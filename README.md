@@ -1,4 +1,4 @@
-# Complia premium website
+# Complia services website
 
 A curated Next.js rebuild of the legacy WordPress site in `public_html/`. The new app lives at the repository root so the WordPress archive remains untouched during migration.
 
