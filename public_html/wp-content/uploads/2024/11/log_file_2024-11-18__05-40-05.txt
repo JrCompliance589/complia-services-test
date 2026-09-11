@@ -1,0 +1,60 @@
+
+---Downloaded files---
+The import files for: Home Default were successfully downloaded!
+Initial max execution time = 300
+Files info:
+Site URL = https://complia.services
+Data file = /home/u627756181/domains/complia.services/public_html/wp-content/themes/gerow/sample-data/contents-demo.xml
+Widget file = /home/u627756181/domains/complia.services/public_html/wp-content/themes/gerow/sample-data/widget-settings.json
+Customizer file = /home/u627756181/domains/complia.services/public_html/wp-content/themes/gerow/sample-data/customizer-data.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+[WARNING] Failed to import "Footer Newsletter": Invalid post type mc4wp-form
+
+
+---Importing widgets---
+Blog Sidebar : 
+
+Search - Search Here - Imported
+Categories - Categories - Imported
+Gerow Sidebar Posts - Most Popular - Imported
+Tag Cloud - Tag Cloud - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

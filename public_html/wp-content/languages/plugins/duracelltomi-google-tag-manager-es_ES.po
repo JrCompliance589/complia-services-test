@@ -1,0 +1,1487 @@
+# Translation of Plugins - GTM4WP &#8211; A Google Tag Manager (GTM) plugin for WordPress - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - GTM4WP &#8211; A Google Tag Manager (GTM) plugin for WordPress - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-09-04 16:49:33+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.1.0\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - GTM4WP &#8211; A Google Tag Manager (GTM) plugin for WordPress - Stable (latest release)\n"
+
+#: src/Admin/SettingsPage.php:139
+msgid "Please pause the blocker for the admin area of this site, or add an exception for it, and reload this page. If the screen still stays empty, please check the browser console for errors, check on the Network tab whether admin.js loads from the plugin folder, and verify that all plugin files were uploaded completely."
+msgstr "Pausa el bloqueador para el área de administración de este sitio, o añade una excepción para ella, y recarga esta página. Si la pantalla sigue vacía, comprueba la consola del navegador para ver si hay errores, mira en la pestaña Red si admin.js se carga desde la carpeta del plugin, y verifica que todos los archivos del plugin se hayan subido por completo."
+
+#: src/Admin/SettingsPage.php:138
+msgid "This screen is built in the browser by a JavaScript file loaded from the plugin folder (build/admin.js), and that file did not run. The most likely cause is an ad or privacy blocker: some filter lists block everything under the folder of this plugin, and that also blocks the file this screen is built from."
+msgstr "Esta pantalla se construye en el navegador mediante un archivo JavaScript que se carga desde la carpeta del plugin (build/admin.js), y ese archivo no se ejecutó. La causa más probable es un bloqueador de anuncios o de privacidad: algunas listas de filtros bloquean todo lo que está bajo la carpeta de este plugin, y eso también bloquea el archivo con el que se construye esta pantalla."
+
+#: src/Admin/SettingsPage.php:137
+msgid "The GTM4WP settings screen could not start."
+msgstr "No se ha podido iniciar la pantalla de ajustes de GTM4WP."
+
+#: src/Modules/WooCommerce/StoreApiData.php:152
+msgid "GA4 ecommerce item data for the cart line, JSON encoded."
+msgstr "Datos del artículo de comercio electrónico GA4 para la línea del carrito, codificados en JSON."
+
+#: src/Modules/WooCommerce/StoreApiData.php:136
+msgid "GA4 ecommerce item data for the product."
+msgstr "Datos del artículo de comercio electrónico GA4 para el producto."
+
+#: src/Modules/WooCommerce/ListTracking.php:337
+msgid "Product Collection"
+msgstr "Colección de productos"
+
+#: src/Modules/WooCommerce/ListTracking.php:334
+msgid "Cart Contents"
+msgstr "Contenido del carrito"
+
+#: src/Modules/WooCommerce/ListTracking.php:331
+msgid "Products By Brand"
+msgstr "Productos por marca"
+
+#: src/Modules/WooCommerce/ListTracking.php:328
+msgid "Products By Tag"
+msgstr "Productos por etiqueta"
+
+#: src/Modules/WooCommerce/ListTracking.php:325
+msgid "Product Category List"
+msgstr "Lista de categorías de productos"
+
+#: src/Modules/WooCommerce/ListTracking.php:322
+msgid "Handpicked Products"
+msgstr "Productos seleccionados a mano"
+
+#: src/Modules/WooCommerce/ListTracking.php:319
+msgid "New Products"
+msgstr "Productos nuevos"
+
+#: src/Modules/WooCommerce/AdminSchema.php:427
+msgid "WooCommerce 5.0 or newer needs to be installed and activated to use this module."
+msgstr "WooCommerce 5.0 o superior debe estar instalado y activado para usar este módulo."
+
+#. translators: 1: opening anchor tag linking to the CheckoutWC website. 2:
+#. closing anchor tag.
+#: src/Modules/WooCommerce/AdminSchema.php:407
+msgid "Enable this if your store uses %1$sCheckoutWC%2$s, which replaces the standard WooCommerce checkout with its own multi-step template. The classic checkout markers the tracker relies on are not reliably present there, so the add_shipping_info and add_payment_info events are missed. With this on, the tracker also binds those events to CheckoutWC's own cfw_step_changed event."
+msgstr "Activa esto si tu tienda usa %1$sCheckoutWC%2$s, que reemplaza el checkout estándar de WooCommerce con su propia plantilla de varios pasos. Los marcadores de checkout clásicos en los que se basa el rastreador no están presentes de forma fiable allí, por lo que se pierden los eventos add_shipping_info y add_payment_info. Con esto activado, el rastreador también vincula esos eventos al evento cfw_step_changed de CheckoutWC."
+
+#: src/Modules/WooCommerce/AdminSchema.php:404
+msgid "CheckoutWC compatibility"
+msgstr "Compatibilidad con CheckoutWC"
+
+#: src/Modules/WooCommerce/AdminSchema.php:396
+msgid "When a user clicks on a product in a list, the select_item event uses a callback function with Google Tag Manager (GTM). This ensures that GTM can fire all related tags before the browser navigates to the product detail page. You can customize a timeout period (in milliseconds). This timeout only comes into play if a tag fails to fire within the specified time for some reason. Set this to 0 to open the product immediately without waiting for GTM: the select_item event is still pushed to the data layer, but the click is no longer held back. Use 0 (or a lower value than 2000) if product links feel slow to open - for example when a consent tool blocks GTM so the callback never returns."
+msgstr "Cuando un usuario hace clic en un producto en una lista, el evento select_item usa una función de callback con Google Tag Manager (GTM). Esto asegura que GTM pueda activar todas las etiquetas relacionadas antes de que el navegador navegue a la página de detalles del producto. Puedes personalizar un período de tiempo de espera (en milisegundos). Este tiempo de espera solo entra en juego si una etiqueta no se activa en el tiempo especificado por alguna razón. Establece esto en 0 para abrir el producto inmediatamente sin esperar a GTM: el evento select_item sigue enviándose a la capa de datos, pero el clic ya no se retiene. Usa 0 (o un valor inferior a 2000) si los enlaces de productos parecen lentos al abrirse, por ejemplo, cuando una herramienta de consentimiento bloquea GTM y el callback nunca regresa."
+
+#: src/Modules/WooCommerce/AdminSchema.php:368
+msgid "If your theme or another plugin shows the order confirmation on a custom page instead of the standard WooCommerce order received endpoint, select it here so the purchase event fires on it. The order is resolved from the current browser session."
+msgstr "Si tu tema u otro plugin muestra la confirmación del pedido en una página personalizada en lugar del endpoint estándar de pedido recibido de WooCommerce, selecciona la página aquí para que el evento purchase se active en ella. El pedido se resuelve desde la sesión actual del navegador."
+
+#: src/Modules/WooCommerce/AdminSchema.php:367
+msgid "Custom order received (thank-you) page"
+msgstr "Página personalizada de pedido recibido (agradecimiento)"
+
+#: src/Modules/WooCommerce/AdminSchema.php:358
+msgid "Turn this on if some purchases are missing. When the customer lands on a heavily customized thank-you page, or on the order-pay page instead of the order received page, the purchase event is emitted on the next page they view in the same browser session instead. The order tracked flag and browser cookie still prevent double counting. Note: this cannot capture orders where the buyer pays via an asynchronous gateway and never returns to the site - that case needs server side tracking."
+msgstr "Actívala si faltan algunas compras. Cuando el cliente llega a una página de agradecimiento muy personalizada, o a la página de pago del pedido en lugar de la página de pedido recibido, el evento purchase se emite en la siguiente página que vea en la misma sesión del navegador. La marca de pedido rastreado y la cookie del navegador siguen evitando el doble conteo. Nota: esto no puede capturar pedidos en los que el comprador paga a través de una pasarela asíncrona y nunca regresa al sitio; en ese caso se necesita seguimiento del lado del servidor."
+
+#: src/Modules/WooCommerce/AdminSchema.php:357
+msgid "Reliable purchase tracking"
+msgstr "Seguimiento fiable de compras"
+
+#: src/Modules/WooCommerce/AdminSchema.php:347
+msgid "The purchase event is sent when an order first reaches one of these statuses, i.e. at order placement - not when payment physically clears. This is why Cash on Delivery (Processing) and bank transfer (On hold) orders are tracked at checkout even though the money arrives later. Leave Failed, Cancelled and Pending payment unchecked so unpaid orders are not counted as sales."
+msgstr "El evento purchase se envía cuando un pedido alcanza por primera vez uno de estos estados, es decir, en el momento del pedido, no cuando el pago se liquida físicamente. Por eso los pedidos de contrarrembolso (Procesando) y transferencia bancaria (En espera) se rastrean en el checkout aunque el dinero llegue después. Deja Failed, Cancelled y Pending payment sin marcar para que los pedidos no pagados no se cuenten como ventas."
+
+#: src/Modules/WooCommerce/AdminSchema.php:346
+msgid "Order statuses that trigger the purchase event"
+msgstr "Estados del pedido que activan el evento purchase"
+
+#: src/Modules/WooCommerce/AdminSchema.php:329
+msgid "Text to prepend to the transaction_id sent with the purchase event, for example to tell several stores apart in one GA4 property or to match the order id format of another system. Leave this empty to send the WooCommerce order number unchanged. Only the purchase event is affected: the order number in the orderData variable and the duplicate tracking guards of the plugin keep using the raw order number."
+msgstr "Texto para anteponer al transaction_id enviado con el evento purchase, por ejemplo para distinguir varias tiendas en una propiedad GA4 o para coincidir con el formato de ID de pedido de otro sistema. Deja esto vacío para enviar el número de pedido de WooCommerce sin cambios. Solo el evento purchase se ve afectado: el número de pedido en la variable orderData y los guardias de seguimiento duplicado del plugin siguen usando el número de pedido original."
+
+#: src/Modules/WooCommerce/AdminSchema.php:328
+msgid "Transaction ID prefix"
+msgstr "Prefijo del ID de transacción"
+
+#: src/Modules/WooCommerce/AdminSchema.php:292
+msgid "Enable this to add all order attributes into the data layer on the order received page regardless and independently from ecommerce tracking"
+msgstr "Actívalo para añadir todos los atributos del pedido en la capa de datos en la página de pedido recibido independientemente del seguimiento de comercio electrónico"
+
+#: src/Modules/WooCommerce/AdminSchema.php:274
+msgid "Enable this option to include the content of the cart in the data layer on each page. Especially useful for site personalization tools."
+msgstr "Activa esta opción para incluir el contenido del carrito en la capa de datos en cada página. Especialmente útil para herramientas de personalización del sitio."
+
+#: src/Modules/WooCommerce/AdminSchema.php:264
+msgid "When a visitor clicks a product in a list, remember which list it was (item_list_name / item_list_id) in a first-party cookie and carry it onto the later view_item, add_to_cart, begin_checkout, add_shipping_info, add_payment_info and purchase events, so GA4 can attribute the whole funnel to the originating list. On a product page the list is merged in by the browser rather than by the server, so the attribution also works when the page is served from a full-page cache. Only enable this if you are NOT already doing the same with custom JavaScript in Google Tag Manager, otherwise the attribution would be set twice."
+msgstr "Cuando un visitante hace clic en un producto en una lista, recuerda de qué lista se trataba (item_list_name / item_list_id) en una cookie de primera parte y lo traslada a los eventos posteriores view_item, add_to_cart, begin_checkout, add_shipping_info, add_payment_info y purchase, para que GA4 pueda atribuir todo el embudo a la lista de origen. En una página de producto, la lista la fusiona el navegador en lugar del servidor, por lo que la atribución también funciona cuando la página se sirve desde una caché de página completa. Activa esto solo si NO estás haciendo ya lo mismo con JavaScript personalizado en Google Tag Manager, de lo contrario, la atribución se establecería dos veces."
+
+#: src/Modules/WooCommerce/AdminSchema.php:263
+msgid "Persist product list attribution across the funnel"
+msgstr "Persistir la atribución de la lista de productos a través del embudo"
+
+#: src/Modules/WooCommerce/AdminSchema.php:172
+msgid "Choose this option if you would like to track e-commerce data with GA4 ecommerce tracking."
+msgstr "Elige esta opción si deseas rastrear datos de comercio electrónico con el seguimiento de comercio electrónico de GA4."
+
+#: src/Modules/WooCommerce/AdminSchema.php:145
+msgid "(use the standard WooCommerce order received page)"
+msgstr "(usar la página de pedido recibido estándar de WooCommerce)"
+
+#: src/Modules/WooCommerce/AdminSchema.php:139
+msgid "Failed"
+msgstr "Fallido"
+
+#: src/Modules/WooCommerce/AdminSchema.php:138
+msgid "Refunded"
+msgstr "Reembolsado"
+
+#: src/Modules/WooCommerce/AdminSchema.php:137
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#: src/Modules/WooCommerce/AdminSchema.php:136
+msgid "Completed"
+msgstr "Completado"
+
+#: src/Modules/WooCommerce/AdminSchema.php:135
+msgid "On hold"
+msgstr "En espera"
+
+#: src/Modules/WooCommerce/AdminSchema.php:134
+msgid "Processing"
+msgstr "Procesando"
+
+#: src/Modules/WooCommerce/AdminSchema.php:133
+msgid "Pending payment"
+msgstr "Pago pendiente"
+
+#: src/Modules/WooCommerce/AdminSchema.php:101
+msgid "(not used)"
+msgstr "(no usado)"
+
+#: src/Modules/WooCommerce/AdminSchema.php:89
+msgid "Purchase tracking"
+msgstr "Seguimiento de compras"
+
+#: src/Modules/WooCommerce/AdminSchema.php:88
+msgid "Data layer content"
+msgstr "Contenido de la capa de datos"
+
+#: src/Modules/WooCommerce/AdminSchema.php:87
+msgid "Product data"
+msgstr "Datos del producto"
+
+#. translators: 1: anchor element linking to GA4 Ecommerce docs. 2: closing
+#. anchor element. 3: anchor element linking to GTM4WP setup guide for Google
+#. Analytics 4. 4: closing anchor element.
+#: src/Modules/WooCommerce/AdminSchema.php:68
+msgid "Track e-commerce data using %1$sGA4 ecommerce tracking%2$s. Use the plugin's %3$sofficial guides%4$s to setup your Google Tag Manager container. WooCommerce 5.0+ is required to use this integration."
+msgstr "Rastrea datos de comercio electrónico usando el %1$sseguimiento de comercio electrónico de GA4%2$s. Usa las %3$sguías oficiales%4$s del plugin para configurar tu contenedor de Google Tag Manager. Se requiere WooCommerce 5.0+ para usar esta integración."
+
+#: src/Modules/VisitorData/AdminSchema.php:81
+msgid "Enable this if your site uses full-page caching and you want to avoid leaking one visitor's data (IP, logged-in user email/username/role, WooCommerce customer and cart) to another visitor through the cached HTML. When on, these visitor/session values are kept out of the cached HTML and delivered in the browser instead, under the same data layer variable names, so your Google Tag Manager tags keep working: the referrer and search term are computed by the browser itself; the visitor IP, Cloudflare country and logged-in user data come from a first-party endpoint that returns only the current visitor's own data (the IP/country fetched once per session, the user data only when the login state changes, so anonymous visitors never fetch it); and the WooCommerce customer and cart ride WooCommerce's own cart-refresh request, adding no extra page request. Because the values now arrive after the page view, point the tags that read them at the matching Custom Event trigger: gtm4wp.visitorData for the visitor and logged-in user variables, gtm4wp.customerData for the WooCommerce customer variables and gtm4wp.cartData for the cart content. Each of the three fires only when its own data changed, and only when you have the option that produces it enabled. The two WooCommerce one-shot events (an add_to_cart after the cart \"Undo\" and the reliable-purchase fallback) are delivered client-side too, each fired exactly once. Off by default."
+msgstr "Activa esto si tu sitio usa caché de página completa y quieres evitar que los datos de un visitante (IP, correo electrónico/nombre de usuario/rol de usuario autenticado, cliente de WooCommerce y carrito) se filtren a otro visitante a través del HTML en caché. Cuando está activado, estos valores de visitante/sesión se mantienen fuera del HTML en caché y se entregan en el navegador en su lugar, con los mismos nombres de variables de la capa de datos, para que tus etiquetas de Google Tag Manager sigan funcionando: el referente y el término de búsqueda los calcula el propio navegador; la IP del visitante, el país de Cloudflare y los datos del usuario autenticado provienen de un endpoint de primera parte que solo devuelve los datos del visitante actual (la IP/país se obtienen una vez por sesión, los datos del usuario solo cuando cambia el estado de autenticación, por lo que los visitantes anónimos nunca los obtienen); y el cliente y el carrito de WooCommerce usan la propia solicitud de actualización de carrito de WooCommerce, sin añadir ninguna solicitud de página adicional. Como los valores ahora llegan después de la vista de página, apunta las etiquetas que los leen al disparador de evento personalizado correspondiente: gtm4wp.visitorData para las variables de visitante y usuario autenticado, gtm4wp.customerData para las variables de cliente de WooCommerce y gtm4wp.cartData para el contenido del carrito. Cada uno de los tres se activa solo cuando sus propios datos cambian, y solo cuando tienes activada la opción que lo produce. Los dos eventos únicos de WooCommerce (un add_to_cart después del «Deshacer» del carrito y el fallback de compra fiable) también se entregan en el lado del cliente, cada uno se activa exactamente una vez. Desactivado por defecto."
+
+#: src/Modules/VisitorData/AdminSchema.php:80
+msgid "Enable cache-safe data layer"
+msgstr "Activar la capa de datos segura para caché"
+
+#: src/Modules/VisitorData/AdminSchema.php:55
+msgid "On sites with full-page caching (LiteSpeed, WP Rocket, Varnish, Cloudflare APO), the HTML built for one visitor is served to everyone. Any visitor-specific value baked into the data layer would then leak to other visitors. This mode keeps those values out of the cached HTML."
+msgstr "En sitios con caché de página completa (LiteSpeed, WP Rocket, Varnish, Cloudflare APO), el HTML construido para un visitante se sirve a todos. Cualquier valor específico del visitante incluido en la capa de datos se filtraría a otros visitantes. Este modo mantiene esos valores fuera del HTML en caché."
+
+#: src/Modules/VisitorData/AdminSchema.php:46
+#: src/Modules/VisitorData/AdminSchema.php:65
+msgid "Cache-safe data layer"
+msgstr "Capa de datos segura para caché"
+
+#: src/Modules/UserEvents/AdminSchema.php:89
+msgid "Check this option to push gtm4wp.formElementLeave only for a field that was empty when the visitor entered it and holds a value when they leave it, so that tabbing through a form without typing no longer produces an event for every field. Text inputs, textareas and dropdowns are checked this way; checkboxes, radio buttons and buttons are always reported, because they carry no \"empty\" state. A field that was already filled in when the visitor entered it, for example one your theme pre-fills, reports nothing when they leave it unchanged. gtm4wp.formElementEnter is never affected and keeps firing for every field."
+msgstr "Marca esta opción para enviar gtm4wp.formElementLeave solo para un campo que estaba vacío cuando el visitante entró en él y tiene un valor cuando lo abandona, de modo que recorrer un formulario con el tabulador sin escribir ya no produce un evento para cada campo. Los campos de texto, áreas de texto y desplegables se comprueban de esta manera; las casillas de verificación, los botones de opción y los botones siempre se reportan, porque no tienen un estado «vacío». Un campo que ya estaba relleno cuando el visitante entró en él, por ejemplo uno que tu tema rellena previamente, no reporta nada cuando lo abandona sin cambios. gtm4wp.formElementEnter nunca se ve afectado y sigue activándose para cada campo."
+
+#: src/Modules/UserEvents/AdminSchema.php:88
+msgid "Only report fields the visitor filled in"
+msgstr "Reportar solo los campos que el visitante rellenó"
+
+#: src/Modules/UserEvents/AdminSchema.php:80
+msgid "Check this option to include a Tag Manager event when a visitor moves between elements of a form (comment, contact, etc). Each event describes the field in inputID, inputName and inputClass and its form in formID, formName and formClass, and also populates Google Tag Manager's built-in Form variables: Form ID, Form Classes, Form URL (the form's action, resolved to an absolute URL) and Form Target. Google publishes no built-in Form Name variable, so the form's name attribute stays available on formName only. Note that the keys behind those built-ins are the ones Google Tag Manager's Clicks category reads, so on these events Click ID and Click Classes resolve to the form as well. No field value is ever included."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante se mueve entre elementos de un formulario (comentario, contacto, etc.). Cada evento describe el campo en inputID, inputName e inputClass y su formulario en formID, formName y formClass, y también rellena las variables de formulario integradas de Google Tag Manager: Form ID, Form Classes, Form URL (la acción del formulario, resuelta a una URL absoluta) y Form Target. Google no publica una variable Form Name integrada, por lo que el atributo name del formulario solo está disponible en formName. Ten en cuenta que las claves detrás de esas variables integradas son las que lee la categoría Clicks de Google Tag Manager, por lo que en estos eventos Click ID y Click Classes también se resuelven en el formulario. Nunca se incluye ningún valor de campo."
+
+#: src/Modules/UserEvents/AdminSchema.php:79
+msgid "Form fill events"
+msgstr "Eventos de relleno de formularios"
+
+#: src/Modules/UserEvents/AdminSchema.php:45
+msgid "User events"
+msgstr "Eventos de usuario"
+
+#: src/Modules/PageVariables/AdminSchema.php:442
+msgid "The IP addresses or CIDR ranges of the reverse proxies, load balancers and CDNs that sit in front of this site - one per line, or comma separated. This is what makes the custom header above trustworthy: with it set, an X-Forwarded-For list is read from the right (skipping your own hops) and a single-value header such as CF-Connecting-IP is only used when the request really did arrive through one of these addresses. Leave it empty if nothing sits in front of your site. Cloudflare publishes its ranges at cloudflare.com/ips; for a load balancer inside your own network the address is usually a private range such as 10.0.0.0/8."
+msgstr "Las direcciones IP o rangos CIDR de los proxies inversos, balanceadores de carga y CDN que se sitúan delante de este sitio, una por línea o separadas por comas. Esto es lo que hace que la cabecera personalizada de arriba sea fiable: con ella configurada, una lista X-Forwarded-For se lee desde la derecha (saltando tus propios saltos) y una cabecera de un solo valor como CF-Connecting-IP solo se usa cuando la solicitud realmente llegó a través de una de estas direcciones. Déjalo vacío si no hay nada delante de tu sitio. Cloudflare publica sus rangos en cloudflare.com/ips; para un balanceador de carga dentro de tu propia red, la dirección suele ser un rango privado como 10.0.0.0/8."
+
+#: src/Modules/PageVariables/AdminSchema.php:441
+msgid "Visitor IP - Trusted proxy addresses"
+msgstr "IP del visitante - Direcciones de proxy de confianza"
+
+#: src/Modules/PageVariables/AdminSchema.php:421
+msgid "By default, the plugin will check the so called REMOTE_ADDR system variable for IP addresses. In some cases, this might not include the correct address. You may specify a custom header to read the IP address from. Important: an HTTP header is sent by the visitor, so on its own it is a claim and not a fact - anyone can put any address in it. Fill in the trusted proxy addresses below to make this header trustworthy. Without them the plugin keeps reading the header the way it always has, but the value can be chosen by the visitor, so do not use it for anything but analytics."
+msgstr "Por defecto, el plugin comprobará la llamada variable de sistema REMOTE_ADDR para las direcciones IP. En algunos casos, es posible que no incluya la dirección correcta. Puedes especificar una cabecera personalizada para leer la dirección IP. Importante: una cabecera HTTP es enviada por el visitante, por lo que por sí sola es una afirmación y no un hecho; cualquiera puede poner cualquier dirección en ella. Rellena las direcciones de proxy de confianza a continuación para hacer que esta cabecera sea fiable. Sin ellas, el plugin sigue leyendo la cabecera como siempre lo ha hecho, pero el valor puede ser elegido por el visitante, así que no lo uses para nada más que para análisis."
+
+#: src/Modules/PageVariables/AdminSchema.php:367
+msgid "Check this option to include the role of the logged in user in the visitorType data layer variable. Roles are reported by their slug, a user with several roles reports them comma separated, and a visitor who is not logged in reports visitor-logged-out."
+msgstr "Marca esta opción para incluir el rol del usuario autenticado en la variable visitorType de la capa de datos. Los roles se reportan por su slug, un usuario con varios roles los reporta separados por comas, y un visitante que no ha iniciado sesión reporta visitor-logged-out."
+
+#: src/Modules/PageVariables/AdminSchema.php:358
+msgid "Check this option to include whether there is a logged in user on your website, in the visitorLoginState data layer variable. The value is either logged-in or logged-out."
+msgstr "Marca esta opción para incluir si hay un usuario autenticado en tu sitio web, en la variable visitorLoginState de la capa de datos. El valor es logged-in o logged-out."
+
+#: src/Modules/PageVariables/AdminSchema.php:340
+msgid "Check this option to include the language code of the current page, detected from WPML or Polylang and falling back to the site locale. Useful to segment behavior on multilingual sites."
+msgstr "Marca esta opción para incluir el código de idioma de la página actual, detectado desde WPML o Polylang y usando la configuración regional del sitio como fallback. Útil para segmentar el comportamiento en sitios multilingües."
+
+#: src/Modules/PageVariables/AdminSchema.php:339
+msgid "Page language"
+msgstr "Idioma de la página"
+
+#: src/Modules/PageVariables/AdminSchema.php:331
+msgid "Check this option to include the primary category of the current post as chosen in Yoast SEO or Rank Math (falls back to the first assigned category). This adds two data layer variables: pagePrimaryCategory holds the category slug and pagePrimaryCategoryName holds its display name. Useful as a single content grouping dimension."
+msgstr "Marca esta opción para incluir la categoría principal de la entrada actual elegida en Yoast SEO o Rank Math (usa la primera categoría asignada como fallback). Esto añade dos variables a la capa de datos: pagePrimaryCategory contiene el slug de la categoría y pagePrimaryCategoryName contiene su nombre para mostrar. Útil como una única dimensión de agrupación de contenido."
+
+#: src/Modules/PageVariables/AdminSchema.php:330
+msgid "Primary category"
+msgstr "Categoría principal"
+
+#: src/Modules/PageVariables/AdminSchema.php:322
+msgid "Check this option to include whether the current post is marked as sticky."
+msgstr "Marca esta opción para incluir si la entrada actual está marcada como fija."
+
+#: src/Modules/PageVariables/AdminSchema.php:321
+msgid "Sticky post"
+msgstr "Entrada fija"
+
+#: src/Modules/PageVariables/AdminSchema.php:313
+msgid "Check this option to include the parent post ID and the depth of the current post in the page hierarchy (0 for top level pages)."
+msgstr "Marca esta opción para incluir el ID de la entrada padre y la profundidad de la entrada actual en la jerarquía de páginas (0 para páginas de nivel superior)."
+
+#: src/Modules/PageVariables/AdminSchema.php:312
+msgid "Page hierarchy"
+msgstr "Jerarquía de la página"
+
+#: src/Modules/PageVariables/AdminSchema.php:304
+msgid "Check this option to include whether the current post has a featured image set."
+msgstr "Marca esta opción para incluir si la entrada actual tiene una imagen destacada establecida."
+
+#: src/Modules/PageVariables/AdminSchema.php:303
+msgid "Featured image presence"
+msgstr "Presencia de imagen destacada"
+
+#: src/Modules/PageVariables/AdminSchema.php:295
+msgid "Check this option to include the template file assigned to the current post or page (returns \"default\" when no custom template is used). Useful to segment behavior by page layout."
+msgstr "Marca esta opción para incluir el archivo de plantilla asignado a la entrada o página actual (devuelve «default» cuando no se usa una plantilla personalizada). Útil para segmentar el comportamiento por diseño de página."
+
+#: src/Modules/PageVariables/AdminSchema.php:294
+msgid "Page template"
+msgstr "Plantilla de página"
+
+#: src/Modules/PageVariables/AdminSchema.php:286
+msgid "Check this option to include the number of comments on the current post and whether commenting is open or closed."
+msgstr "Marca esta opción para incluir el número de comentarios en la entrada actual y si los comentarios están abiertos o cerrados."
+
+#: src/Modules/PageVariables/AdminSchema.php:285
+msgid "Comment count"
+msgstr "Número de comentarios"
+
+#: src/Modules/PageVariables/AdminSchema.php:277
+msgid "Check this option to include the number of days elapsed since the current post was published. Useful to segment engagement by fresh versus evergreen content."
+msgstr "Marca esta opción para incluir el número de días transcurridos desde que se publicó la entrada actual. Útil para segmentar el engagement por contenido reciente frente a contenido perenne."
+
+#: src/Modules/PageVariables/AdminSchema.php:276
+msgid "Content age in days"
+msgstr "Antigüedad del contenido en días"
+
+#: src/Modules/PageVariables/AdminSchema.php:268
+msgid "Check this option to include the last modified date of the current post. This will include the same set of date variables as the post date option (full date, year, month, day, day name, hour, minute, ISO and Unix timestamp)."
+msgstr "Marca esta opción para incluir la fecha de última modificación de la entrada actual. Esto incluirá el mismo conjunto de variables de fecha que la opción de fecha de entrada (fecha completa, año, mes, día, nombre del día, hora, minuto, ISO y marca de tiempo Unix)."
+
+#: src/Modules/PageVariables/AdminSchema.php:267
+msgid "Last modified date"
+msgstr "Fecha de última modificación"
+
+#: src/Modules/PageVariables/AdminSchema.php:259
+msgid "Check this option to include the estimated reading time of the current post in minutes (based on 200 words per minute, adjustable with the gtm4wp_reading_time_wpm filter)."
+msgstr "Marca esta opción para incluir el tiempo de lectura estimado de la entrada actual en minutos (basado en 200 palabras por minuto, ajustable con el filtro gtm4wp_reading_time_wpm)."
+
+#: src/Modules/PageVariables/AdminSchema.php:258
+msgid "Estimated reading time"
+msgstr "Tiempo de lectura estimado"
+
+#: src/Modules/PageVariables/AdminSchema.php:250
+msgid "Check this option to include the number of words in the current post content. Useful to normalize scroll depth and engagement metrics against the length of the content."
+msgstr "Marca esta opción para incluir el número de palabras del contenido de la entrada actual. Útil para normalizar la profundidad de desplazamiento y las métricas de engagement en función de la longitud del contenido."
+
+#: src/Modules/PageVariables/AdminSchema.php:249
+msgid "Content word count"
+msgstr "Número de palabras del contenido"
+
+#: src/Modules/PageVariables/AdminSchema.php:219
+msgid "The names of the custom fields you actually want in the data layer - one per line, or comma separated. Leave it empty to keep publishing every custom field whose name does not start with an underscore and is not otherwise protected or skipped, which is what the option above does on its own. Filling it in is the safer way to use that option: your Google Tag Manager container only ever needs a handful of keys, and naming them means a field added later by a plugin, a theme or an editor cannot start appearing on your public pages without you deciding it. Protected fields and the gtm4wp_post_meta_in_datalayer filter still apply on top of this list, so naming a field here cannot publish one that is held back for those reasons - a name starting with an underscore is never published however you list it. A field name that contains a comma cannot be listed at all, because commas separate the entries."
+msgstr "Los nombres de los campos personalizados que realmente quieres en la capa de datos, uno por línea o separados por comas. Déjalo vacío para seguir publicando todos los campos personalizados cuyo nombre no comience con un guion bajo y no esté protegido u omitido, que es lo que hace la opción anterior por sí sola. Rellenarlo es la forma más segura de usar esa opción: tu contenedor de Google Tag Manager solo necesita un puñado de claves, y nombrarlas significa que un campo añadido posteriormente por un plugin, un tema o un editor no puede empezar a aparecer en tus páginas públicas sin que tú lo decidas. Los campos protegidos y el filtro gtm4wp_post_meta_in_datalayer siguen aplicándose además de esta lista, por lo que nombrar un campo aquí no puede publicar uno que esté retenido por esas razones; un nombre que comienza con un guion bajo nunca se publica, independientemente de cómo lo enumeres. Un nombre de campo que contenga una coma no se puede listar en absoluto, porque las comas separan las entradas."
+
+#: src/Modules/PageVariables/AdminSchema.php:218
+msgid "Post custom fields - publish only these keys"
+msgstr "Campos personalizados de entrada - publicar solo estas claves"
+
+#: src/Modules/PageVariables/AdminSchema.php:210
+msgid "Check this option to include the custom fields (post meta) of the current post in the pagePostTerms.meta data layer variable. Read this before enabling it: this publishes EVERY custom field whose name does not start with an underscore, together with its value, into the data layer of the public page, where any visitor can read it. That includes fields created by other plugins and themes - Advanced Custom Fields stores its values this way - so it may expose internal notes, ids, prices or contact details you did not intend to make public. Review your custom fields first, and use the key list below to name only the ones you need (or the gtm4wp_post_meta_in_datalayer filter to exclude individual keys in code). Custom fields that hold a structured value rather than plain text are skipped: plugins store those in a packed internal format that no Google Tag Manager variable can read. Fields that a plugin or your own site marks as protected are skipped too. Until 2.0 this data was sent as part of the \"Post Terms\" option above; if you had that enabled, this option was turned on for you during the upgrade so your Google Tag Manager setup keeps working."
+msgstr "Marca esta opción para incluir los campos personalizados (meta de entrada) de la entrada actual en la variable pagePostTerms.meta de la capa de datos. Lee esto antes de activarlo: esto publica TODOS los campos personalizados cuyo nombre no comienza con un guion bajo, junto con su valor, en la capa de datos de la página pública, donde cualquier visitante puede leerlo. Esto incluye campos creados por otros plugins y temas (Advanced Custom Fields almacena sus valores de esta manera), por lo que puede exponer notas internas, IDs, precios o datos de contacto que no querías hacer públicos. Revisa primero tus campos personalizados y usa la lista de claves a continuación para nombrar solo los que necesites (o el filtro gtm4wp_post_meta_in_datalayer para excluir claves individuales en código). Los campos personalizados que contienen un valor estructurado en lugar de texto plano se omiten: los plugins los almacenan en un formato interno empaquetado que ninguna variable de Google Tag Manager puede leer. Los campos que un plugin o tu propio sitio marcan como protegidos también se omiten. Hasta la versión 2.0, estos datos se enviaban como parte de la opción «Términos de entrada» de arriba; si la tenías activada, esta opción se activó automáticamente durante la actualización para que tu configuración de Google Tag Manager siguiera funcionando."
+
+#: src/Modules/PageVariables/AdminSchema.php:209
+msgid "Post custom fields (meta)"
+msgstr "Campos personalizados de entrada (meta)"
+
+#: src/Modules/PageVariables/AdminSchema.php:201
+msgid "Check this option to include taxonomy values associated with a given post, in the pagePostTerms data layer variable. Custom fields are a separate option below."
+msgstr "Marca esta opción para incluir los valores de taxonomía asociados a una entrada determinada, en la variable pagePostTerms de la capa de datos. Los campos personalizados son una opción separada a continuación."
+
+#: src/Modules/PageVariables/AdminSchema.php:192
+msgid "Check this option to include the format of the current post in the postFormat data layer variable. The format is reported by its slug (aside, gallery, video and so on), and posts with no format set report standard."
+msgstr "Marca esta opción para incluir el formato de la entrada actual en la variable postFormat de la capa de datos. El formato se reporta por su slug (aside, gallery, video, etc.), y las entradas sin formato establecido reportan standard."
+
+#: src/Modules/PageVariables/AdminSchema.php:156
+msgid "Check this option to include the date of the current post. This will include 9 dataLayer variables: full date, year, month, day, day name, hour, minute, ISO 8601 date and Unix timestamp. On date based archive pages only the parts the archive covers are included."
+msgstr "Marca esta opción para incluir la fecha de la entrada actual. Esto incluirá 9 variables de dataLayer: fecha completa, año, mes, día, nombre del día, hora, minuto, fecha ISO 8601 y marca de tiempo Unix. En las páginas de archivo basadas en fecha, solo se incluyen las partes que cubre el archivo."
+
+#: src/Modules/PageVariables/AdminSchema.php:147
+msgid "Check this option to include the display name of the author on the current post or author page in the pagePostAuthor data layer variable. On a post with several authors (PublishPress Authors) the full list is added as pagePostAuthors as well."
+msgstr "Marca esta opción para incluir el nombre para mostrar del autor en la entrada actual o página de autor en la variable pagePostAuthor de la capa de datos. En una entrada con varios autores (PublishPress Authors), la lista completa también se añade como pagePostAuthors."
+
+#: src/Modules/PageVariables/AdminSchema.php:138
+msgid "Check this option to include the ID of the author on the current post or author page in the pagePostAuthorID data layer variable. On a post with several authors (PublishPress Authors) the full list is added as pagePostAuthorIDs as well."
+msgstr "Marca esta opción para incluir el ID del autor en la entrada actual o página de autor en la variable pagePostAuthorID de la capa de datos. En una entrada con varios autores (PublishPress Authors), la lista completa también se añade como pagePostAuthorIDs."
+
+#: src/Modules/PageVariables/AdminSchema.php:129
+msgid "Check this option to include the tags of the current post in the pageAttributes data layer variable. Tags are listed by their slug (for example black-friday), not by their display name."
+msgstr "Marca esta opción para incluir las etiquetas de la entrada actual en la variable pageAttributes de la capa de datos. Las etiquetas se listan por su slug (por ejemplo black-friday), no por su nombre para mostrar."
+
+#: src/Modules/PageVariables/AdminSchema.php:118
+msgid "Check this option to also add the parent (ancestor) categories to the pageCategory data layer variable. When off, only the categories directly assigned to the current post or archive are listed. Requires the \"Category list of current post/archive\" option above to be enabled."
+msgstr "Marca esta opción para añadir también las categorías padre (ancestros) a la variable pageCategory de la capa de datos. Cuando está desactivado, solo se listan las categorías asignadas directamente a la entrada o archivo actual. Requiere que la opción «Lista de categorías de entrada/archivo actual» de arriba esté activada."
+
+#: src/Modules/PageVariables/AdminSchema.php:117
+msgid "Include parent categories in the category list"
+msgstr "Incluir categorías padre en la lista de categorías"
+
+#: src/Modules/PageVariables/AdminSchema.php:109
+msgid "Check this option to include the categories of the current post or archive page in the pageCategory data layer variable. Categories are listed by their slug (for example news-and-events), not by their display name."
+msgstr "Marca esta opción para incluir las categorías de la entrada actual o página de archivo en la variable pageCategory de la capa de datos. Las categorías se listan por su slug (por ejemplo news-and-events), no por su nombre para mostrar."
+
+#: src/Modules/PageVariables/AdminSchema.php:84
+msgid "Site data"
+msgstr "Datos del sitio"
+
+#: src/Modules/PageVariables/AdminSchema.php:83
+msgid "Visitor data"
+msgstr "Datos del visitante"
+
+#: src/Modules/PageVariables/AdminSchema.php:81
+msgid "Content & engagement data"
+msgstr "Datos de contenido y engagement"
+
+#: src/Modules/PageVariables/AdminSchema.php:80
+msgid "Post data"
+msgstr "Datos de la entrada"
+
+#: src/Modules/PageVariables/AdminSchema.php:61
+msgid "Page variables"
+msgstr "Variables de página"
+
+#: src/Modules/MediaEvents/AdminSchema.php:211
+msgid "By default the media trackers on the Media players tab only wire players that are present when the page loads. Check this option to also track players inserted after page load — e.g. opened in a popup/lightbox or loaded via AJAX — by watching the page for new embeds. This adds a single shared MutationObserver on the page, which has a small per-change cost, so leave it off unless your site injects media players at runtime."
+msgstr "Por defecto, los rastreadores de medios en la pestaña de reproductores multimedia solo conectan los reproductores que están presentes cuando se carga la página. Marca esta opción para rastrear también los reproductores insertados después de la carga de la página, por ejemplo, abiertos en una ventana emergente/lightbox o cargados vía AJAX, observando la página en busca de nuevas inserciones. Esto añade un único MutationObserver compartido en la página, que tiene un pequeño coste por cambio, así que desactívalo a menos que tu sitio inserte reproductores multimedia en tiempo de ejecución."
+
+#: src/Modules/MediaEvents/AdminSchema.php:210
+msgid "Track dynamically inserted players"
+msgstr "Rastrear reproductores insertados dinámicamente"
+
+#: src/Modules/MediaEvents/AdminSchema.php:201
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a Twitch stream or video embedded on your site. Each event also populates Google Tag Manager's built-in Video variables. Note: current time and duration are only available for videos (VODs), not live streams."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante interactúa con un stream o vídeo de Twitch incrustado en tu sitio. Cada evento también rellena las variables de vídeo integradas de Google Tag Manager. Nota: el tiempo actual y la duración solo están disponibles para vídeos (VODs), no para streams en vivo."
+
+#: src/Modules/MediaEvents/AdminSchema.php:200
+msgid "Twitch events"
+msgstr "Eventos de Twitch"
+
+#: src/Modules/MediaEvents/AdminSchema.php:191
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a Spotify track, episode or playlist embedded on your site. Each event also populates Google Tag Manager's built-in Video variables. Note: the Spotify embed only reports periodic playback updates, so play, pause and finished states are derived from those updates, and it reports no title at all - the title is read from the embed on the page, and only when the embed carries none is it looked up once from Spotify's public oEmbed endpoint."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante interactúa con una canción, episodio o lista de reproducción de Spotify incrustada en tu sitio. Cada evento también rellena las variables de vídeo integradas de Google Tag Manager. Nota: la inserción de Spotify solo reporta actualizaciones periódicas de reproducción, por lo que los estados de reproducción, pausa y finalizado se derivan de esas actualizaciones, y no reporta ningún título; el título se lee de la inserción en la página, y solo cuando la inserción no lleva ninguno se busca una vez en el endpoint oEmbed público de Spotify."
+
+#: src/Modules/MediaEvents/AdminSchema.php:190
+msgid "Spotify events"
+msgstr "Eventos de Spotify"
+
+#: src/Modules/MediaEvents/AdminSchema.php:181
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a VideoPress (Jetpack/WordPress.com) video embedded on your site. Each event also populates Google Tag Manager's built-in Video variables."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante interactúa con un vídeo de VideoPress (Jetpack/WordPress.com) incrustado en tu sitio. Cada evento también rellena las variables de vídeo integradas de Google Tag Manager."
+
+#: src/Modules/MediaEvents/AdminSchema.php:180
+msgid "VideoPress video events"
+msgstr "Eventos de vídeo de VideoPress"
+
+#: src/Modules/MediaEvents/AdminSchema.php:171
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a JW Player video embedded on your site. Each event also populates Google Tag Manager's built-in Video variables."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante interactúa con un vídeo de JW Player incrustado en tu sitio. Cada evento también rellena las variables de vídeo integradas de Google Tag Manager."
+
+#: src/Modules/MediaEvents/AdminSchema.php:170
+msgid "JW Player video events"
+msgstr "Eventos de vídeo de JW Player"
+
+#: src/Modules/MediaEvents/AdminSchema.php:161
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a Wistia video embedded on your site. Each event also populates Google Tag Manager's built-in Video variables."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante interactúa con un vídeo de Wistia incrustado en tu sitio. Cada evento también rellena las variables de vídeo integradas de Google Tag Manager."
+
+#: src/Modules/MediaEvents/AdminSchema.php:160
+msgid "Wistia video events"
+msgstr "Eventos de vídeo de Wistia"
+
+#: src/Modules/MediaEvents/AdminSchema.php:151
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a Cloudflare Stream video embedded on your site. Each event also populates Google Tag Manager's built-in Video variables."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante interactúa con un vídeo de Cloudflare Stream incrustado en tu sitio. Cada evento también rellena las variables de vídeo integradas de Google Tag Manager."
+
+#: src/Modules/MediaEvents/AdminSchema.php:150
+msgid "Cloudflare Stream video events"
+msgstr "Eventos de vídeo de Cloudflare Stream"
+
+#: src/Modules/MediaEvents/AdminSchema.php:141
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a Mixcloud show embedded on your site. Each event also populates Google Tag Manager's built-in Video variables."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante interactúa con un programa de Mixcloud incrustado en tu sitio. Cada evento también rellena las variables de vídeo integradas de Google Tag Manager."
+
+#: src/Modules/MediaEvents/AdminSchema.php:140
+msgid "Mixcloud events"
+msgstr "Eventos de Mixcloud"
+
+#: src/Modules/MediaEvents/AdminSchema.php:130
+msgid "Optional. The ID of the player configuration to load, found in the Players tab of your Dailymotion Studio account. Leave it empty to use Dailymotion's default player, which needs no account. Filling it in is also what removes Dailymotion's \"initialized without a player id\" console warning. If an embed code already names a player of its own, that one is used for that embed regardless of this setting."
+msgstr "Opcional. El ID de la configuración del reproductor que se va a cargar, que se encuentra en la pestaña Players de tu cuenta de Dailymotion Studio. Déjalo vacío para usar el reproductor predeterminado de Dailymotion, que no necesita cuenta. Rellenarlo también es lo que elimina la advertencia de consola de Dailymotion «initialized without a player id». Si un código de inserción ya nombra un reproductor propio, se usará ese para esa inserción independientemente de este ajuste."
+
+#: src/Modules/MediaEvents/AdminSchema.php:129
+msgid "Dailymotion player ID"
+msgstr "ID de reproductor de Dailymotion"
+
+#: src/Modules/MediaEvents/AdminSchema.php:120
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a Dailymotion video embedded on your site. Each event also populates Google Tag Manager's built-in Video variables. Note: Dailymotion no longer lets any script listen to a video it did not create itself, so tracking works by rebuilding each embed with Dailymotion's current player. The video keeps the size WordPress gave it and plays as before, but the player your visitors see is the one Dailymotion builds - see the player ID setting below. If the player library cannot be loaded, the embed is left exactly as it was and simply goes untracked."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante interactúa con un vídeo de Dailymotion incrustado en tu sitio. Cada evento también rellena las variables de vídeo integradas de Google Tag Manager. Nota: Dailymotion ya no permite que ningún script escuche un vídeo que no haya creado él mismo, por lo que el seguimiento funciona reconstruyendo cada inserción con el reproductor actual de Dailymotion. El vídeo mantiene el tamaño que WordPress le dio y se reproduce como antes, pero el reproductor que ven tus visitantes es el que construye Dailymotion; consulta el ajuste de ID de reproductor a continuación. Si la biblioteca del reproductor no se puede cargar, la inserción se deja exactamente como estaba y simplemente no se rastrea."
+
+#: src/Modules/MediaEvents/AdminSchema.php:119
+msgid "Dailymotion video events"
+msgstr "Eventos de vídeo de Dailymotion"
+
+#: src/Modules/MediaEvents/AdminSchema.php:110
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a native HTML5 <video> or <audio> player embedded on your site. Each event also populates Google Tag Manager's built-in Video variables. Note: the tracker binds to the native media element, so a theme or player library that wraps or replaces it, or a live/streamed source with no fixed duration, can change which events fire and what they report."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante interactúa con un reproductor HTML5 nativo de <video> o <audio> incrustado en tu sitio. Cada evento también rellena las variables de vídeo integradas de Google Tag Manager. Nota: el rastreador se vincula al elemento multimedia nativo, por lo que un tema o biblioteca de reproductor que lo envuelva o reemplace, o una fuente en vivo/streaming sin duración fija, pueden cambiar qué eventos se activan y qué reportan."
+
+#: src/Modules/MediaEvents/AdminSchema.php:109
+msgid "HTML5 video and audio events"
+msgstr "Eventos de vídeo y audio HTML5"
+
+#: src/Modules/MediaEvents/AdminSchema.php:101
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a Soundcloud media embedded on your site. Each event also populates Google Tag Manager's built-in Video variables."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante interactúa con un medio de Soundcloud incrustado en tu sitio. Cada evento también rellena las variables de vídeo integradas de Google Tag Manager."
+
+#: src/Modules/MediaEvents/AdminSchema.php:92
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a Vimeo video embedded on your site. Each event also populates Google Tag Manager's built-in Video variables."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante interactúa con un vídeo de Vimeo incrustado en tu sitio. Cada evento también rellena las variables de vídeo integradas de Google Tag Manager."
+
+#: src/Modules/MediaEvents/AdminSchema.php:82
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a YouTube video embedded on your site. Each event also populates Google Tag Manager's built-in Video variables (Video Status, Video URL, Video Title, Video Provider, Video Duration, Video Current Time, Video Percent). Deprecated: Google Tag Manager now ships its own native YouTube Video trigger, which is the recommended way to measure YouTube playback going forward."
+msgstr "Marca esta opción para incluir un evento de Tag Manager cuando un visitante interactúa con un vídeo de YouTube incrustado en tu sitio. Cada evento también rellena las variables de vídeo integradas de Google Tag Manager (Video Status, Video URL, Video Title, Video Provider, Video Duration, Video Current Time, Video Percent). Obsoleto: Google Tag Manager ahora incluye su propio disparador nativo de YouTube Video, que es la forma recomendada de medir la reproducción de YouTube en adelante."
+
+#: src/Modules/MediaEvents/AdminSchema.php:65
+msgid "Media players"
+msgstr "Reproductores multimedia"
+
+#: src/Modules/MediaEvents/AdminSchema.php:55
+msgid "Fire tags in Google Tag Manager when visitors interact with embedded media players on your website."
+msgstr "Activa etiquetas en Google Tag Manager cuando los visitantes interactúen con reproductores multimedia incrustados en tu sitio web."
+
+#: src/Modules/Container/AdminSchema.php:487
+msgid "On this site WP_ENVIRONMENT_TYPE is not set, so WordPress falls back to the environment type \"production\" and the GTM container is still loaded here even with this option turned on. Set WP_ENVIRONMENT_TYPE to \"staging\", \"development\" or \"local\" on your non-production copies for this option to take effect there."
+msgstr "En este sitio no se ha establecido WP_ENVIRONMENT_TYPE, por lo que WordPress usa el tipo de entorno «production» y el contenedor GTM sigue cargándose aquí incluso con esta opción activada. Establece WP_ENVIRONMENT_TYPE como «staging», «development» o «local» en tus copias que no sean de producción para que esta opción tenga efecto allí."
+
+#. translators: %s: the environment type reported by WordPress, always
+#. "production" here.
+#: src/Modules/Container/AdminSchema.php:483
+msgid "On this site WordPress currently reports the environment type \"%s\", so with this option turned on the GTM container is still loaded here."
+msgstr "En este sitio, WordPress actualmente reporta el tipo de entorno «%s», por lo que con esta opción activada, el contenedor GTM sigue cargándose aquí."
+
+#. translators: %s: the environment type reported by WordPress, e.g. "staging".
+#: src/Modules/Container/AdminSchema.php:477
+msgid "On this site WordPress currently reports the environment type \"%s\", so with this option turned on the GTM container is NOT loaded here (the data layer stays active)."
+msgstr "En este sitio, WordPress actualmente reporta el tipo de entorno «%s», por lo que con esta opción activada, el contenedor GTM NO se carga aquí (la capa de datos permanece activa)."
+
+#: src/Modules/Container/AdminSchema.php:461
+msgid "When turned on, the GTM container code is only output when WordPress reports the environment type as \"production\". On any other environment (local, development, staging) the container is suppressed while the data layer stays active - so a cloned or staging copy of your site does not send hits to your live Google Tag Manager container without deactivating the plugin. This relies on the WP_ENVIRONMENT_TYPE constant (or WP_ENVIRONMENT_TYPE environment variable) being set on non-production copies; it defaults to \"production\" when unset. For host-based control without an option, return false from the gtm4wp_output_container filter."
+msgstr "Cuando está activado, el código del contenedor GTM solo se genera cuando WordPress reporta el tipo de entorno como «production». En cualquier otro entorno (local, development, staging), el contenedor se suprime mientras la capa de datos permanece activa, de modo que una copia clonada o de pruebas de tu sitio no envíe datos a tu contenedor de Google Tag Manager en vivo sin desactivar el plugin. Esto depende de que la constante WP_ENVIRONMENT_TYPE (o la variable de entorno WP_ENVIRONMENT_TYPE) esté establecida en las copias que no son de producción; por defecto es «production» cuando no se establece. Para un control basado en el host sin una opción, devuelve false desde el filtro gtm4wp_output_container."
+
+#: src/Modules/Container/AdminSchema.php:437
+msgid "Both environment parameters are hard coded, therefore only the first container is loaded."
+msgstr "Ambos parámetros de entorno están codificados, por lo que solo se carga el primer contenedor."
+
+#: src/Modules/Container/AdminSchema.php:433
+msgid "The affected columns are read-only and show the values that are actually used. The values you saved for them are kept untouched and are used again as soon as the constants are removed from wp-config.php."
+msgstr "Las columnas afectadas son de solo lectura y muestran los valores que realmente se utilizan. Los valores que guardaste para ellas se mantienen intactos y se vuelven a usar en cuanto se eliminen las constantes de wp-config.php."
+
+#: src/Modules/Container/AdminSchema.php:431
+msgid "Those constants also decide which containers are loaded, so the whole table is read-only and shows the containers that are actually running. The container list you saved here is kept untouched and is used again as soon as the constants are removed from wp-config.php."
+msgstr "Esas constantes también deciden qué contenedores se cargan, por lo que toda la tabla es de solo lectura y muestra los contenedores que realmente se están ejecutando. La lista de contenedores que guardaste aquí se mantiene intacta y se vuelve a usar en cuanto se eliminen las constantes de wp-config.php."
+
+#. translators: %s: comma separated list of wp-config.php constant names, e.g.
+#. GTM4WP_HARDCODED_GTM_ID.
+#: src/Modules/Container/AdminSchema.php:426
+msgid "Part of this setting is fixed in your wp-config.php file by %s and cannot be changed here."
+msgstr "Parte de este ajuste está fijada en tu archivo wp-config.php por %s y no se puede cambiar aquí."
+
+#: src/Modules/Container/AdminSchema.php:406
+msgid ""
+"Add one row for each Google Tag Manager container you want to load.<br />\n"
+"\t\t\t\tThe environment parameters (gtm_auth and gtm_preview) activate a specific container environment; both values are required to activate an environment, leave both empty to load the live version.<br />\n"
+"\t\t\t\tEnter a custom domain name (without the https:// prefix) and a custom path if you are using a server side GTM container for tracking. Leave them empty to use www.googletagmanager.com and gtm.js.<br />\n"
+"\t\t\t\tWhen a custom path is set you can also turn on \"Omit container ID\" so that the container ID is left out of the loader URL - use this when your server side GTM container is selected by its path and expects no id parameter."
+msgstr ""
+"Añade una fila para cada contenedor de Google Tag Manager que quieras cargar.<br />\n"
+"\t\t\t\tLos parámetros de entorno (gtm_auth y gtm_preview) activan un entorno de contenedor específico; ambos valores son necesarios para activar un entorno, déjalos vacíos para cargar la versión en vivo.<br />\n"
+"\t\t\t\tIntroduce un nombre de dominio personalizado (sin el prefijo https://) y una ruta personalizada si estás usando un contenedor GTM del lado del servidor para el seguimiento. Déjalos vacíos para usar www.googletagmanager.com y gtm.js.<br />\n"
+"\t\t\t\tCuando se establece una ruta personalizada, también puedes activar «Omitir ID de contenedor» para que el ID del contenedor se excluya de la URL del cargador; usa esto cuando tu contenedor GTM del lado del servidor sea seleccionado por su ruta y no espere ningún parámetro id."
+
+#: src/Modules/Container/AdminSchema.php:368
+msgid "Do not load the GTM container on the frontend when the logged in user has any of the checked roles."
+msgstr "No cargar el contenedor GTM en el front-end cuando el usuario autenticado tenga cualquiera de los roles marcados."
+
+#: src/Modules/Container/AdminSchema.php:357
+msgid "Only output the container on production environments"
+msgstr "Solo generar el contenedor en entornos de producción"
+
+#: src/Modules/Container/AdminSchema.php:327
+msgid "Invalid dataLayer variable name. It has to be a valid JavaScript variable name: start with a letter, '_' or '$', followed by letters, digits, '_' or '$'. A hyphen is not allowed."
+msgstr "Nombre de variable dataLayer no válido. Debe ser un nombre de variable JavaScript válido: comenzar con una letra, '_' o '$', seguido de letras, dígitos, '_' o '$'. No se permite un guion."
+
+#: src/Modules/Container/AdminSchema.php:291
+msgid "Off - container code turned off, data layer only"
+msgstr "Desactivado - código del contenedor desactivado, solo capa de datos"
+
+#: src/Modules/Container/AdminSchema.php:290
+msgid "Automatically after the opening body tag (theme must support wp_body_open)"
+msgstr "Automáticamente después de la etiqueta de apertura del body (el tema debe ser compatible con wp_body_open)"
+
+#: src/Modules/Container/AdminSchema.php:289
+msgid "Manually coded after the opening body tag"
+msgstr "Codificado manualmente después de la etiqueta de apertura del body"
+
+#: src/Modules/Container/AdminSchema.php:288
+msgid "Footer of the page (compatible with all WP themes, no Search Console verification)"
+msgstr "Pie de página (compatible con todos los temas de WP, sin verificación de Search Console)"
+
+#: src/Modules/Container/AdminSchema.php:274
+msgid ""
+"Decides where to put the second, so called <code>&lt;noscript&gt;</code> part of the GTM container code. The main GTM container code will always be placed into the <code>&lt;head&gt;</code> section of your webpages.<br />\n"
+"\t\t\t\t\t\tIf you select \"Manually coded\", add the following code just after the opening &lt;body&gt; tag in your template:<br />\n"
+"\t\t\t\t\t\t<code>&lt;?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?&gt;</code><br />\n"
+"\t\t\t\t\t\tSelecting \"Off\" removes both parts of the container code but leaves data layer codes working."
+msgstr ""
+"Decide dónde colocar la segunda parte, la llamada <code>&lt;noscript&gt;</code> del código del contenedor GTM. El código principal del contenedor GTM siempre se colocará en la sección <code>&lt;head&gt;</code> de tus páginas web.<br />\n"
+"\t\t\t\t\t\tSi seleccionas «Codificado manualmente», añade el siguiente código justo después de la etiqueta de apertura &lt;body&gt; en tu plantilla:<br />\n"
+"\t\t\t\t\t\t<code>&lt;?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?&gt;</code><br />\n"
+"\t\t\t\t\t\tSeleccionar «Desactivado» elimina ambas partes del código del contenedor pero deja los códigos de la capa de datos funcionando."
+
+#. translators: %s: the container ID of the row with the invalid value.
+#: src/Modules/Container/AdminSchema.php:246
+msgid "Invalid custom domain path in the row of container %s. Value can include anything between a-z, A-Z, 0-9 or any of the characters . - _ /"
+msgstr "Ruta de dominio personalizada no válida en la fila del contenedor %s. El valor puede incluir cualquier cosa entre a-z, A-Z, 0-9 o cualquiera de los caracteres . - _ /"
+
+#. translators: %s: the container ID of the row with the invalid value.
+#: src/Modules/Container/AdminSchema.php:232
+msgid "Invalid custom domain name in the row of container %s. Enter a valid domain name without the https:// prefix."
+msgstr "Nombre de dominio personalizado no válido en la fila del contenedor %s. Introduce un nombre de dominio válido sin el prefijo https://."
+
+#. translators: %s: the container ID of the row with the invalid value.
+#: src/Modules/Container/AdminSchema.php:215
+msgid "Invalid gtm_preview environment parameter value in the row of container %s. It should have the format 'env-NN' where NN is an integer number."
+msgstr "Valor del parámetro de entorno gtm_preview no válido en la fila del contenedor %s. Debe tener el formato 'env-NN', donde NN es un número entero."
+
+#. translators: %s: the container ID of the row with the invalid value.
+#: src/Modules/Container/AdminSchema.php:204
+msgid "Invalid gtm_auth environment parameter value in the row of container %s. It should only contain letters, numbers or the '-' and '_' characters."
+msgstr "Valor del parámetro de entorno gtm_auth no válido en la fila del contenedor %s. Solo debe contener letras, números o los caracteres '-' y '_'."
+
+#. translators: %s: the duplicated container ID.
+#: src/Modules/Container/AdminSchema.php:192
+msgid "The Google Tag Manager ID \"%s\" is listed more than once. Every container ID can only be entered in one row."
+msgstr "El ID de Google Tag Manager «%s» aparece más de una vez. Cada ID de contenedor solo puede introducirse en una fila."
+
+#. translators: %s: the invalid container ID as entered by the user.
+#: src/Modules/Container/AdminSchema.php:181
+msgid "Invalid or missing Google Tag Manager ID in one of the container rows: \"%s\". Valid ID format: GTM-XXXXX."
+msgstr "ID de Google Tag Manager no válido o faltante en una de las filas del contenedor: «%s». Formato de ID válido: GTM-XXXXX."
+
+#: src/Modules/Container/AdminSchema.php:150
+msgid "Google Tag Manager containers"
+msgstr "Contenedores de Google Tag Manager"
+
+#: src/Modules/Container/AdminSchema.php:133
+msgid "Omit container ID"
+msgstr "Omitir ID de contenedor"
+
+#: src/Modules/Container/AdminSchema.php:128
+msgid "Custom path"
+msgstr "Ruta personalizada"
+
+#: src/Modules/Container/AdminSchema.php:123
+msgid "Custom domain"
+msgstr "Dominio personalizado"
+
+#: src/Modules/Container/AdminSchema.php:118
+msgid "Environment gtm_preview"
+msgstr "Entorno gtm_preview"
+
+#: src/Modules/Container/AdminSchema.php:113
+msgid "Environment gtm_auth"
+msgstr "Entorno gtm_auth"
+
+#: src/Modules/Container/AdminSchema.php:108
+msgid "Container ID"
+msgstr "ID del contenedor"
+
+#: src/Modules/Container/AdminSchema.php:51
+msgid "Google Tag Manager container"
+msgstr "Contenedor de Google Tag Manager"
+
+#: src/Modules/ContactForm7/AdminSchema.php:104
+msgid "In addition to the gtm4wp.contactForm7* events, push Google Analytics 4 recommended form events: form_start (on first field interaction), form_submit (on submit) and generate_lead (on a successful send). Each carries form_id, form_name and form_destination. Like GA4 Enhanced Measurement, form_submit fires on every submission attempt, including one Contact Form 7 rejects, so form_submit and generate_lead also carry form_status with the Contact Form 7 status (mail_sent, validation_failed, spam and so on) to tell the two apart. Useful because GA4 Enhanced Measurement does not reliably capture Contact Form 7 AJAX submissions on its own."
+msgstr "Además de los eventos gtm4wp.contactForm7*, envía los eventos de formulario recomendados por Google Analytics 4: form_start (en la primera interacción con el campo), form_submit (en el envío) y generate_lead (en un envío exitoso). Cada uno lleva form_id, form_name y form_destination. Al igual que GA4 Enhanced Measurement, form_submit se activa en cada intento de envío, incluido uno que Contact Form 7 rechace, por lo que form_submit y generate_lead también llevan form_status con el estado de Contact Form 7 (mail_sent, validation_failed, spam, etc.) para distinguir ambos. Útil porque GA4 Enhanced Measurement no captura de forma fiable los envíos AJAX de Contact Form 7 por sí solo."
+
+#: src/Modules/ContactForm7/AdminSchema.php:103
+msgid "Also push GA4 recommended events"
+msgstr "También enviar eventos recomendados de GA4"
+
+#: src/Modules/ContactForm7/AdminSchema.php:95
+msgid "None: do not include submitted fields"
+msgstr "Ninguno: no incluir campos enviados"
+
+#: src/Modules/ContactForm7/AdminSchema.php:94
+msgid "Field names only (no values)"
+msgstr "Solo nombres de campo (sin valores)"
+
+#: src/Modules/ContactForm7/AdminSchema.php:93
+msgid "Full: field names and submitted values (default)"
+msgstr "Completo: nombres de campo y valores enviados (predeterminado)"
+
+#: src/Modules/ContactForm7/AdminSchema.php:90
+msgid "Controls how submitted Contact Form 7 field values are exposed in the data layer. Submitted values may contain personal data; whether it is forwarded to analytics or advertising tools is the responsibility of the tag/container manager. Choose \"Field names only\" or \"None\" to keep personal data out of the data layer."
+msgstr "Controla cómo se exponen los valores de campo enviados de Contact Form 7 en la capa de datos. Los valores enviados pueden contener datos personales; si se reenvían a herramientas de análisis o publicidad es responsabilidad del administrador de etiquetas/contenedor. Elige «Solo nombres de campo» o «Ninguno» para mantener los datos personales fuera de la capa de datos."
+
+#: src/Modules/ContactForm7/AdminSchema.php:89
+msgid "Submitted field values in the data layer"
+msgstr "Valores de campo enviados en la capa de datos"
+
+#: src/Modules/ContactForm7/AdminSchema.php:81
+msgid "Check this to fire dataLayer events for Contact Form 7 submissions (supported events: before submit, invalid input, unaccepted terms, spam detected, submission aborted, form submitted, mail sent, mail send failed). Each event carries the form ID, unit tag, container post ID, locale and submission status."
+msgstr "Marca esto para activar eventos dataLayer en los envíos de Contact Form 7 (eventos compatibles: before submit, invalid input, unaccepted terms, spam detected, submission aborted, form submitted, mail sent, mail send failed). Cada evento lleva el ID del formulario, la etiqueta de unidad, el ID de entrada del contenedor, la configuración regional y el estado del envío."
+
+#: src/Modules/ConsentMode/AdminSchema.php:259
+msgid "When enabled, Axeptio drives Google Consent Mode v2: it fires both the \"default\" (everything denied) and the \"update\" commands using its certified vendor mapping. Use this instead of the plugin's own \"Google Consent Mode\" feature, and do not enable both. A dedicated dataLayer event (gtm4wp.axeptioConsentUpdate) is also pushed whenever the visitor updates their choices."
+msgstr "Cuando está activado, Axeptio maneja Google Consent Mode v2: activa tanto el comando «default» (todo denegado) como el comando «update» usando su mapeo de proveedores certificados. Usa esto en lugar de la función «Google Consent Mode» del propio plugin, y no actives ambas. También se envía un evento dataLayer dedicado (gtm4wp.axeptioConsentUpdate) cada vez que el visitante actualiza sus elecciones."
+
+#: src/Modules/ConsentMode/AdminSchema.php:258
+msgid "Enable Google Consent Mode v2"
+msgstr "Activar Google Consent Mode v2"
+
+#: src/Modules/ConsentMode/AdminSchema.php:247
+msgid "The cookies version (cookiesVersion) loaded by the SDK. The list is fetched automatically from your Axeptio project once a valid Project ID is set above."
+msgstr "La versión de cookies (cookiesVersion) que carga el SDK. La lista se obtiene automáticamente de tu proyecto Axeptio una vez que se establece un ID de proyecto válido arriba."
+
+#: src/Modules/ConsentMode/AdminSchema.php:246
+msgid "Cookies version"
+msgstr "Versión de cookies"
+
+#: src/Modules/ConsentMode/AdminSchema.php:235
+msgid "Your Axeptio project identifier, passed to the SDK as the clientId. You can find it in your Axeptio dashboard."
+msgstr "Tu identificador de proyecto Axeptio, que se pasa al SDK como clientId. Puedes encontrarlo en tu panel de Axeptio."
+
+#: src/Modules/ConsentMode/AdminSchema.php:234
+msgid "Axeptio Project ID"
+msgstr "ID de proyecto de Axeptio"
+
+#: src/Modules/ConsentMode/AdminSchema.php:223
+msgid "Enable this to let GTM4WP load the Axeptio CMP SDK directly. No separate Axeptio plugin is required. Enter your Axeptio project ID and cookies version below."
+msgstr "Activa esto para que GTM4WP cargue el SDK de Axeptio CMP directamente. No se necesita ningún plugin de Axeptio separado. Introduce tu ID de proyecto de Axeptio y la versión de cookies a continuación."
+
+#: src/Modules/ConsentMode/AdminSchema.php:222
+msgid "Enable Axeptio"
+msgstr "Activar Axeptio"
+
+#. translators: 1: opening anchor tag linking to CookieYes' consent banner
+#. action API documentation. 2: Closing anchor tag.
+#: src/Modules/ConsentMode/AdminSchema.php:207
+msgid "Enable this to push a GTM data layer event (cookie_consent_update) whenever CookieYes reports a consent choice. It listens for the %1$sCookieYes consent banner action API%2$s events (cookieyes_consent_update and cookieyes_banner_load) and forwards the accepted/rejected categories to the data layer, giving your container a defined consent signal to sequence tags on. It does not defer any events - rely on Google Consent Mode v2 to gate tags regardless of push order."
+msgstr "Activa esto para enviar un evento de la capa de datos de GTM (cookie_consent_update) cada vez que CookieYes reporte una elección de consentimiento. Escucha los eventos de la %1$sAPI de acción del banner de consentimiento de CookieYes%2$s (cookieyes_consent_update y cookieyes_banner_load) y reenvía las categorías aceptadas/rechazadas a la capa de datos, dando a tu contenedor una señal de consentimiento definida para secuenciar las etiquetas. No retrasa ningún evento; confía en Google Consent Mode v2 para controlar las etiquetas independientemente del orden de envío."
+
+#: src/Modules/ConsentMode/AdminSchema.php:204
+msgid "CookieYes consent bridge"
+msgstr "Puente de consentimiento de CookieYes"
+
+#: src/Modules/ConsentMode/AdminSchema.php:192
+msgid "Enabling this feature will fire a GTM event (cookie_consent_update) when the consent banner has been closed with consents being set or during pageload when previously set consents have been found. Deprecated: this integration only targets the long-outdated WebToffee GDPR Cookie Consent v2.x product line. You do not need it with v3.x or above, which ships all the necessary code to integrate the consent banner with Google Tag Manager natively - please upgrade the WebToffee plugin instead of using this option."
+msgstr "Activar esta función activará un evento de GTM (cookie_consent_update) cuando el banner de consentimiento se haya cerrado con consentimientos establecidos o durante la carga de la página cuando se hayan encontrado consentimientos establecidos anteriormente. Obsoleto: esta integración solo se dirige a la línea de productos WebToffee GDPR Cookie Consent v2.x, que lleva mucho tiempo obsoleta. No la necesitas con v3.x o superior, que incluye todo el código necesario para integrar el banner de consentimiento con Google Tag Manager de forma nativa; actualiza el plugin WebToffee en lugar de usar esta opción."
+
+#: src/Modules/ConsentMode/AdminSchema.php:79
+msgid "Axeptio"
+msgstr "Axeptio"
+
+#: src/Modules/ConsentMode/AdminSchema.php:78
+msgid "CookieYes"
+msgstr "CookieYes"
+
+#: src/Modules/ConsentMode/AdminSchema.php:65
+msgid "Configure Google consent mode default values and integrations with consent management tools."
+msgstr "Configura los valores predeterminados del modo de consentimiento de Google y las integraciones con herramientas de gestión del consentimiento."
+
+#: src/Modules/ConsentMode/AdminSchema.php:56
+msgid "Consent mode & consent tools"
+msgstr "Modo de consentimiento y herramientas de consentimiento"
+
+#: src/Modules/ClientDeviceData/AdminSchema.php:98
+msgid "Check this option to include the type of device the user is currently using (desktop or mobile) including model data where available."
+msgstr "Marca esta opción para incluir el tipo de dispositivo que está usando actualmente el usuario (escritorio o móvil), incluidos los datos del modelo cuando estén disponibles."
+
+#: src/Modules/ClientDeviceData/AdminSchema.php:88
+msgid "OS data"
+msgstr "Datos del SO"
+
+#: src/Modules/ClientDeviceData/AdminSchema.php:80
+msgid "Check this option to include the name and version of the browser the visitor uses."
+msgstr "Marca esta opción para incluir el nombre y la versión del navegador que usa el visitante."
+
+#: src/Modules/ClientDeviceData/AdminSchema.php:64
+msgid "Collected data"
+msgstr "Datos recopilados"
+
+#: src/Modules/ClientDeviceData/AdminSchema.php:54
+msgid "Data is collected in the browser using User-Agent Client Hints and pushed into the data layer as a gtm4wp.deviceData event shortly after page load. Browsers without Client Hints support (Safari, Firefox) provide less detail."
+msgstr "Los datos se recopilan en el navegador mediante User-Agent Client Hints y se envían a la capa de datos como un evento gtm4wp.deviceData poco después de la carga de la página. Los navegadores sin soporte para Client Hints (Safari, Firefox) proporcionan menos detalles."
+
+#: src/Modules/ClientDeviceData/AdminSchema.php:45
+msgid "Browser, OS & device data"
+msgstr "Datos del navegador, SO y dispositivo"
+
+#: src/Modules/Blacklist/AdminSchema.php:302
+msgid "Entity groups"
+msgstr "Grupos de entidades"
+
+#: src/Modules/Blacklist/AdminSchema.php:298
+msgid "Variables"
+msgstr "Variables"
+
+#: src/Modules/Blacklist/AdminSchema.php:294
+msgid "Triggers"
+msgstr "Disparadores"
+
+#: src/Modules/Blacklist/AdminSchema.php:290
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: src/Modules/Blacklist/AdminSchema.php:272
+msgid "Select the tag, trigger, variable and entity group types affected by the restriction mode above."
+msgstr "Selecciona los tipos de etiqueta, disparador, variable y grupo de entidades afectados por el modo de restricción anterior."
+
+#: src/Modules/Blacklist/AdminSchema.php:271
+msgid "Restricted entities"
+msgstr "Entidades restringidas"
+
+#: src/Modules/Blacklist/AdminSchema.php:254
+msgid "Allowlist selected entities"
+msgstr "Lista blanca de entidades seleccionadas"
+
+#: src/Modules/Blacklist/AdminSchema.php:253
+msgid "Blocklist selected entities"
+msgstr "Lista negra de entidades seleccionadas"
+
+#: src/Modules/Blacklist/AdminSchema.php:252
+msgid "Disabled"
+msgstr "Desactivado"
+
+#: src/Modules/Blacklist/AdminSchema.php:245
+msgid "Select whether the checked entities below should be blocklisted (blocked) or allowlisted (everything else blocked)."
+msgstr "Selecciona si las entidades marcadas a continuación deben estar en lista negra (bloqueadas) o en lista blanca (todo lo demás bloqueado)."
+
+#: src/Modules/Blacklist/AdminSchema.php:216
+msgid "Entities"
+msgstr "Entidades"
+
+#: src/Modules/Blacklist/AdminSchema.php:215
+#: src/Modules/Blacklist/AdminSchema.php:244
+msgid "Restriction mode"
+msgstr "Modo de restricción"
+
+#: src/Modules/Blacklist/AdminSchema.php:194
+msgid "Tag restrictions"
+msgstr "Restricciones de etiquetas"
+
+#: src/Modules/Blacklist/AdminSchema.php:184
+msgid "Sandboxed custom template scripts"
+msgstr "Scripts de plantilla personalizados en modo sandbox"
+
+#: src/Modules/Amp/AdminSchema.php:44 src/Modules/Amp/AdminSchema.php:63
+msgid "AMP"
+msgstr "AMP"
+
+#: src/Admin/RestController.php:376
+msgid "The uploaded file is not a valid GTM4WP settings export."
+msgstr "El archivo subido no es una exportación de ajustes de GTM4WP válida."
+
+#: src/Admin/RestController.php:362
+msgid "The settings file is too large to be a GTM4WP export."
+msgstr "El archivo de ajustes es demasiado grande para ser una exportación de GTM4WP."
+
+#: src/Admin/RestController.php:354
+msgid "No settings file was uploaded."
+msgstr "No se subió ningún archivo de ajustes."
+
+#. translators: 1: the configured dataLayer variable name that was rejected. 2:
+#. opening anchor element pointing to the GTM4WP options page. 3: closing
+#. anchor element.
+#: src/Admin/Notices.php:195
+msgid "The configured dataLayer variable name \"%1$s\" is not a valid JavaScript variable name, so Google Tag Manager for WordPress is using the default name \"dataLayer\" instead. Please %2$scorrect it on the settings page%3$s."
+msgstr "El nombre de la variable dataLayer configurado «%1$s» no es un nombre de variable JavaScript válido, por lo que Google Tag Manager for WordPress está usando el nombre predeterminado «dataLayer» en su lugar. Por favor, %2$scorrígelo en la página de ajustes%3$s."
+
+#. translators: 1: opening anchor element pointing to the GTM4WP options page.
+#. 2: closing anchor element.
+#: src/Admin/Notices.php:172
+msgid "Google Tag Manager for WordPress is reading the visitor IP address from a custom HTTP header, but no trusted proxy addresses are configured. HTTP headers are sent by the visitor, so the reported IP address can be chosen by them. Please %1$sadd the addresses of your reverse proxy, load balancer or CDN%2$s, or turn the custom header off."
+msgstr "Google Tag Manager for WordPress está leyendo la dirección IP del visitante desde una cabecera HTTP personalizada, pero no hay direcciones de proxy de confianza configuradas. Las cabeceras HTTP las envía el visitante, por lo que la dirección IP reportada puede ser elegida por ellos. Por favor, %1$sañade las direcciones de tu proxy inverso, balanceador de carga o CDN%2$s, o desactiva la cabecera personalizada."
+
+#. translators: %s: comma separated list of wp-config.php constant names that
+#. hold an invalid value.
+#: src/Admin/Notices.php:146
+msgid "The value of %s in your wp-config.php file is invalid and has been ignored. Please correct it, otherwise your Google Tag Manager container will not use the setting you configured there."
+msgid_plural "The values of %s in your wp-config.php file are invalid and have been ignored. Please correct them, otherwise your Google Tag Manager container will not use the settings you configured there."
+msgstr[0] "El valor de %s en tu archivo wp-config.php no es válido y se ha ignorado. Corrígelo, de lo contrario, tu contenedor de Google Tag Manager no usará el ajuste que configuraste allí."
+msgstr[1] "Los valores de %s en tu archivo wp-config.php no son válidos y se han ignorado. Corrígelos, de lo contrario, tu contenedor de Google Tag Manager no usará los ajustes que configuraste allí."
+
+#. translators: 1: required PHP version, 2: required WordPress version, 3:
+#. current PHP version, 4: current WordPress version.
+#: duracelltomi-google-tag-manager-for-wordpress.php:69
+msgid "GTM4WP 2.x requires PHP %1$s and WordPress %2$s or newer. Your site runs PHP %3$s and WordPress %4$s, therefore the plugin is currently inactive. Please update your environment or downgrade to GTM4WP 1.x."
+msgstr "GTM4WP 2.x requiere PHP %1$s y WordPress %2$s o superior. Tu sitio ejecuta PHP %3$s y WordPress %4$s, por lo que el plugin está actualmente inactivo. Actualiza tu entorno o cambia a GTM4WP 1.x."
+
+#: src/Admin/PluginRow.php:60
+msgid "Important Upgrade Notice:"
+msgstr "Aviso importante de la actualización:"
+
+#: src/Modules/WooCommerce/AdminSchema.php:395
+msgid "Set maximum timeout for select_item event"
+msgstr "Define el tiempo máximo de espera para el evento select_item"
+
+#: src/Modules/ConsentMode/AdminSchema.php:191
+msgid "WebToffee GDPR Cookie Consent (v2.x)"
+msgstr "WebToffee GDPR Cookie Consent (v2.x)"
+
+#: src/Modules/WooCommerce/AdminSchema.php:255
+msgid "If this option is turned on, the view_item event will be also fired during page load of a variable product using parent product data."
+msgstr "Si esta opción está activada, el evento view_item también se activará durante la carga de la página de un producto variable que utiliza datos del producto principal."
+
+#: src/Modules/WooCommerce/AdminSchema.php:254
+msgid "Fire view_item on parent product"
+msgstr "Activar view_item en el producto principal"
+
+#: src/Modules/WooCommerce/AdminSchema.php:181
+msgid "If you have many products shown on product category pages and/or on your site home, you could miss pageviews in Google Analytics due to the amount of data that is needed to be sent. To prevent this, you can split product impression data into multiple Google Analytics events by entering a number here (minimum 10-15 recommended). Leave this value 0 to include product impression data in your pageview hit."
+msgstr "Si tienes muchos productos mostrados en páginas de categorías de productos y/o en la página de inicio de tu sitio, podrías perder páginas vistas en Google Analytics debido a la cantidad de datos que es necesario enviar. Para evitarlo, puedes dividir los datos de impresión de productos en varios eventos de Google Analytics introduciendo un número aquí (se recomienda un mínimo de 10-15). Deja este valor en 0 para incluir los datos de impresión de producto en tu impacto de páginas vistas."
+
+#: src/Modules/ConsentMode/AdminSchema.php:77
+msgid "WebToffee GDPR Cookie Consent"
+msgstr "WebToffee GDPR Cookie Consent"
+
+#: src/Modules/ConsentMode/AdminSchema.php:139
+msgid "Select this checkbox to make the ad_personalization flag \"granted\" by default."
+msgstr "Selecciona esta casilla para que el indicador de ad_personalization sea «granted» por defecto."
+
+#: src/Modules/ConsentMode/AdminSchema.php:138
+msgid "Ad Personalization"
+msgstr "Personalización de anuncios"
+
+#: src/Modules/ConsentMode/AdminSchema.php:130
+msgid "Select this checkbox to make the ad_user_data flag \"granted\" by default."
+msgstr "Selecciona esta casilla para que el indicador ad_user_data sea «granted» por defecto."
+
+#: src/Modules/ConsentMode/AdminSchema.php:129
+msgid "Ad User Data"
+msgstr "Ad User Data"
+
+#. translators: 1: opening anchor tag linking to Google's documentation about
+#. the consent mode command. 2: Closing anchor tag.
+#: src/Modules/ConsentMode/AdminSchema.php:97
+msgid "Enable this checkbox if you wish to execute the \"default\" command of %1$sGoogle Consent Mode%2$s before the container loads. The \"update\" command needs to be executed from your consent management tool. DO NOT enable this feature if your consent manager tool supports firing both the \"default\" and the \"update\" command."
+msgstr "Activa esta casilla si deseas ejecutar el comando «default» de %1$sGoogle Consent Mode%2$s antes de que se cargue el contenedor. El comando «update» debe ejecutarse desde tu herramienta de gestión del consentimiento. NO actives esta función si tu herramienta de gestión del consentimiento permite ejecutar tanto el comando «default» como el comando «update»."
+
+#: src/Modules/WooCommerce/AdminSchema.php:171
+msgid "Track e-commerce"
+msgstr "Seguimiento de comercio electrónico"
+
+#: src/Modules/PageVariables/AdminSchema.php:420
+msgid "Visitor IP - Read from custom header."
+msgstr "IP del Visitante - Leída de la cabecera personalizada."
+
+#. Plugin Name of the plugin
+#: duracelltomi-google-tag-manager-for-wordpress.php
+msgid "GTM4WP - A Google Tag Manager (GTM) plugin for WordPress"
+msgstr "GTM4WP - A Google Tag Manager (GTM) plugin for WordPress"
+
+#: src/Modules/ConsentMode/AdminSchema.php:166
+msgid "Select this checkbox to make the security_storage flag \"granted\" by default."
+msgstr "Selecciona esta casilla para que el indicador de security_storage sea «granted» por defecto."
+
+#: src/Modules/ConsentMode/AdminSchema.php:148
+msgid "Select this checkbox to make the functionality_storage flag \"granted\" by default."
+msgstr "Selecciona esta casilla para que el indicador de functionality_storage sea «granted» por defecto."
+
+#: src/Modules/ConsentMode/AdminSchema.php:157
+msgid "Select this checkbox to make the personalization_storage flag \"granted\" by default."
+msgstr "Selecciona esta casilla para que el indicador de personalization_storage sea «granted» por defecto."
+
+#: src/Modules/ConsentMode/AdminSchema.php:112
+msgid "Select this checkbox to make the analytics_storage flag \"granted\" by default."
+msgstr "Selecciona esta casilla para que el indicador de analytics_storage sea «granted» por defecto."
+
+#: src/Modules/ConsentMode/AdminSchema.php:165
+msgid "Security Storage"
+msgstr "Security Storage"
+
+#: src/Modules/ConsentMode/AdminSchema.php:147
+msgid "Functionality Storage"
+msgstr "Functionality Storage"
+
+#: src/Modules/ConsentMode/AdminSchema.php:156
+msgid "Personalization Storage"
+msgstr "Personalization Storage"
+
+#: src/Modules/ConsentMode/AdminSchema.php:111
+msgid "Analytics Storage"
+msgstr "Analytics Storage"
+
+#: src/Modules/ConsentMode/AdminSchema.php:121
+msgid "Select this checkbox to make the ad_storage flag \"granted\" by default."
+msgstr "Selecciona esta casilla para que el indicador de ad_storage sea «granted» por defecto."
+
+#: src/Modules/ConsentMode/AdminSchema.php:120
+msgid "Ad Storage"
+msgstr "Ad Storage"
+
+#: src/Modules/ConsentMode/AdminSchema.php:75
+#: src/Modules/ConsentMode/AdminSchema.php:94
+msgid "Google Consent Mode"
+msgstr "Modo de consentimiento de Google"
+
+#. translators: 1: anchor element linking to the official GA4 doc about
+#. clearing the ecommerce object. 2: closing anchor element.
+#: src/Modules/WooCommerce/AdminSchema.php:381
+msgid "Clear the ecommerce object before any new event being pushed into the data layer. Although it is %1$srecommended by Google%2$s, it is not mandatory to activate this feature as the GA4 event tag reads only the last pushed ecommerce data on any new event. Use it if you encounter issues with your GTM implementation."
+msgstr "Borra el objeto de comercio electrónico antes de que se introduzca cualquier nuevo evento en la capa de datos. Aunque es %1$srecomendado por Google%2$s, no es obligatorio activar esta función, ya que la etiqueta de eventos GA4 solo lee los últimos datos de comercio electrónico introducidos en cualquier evento nuevo. Utilízala si tienes problemas con tu implementación de GTM."
+
+#: src/Modules/WooCommerce/AdminSchema.php:378
+msgid "Clear ecommerce object before new event"
+msgstr "Borrar objeto ecommerce antes de nuevo evento"
+
+#: src/Modules/Container/AdminSchema.php:349
+msgid "GTM4WP puts several useful messages into the console of your browser which can also help give proper support in some cases. If you see any issues regarding this functionality, you can disable it here."
+msgstr "GTM4WP pone varios mensajes útiles en la consola de tu navegador que también pueden ayudar a dar el soporte adecuado en algunos casos. Si ves algún problema relacionado con esta funcionalidad, puedes desactivarla aquí."
+
+#: src/Modules/Container/AdminSchema.php:348
+msgid "Do not use console.log() messages on frontend"
+msgstr "No utilizar mensajes console.log() en la vista pública"
+
+#. translators: 1: opening anchor tag linking to GTM's developer doc homepage.
+#. 2: Closing anchor tag.
+#: src/Modules/Container/AdminSchema.php:62
+msgid "This plugin is intended to be used by IT and marketing staff. Please be sure you read the %1$sGoogle Tag Manager Help Center%2$s before you start using this plugin."
+msgstr "Este plugin está pensado para ser utilizado por personal de TI y de marketing. Asegúrate de leer el %1$sGoogle Tag Manager Help Center%2$s antes de empezar a utilizar este plugin."
+
+#. translators: 1: opening anchor tag linking to Cookiebot's documentation
+#. about the automatic cookie blocking feature. 2: Closing anchor tag.
+#: src/Modules/ConsentMode/AdminSchema.php:177
+msgid "Enable this checkbox if you wish to use the %1$sautomatic cookie blocking mode of Cookiebot with Google Tag Manager%2$s."
+msgstr "Activa esta casilla si quieres usar el modo de %1$sbloqueo automático de cookies de Cookiebot con Google Tag Manager%2$s."
+
+#. translators: 1: anchor element linking to GTM4WP setup guide for Google Ads
+#. dynamic remarketing. 2: closing anchor element.
+#: src/Modules/WooCommerce/AdminSchema.php:230
+msgid "Select which vertical category to add next to each product to utilize dynamic remarketing for Google Ads. Use the plugin's %1$sofficial setup guide for dynamic remarketing%2$s to setup your Google Tag Manager container."
+msgstr "Selecciona qué categoría vertical añadir junto a cada producto para utilizar el remarketing dinámico para Google Ads. Utiliza la %1$sguía oficial de configuración del plugin para remarketing dinámico%2$s para configurar tu contenedor de Google Tag Manager."
+
+#: src/Modules/Container/AdminSchema.php:367
+msgid "User roles to exclude"
+msgstr "Perfiles de usuario a excluir"
+
+#: src/Modules/WooCommerce/AdminSchema.php:338
+msgid "Turn this on to prevent the plugin from flagging orders as being already tracked. Leaving this unchecked ensures that no order data will be tracked multiple times in any ad or measurement system. Please only turn this feature on if you really need it!"
+msgstr "Actívala para evitar que el plugin marque los pedidos como ya rastreados. Si dejas esta opción sin marcar, te asegurarás de que los datos de ningún pedido se rastreen varias veces en cualquier anuncio o sistema de medición. Por favor, ¡activa esta función solo si realmente la necesitas!"
+
+#: src/Modules/ConsentMode/AdminSchema.php:76
+msgid "Cookiebot"
+msgstr "Cookiebot"
+
+#: src/Modules/ConsentMode/AdminSchema.php:174
+msgid "Cookiebot auto blocking"
+msgstr "Bloqueo automático de Cookiebot"
+
+#: src/Modules/WooCommerce/AdminSchema.php:227
+msgid "Google Ads Business Vertical"
+msgstr "Negocio vertical de Google Ads"
+
+#: src/Modules/WooCommerce/AdminSchema.php:301
+msgid "To prevent duplicate transaction tracking at the order received page, enter the maximum age (in minutes) of the order or its payment for the transaction to be measured. Viewing the order received page of older orders will be ignored from transaction tracking, as it is considered to be measured in an earlier session."
+msgstr "Para evitar el duplicado de seguimiento de transacciones en la página de pedido recibido, introduce la edad máxima (en minutos) del pedido o de su pago para medir la transacción. La visualización de la página de pedido recibido en pedidos anteriores se ignorará del seguimiento de transacciones, ya que se considera que se ha medido en una sesión anterior."
+
+#: src/Modules/WooCommerce/AdminSchema.php:300
+msgid "Only track orders younger than"
+msgstr "Solo seguir pedidos de menos de"
+
+#: src/Modules/Blacklist/AdminSchema.php:205
+msgid "For example blocklisting everything and only allowlisting the Google Analytics tag without allowlisting the URL variable type will cause your Google Analytics tags to be blocked anyway since the attached triggers (Page View) can not fire!"
+msgstr "Por ejemplo, si se incluye todo en la lista negra y solo la etiqueta de Google Analytics en la lista blanca, sin incluir el tipo de variable de la URL, las etiquetas de Google Analytics se bloquearán de todos modos, ya que los disparadores adjuntos (vista de página) no pueden activarse."
+
+#: src/Modules/WooCommerce/ListTracking.php:340
+msgid "Grouped Product Detail Page"
+msgstr "Página de detalles de los productos agrupados"
+
+#: src/Modules/WooCommerce/AdminSchema.php:291
+msgid "Order data in data layer"
+msgstr "Datos del pedido en la capa de datos"
+
+#: src/Modules/WooCommerce/AdminSchema.php:320
+msgid "Enable this to exclude shipping costs from the revenue variable while generating the purchase data"
+msgstr "Activa esto para excluir los costes de envío de la variable de ingresos mientras se generan los datos de compra"
+
+#: src/Modules/WooCommerce/AdminSchema.php:319
+msgid "Exclude shipping from revenue"
+msgstr "Excluir el envío de los ingresos"
+
+#: src/Modules/WooCommerce/AdminSchema.php:199
+msgid "Select which custom taxonomy is being used to add the brand of products"
+msgstr "Selecciona qué taxonomía personalizada se está usando para añadir la marca de los productos"
+
+#: src/Modules/WooCommerce/AdminSchema.php:198
+msgid "Taxonomy to be used for product brands"
+msgstr "Taxonomía a usar para las marcas de los productos"
+
+#: src/Modules/WooCommerce/AdminSchema.php:273
+msgid "Cart content in data layer"
+msgstr "Contenido del carrito en la capa de datos"
+
+#: src/Modules/PageVariables/AdminSchema.php:467
+msgid "Add the country code of the user provided by Cloudflare (if Cloudflare is used with your site)"
+msgstr "Añade el código del país del usuario proporcionado por Cloudflare (si Cloudflare es usado con tu sitio)"
+
+#: src/Modules/PageVariables/AdminSchema.php:466
+msgid "Cloudflare country code"
+msgstr "Código de país de Cloudflare"
+
+#: src/Modules/PageVariables/AdminSchema.php:200
+msgid "Post Terms"
+msgstr "Términos de la entrada"
+
+#: src/Modules/Amp/AdminSchema.php:103
+msgid "Invalid AMP Google Tag Manager Container ID. Valid ID format: GTM-XXXXX. Use comma without additional space (,) to enter more than one ID."
+msgstr "ID no válido de contenedor de Google Tag Manager AMP. Formato válido de ID: GTM-XXXXX. Usa una coma sin espacio adicional (,) para introducir más de un ID."
+
+#: src/Modules/Container/AdminSchema.php:340
+msgid "Turning on this option will load your Google Tag Manager container as early as possible during page load. This can cause issues if you are using jQuery in your custom HTML tags that fire on 'Page View' events."
+msgstr "Activando esta opción, se cargará tu contenedor de Google Tag Manager lo antes posible durante la carga de la página. Esto puede causar problemas si estás usando jQuery en tus etiquetas HTML personalizadas que se activan en los eventos de «páginas vistas»."
+
+#: src/Modules/Container/AdminSchema.php:339
+msgid "Load GTM container as early as possible"
+msgstr "Cargar el contenedor GTM lo antes posible"
+
+#. translators: 1: opening anchor tag for a link pointing to the official GTM
+#. help center article about the AMP container snippet 2: Closing anchor tag.
+#: src/Modules/Amp/AdminSchema.php:81
+msgid "Enter a comma separated list of Google Tag Manager container IDs that you would like to use on your site. This plugin will add the %1$sAMP GTM snippet%2$s to your AMP pages."
+msgstr "Escribe una lista separada por comas de los ID de contenedor de Google Tag Manager que quieres utilizar en tu sitio. Este plugin añadirá el %1$sfragmento AMP GTM%2$s a tus páginas AMP."
+
+#: src/Modules/Amp/AdminSchema.php:78
+msgid "Google Tag Manager 'AMP' Container ID"
+msgstr "ID de contenedor de Google Tag Manager «AMP»"
+
+#: src/Modules/WooCommerce/AdminSchema.php:337
+msgid "Do not flag orders as being tracked"
+msgstr "No marcar los pedidos como rastreados"
+
+#: src/Modules/WooCommerce/AdminSchema.php:180
+msgid "Products per impression"
+msgstr "Productos por impresión"
+
+#: src/Modules/WooCommerce/AdminSchema.php:311
+msgid "Enable this to exclude tax from the revenue variable while generating the purchase data"
+msgstr "Actívalo para excluir los impuestos de la variable de ingresos al generar los datos de compra"
+
+#: src/Modules/WooCommerce/AdminSchema.php:310
+msgid "Exclude tax from revenue"
+msgstr "Excluir los impuestos de los ingresos"
+
+#: src/Modules/UserEvents/AdminSchema.php:109
+msgid "Check this option to include a Tag Manager event when an existing user has been logged in on the frontend of your site (admin events not included)"
+msgstr "Marca esta opción para incluir un evento de TAG Manager cuando un usuario existente se ha conectado en la portada de tu sitio (eventos de administración no incluidos)"
+
+#: src/Modules/UserEvents/AdminSchema.php:108
+msgid "User logged in"
+msgstr "Usuario conectado"
+
+#: src/Modules/UserEvents/AdminSchema.php:100
+msgid "Check this option to include a Tag Manager event when a new user registration has been completed on the frontend of your site (admin events not included)"
+msgstr "Marca esta opción para incluir un evento de TAG Manager cuando haya sido completado un nuevo registro de usuario en la portada de tu sitio (eventos de administración no incluidos)"
+
+#: src/Modules/UserEvents/AdminSchema.php:99
+msgid "New user registration"
+msgstr "Registro de nuevo usuario"
+
+#: src/Modules/PageVariables/AdminSchema.php:412
+msgid "Check this option to include the IP address of the visitor. You might use this to filter internal traffic inside your GTM container. Please be aware that per GDPR its not allowed to transmit this full IP address to Google Analytics or to any other measurement system without explicit consent from the visitor."
+msgstr "Marca esta opción para incluir la dirección IP del visitante. Puedes usar esto para filtrar el tráfico interno dentro de tu contenedor GTM. Por favor, ten en cuenta que, por el RGPD, no está permitido transmitir esta dirección IP completa a Google Analytics o a cualquier otro sistema de medición sin el consentimiento explícito del visitante."
+
+#: src/Modules/PageVariables/AdminSchema.php:411
+msgid "Visitor IP"
+msgstr "IP del visitante"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: duracelltomi-google-tag-manager-for-wordpress.php
+msgid "https://gtm4wp.com/"
+msgstr "https://gtm4wp.com/"
+
+#. translators: %s: the Google Tag Manager container ID with the incomplete
+#. environment configuration.
+#: src/Admin/Notices.php:124
+msgid "Incomplete Google Tag Manager environment configuration of container %s: either the gtm_preview or the gtm_auth parameter value is missing!"
+msgstr "Configuración incompleta del entorno de Google Tag Manager %s: ¡Falta el valor del parámetro `gtm_preview` o `gtm_auth`!"
+
+#: src/Modules/WooCommerce/AdminSchema.php:219
+msgid "Check this to include the full category path of each product in ecommerce tracking. WARNING! This can lead to performance issues on large sites with lots of traffic!"
+msgstr "Marca esto para incluir la ruta completa de la categoría de cada producto en el seguimiento mejorado de comercio electrónico. ¡ADVERTENCIA! ¡Esto puede llevar a problemas de rendimiento en sitios grandes con mucho tráfico!"
+
+#: src/Modules/WooCommerce/AdminSchema.php:218
+msgid "Include full category path."
+msgstr "Incluye la ruta completa de la categoría."
+
+#: src/Modules/WooCommerce/AdminSchema.php:283
+msgid "Enable this to add all customer data (billing and shipping data, total number of orders and order value) into the data layer"
+msgstr "Actívalo para añadir todos los datos del cliente (datos de facturación y envío, número total de pedidos y valor del pedido) en la capa de datos (se necesita WooCommerce 3.x)"
+
+#: src/Modules/WooCommerce/AdminSchema.php:282
+msgid "Customer data in data layer"
+msgstr "Datos del cliente en la capa de datos"
+
+#: src/Modules/PageVariables/AdminSchema.php:385
+msgid "Check this option to include the username of the logged in user."
+msgstr "Marca esta opción para incluir el nombre de usuario del usuario conectado."
+
+#: src/Modules/PageVariables/AdminSchema.php:384
+msgid "Logged in user name"
+msgstr "Nombre del usuario conectado"
+
+#: src/Modules/PageVariables/AdminSchema.php:191
+msgid "Post Format"
+msgstr "Formato de entrada"
+
+#: src/Modules/WooCommerce/ListTracking.php:301
+msgid "Upsell Products"
+msgstr "Productos de venta dirigida"
+
+#: src/Modules/WooCommerce/ListTracking.php:298
+msgid "Cross-Sell Products"
+msgstr "Productos de venta cruzada"
+
+#: src/Modules/PageVariables/AdminSchema.php:403
+msgid "Check this option to include the date of creation (registration) of the logged in user."
+msgstr "Marca esta opción para incluir la fecha de creación (registro) del usuario conectado."
+
+#: src/Modules/PageVariables/AdminSchema.php:402
+msgid "Logged in user creation date"
+msgstr "Fecha de creación del usuario conectado"
+
+#: src/Modules/WooCommerce/AdminSchema.php:246
+msgid "Some product feed generator plugins prefix product IDs with a fixed text like 'woocommerce_gpf'. You can enter this prefix here so that tags in your website include this prefix as well."
+msgstr "Algunos plugins de generación de feeds de productos incluyen prefijos de ID de productos con un texto fijo, como por ejemplo «woocommerce_gpf». Puedes introducir aquí este prefijo para que esas etiquetas en tu web también incluyan este prefijo."
+
+#: src/Modules/WooCommerce/AdminSchema.php:245
+msgid "Product ID prefix"
+msgstr "Prefijo ID del producto"
+
+#: src/Modules/WooCommerce/AdminSchema.php:190
+msgid "Check this to use product SKU instead of the ID of the products for remarketing and ecommerce tracking. Will fallback to ID if no SKU is set."
+msgstr "Selecciona esto para usar el SKU en lugar del ID de los productos para el Remarketing y el seguimiento de comercio electrónico. Si no se establece el SKU cogerá el ID."
+
+#: src/Modules/PageVariables/AdminSchema.php:394
+msgid "Check this option to include the email address of the logged in user."
+msgstr "Selecciona esta opción para incluir la dirección de correo electrónico del usuario logueado."
+
+#: src/Modules/PageVariables/AdminSchema.php:393
+msgid "Logged in user email"
+msgstr "Email del usuario logueado"
+
+#: src/Modules/PageVariables/AdminSchema.php:486
+msgid "Name of the current site in a WordPress Multisite environment"
+msgstr "Nombre del sitio actual en un entorno WordPress Multisitio"
+
+#: src/Modules/PageVariables/AdminSchema.php:485
+msgid "Site name"
+msgstr "Nombre del sitio"
+
+#: src/Modules/PageVariables/AdminSchema.php:477
+msgid "ID of the current site in a WordPress Multisite environment"
+msgstr "ID del sitio actual en un entorno de WordPress Multisitio."
+
+#: src/Modules/PageVariables/AdminSchema.php:476
+msgid "Site ID"
+msgstr "ID del sitio"
+
+#: src/Modules/PageVariables/AdminSchema.php:137
+msgid "Post author ID"
+msgstr "ID del autor del post"
+
+#: src/Modules/WooCommerce/ListTracking.php:316
+msgid "Featured Products"
+msgstr "Productos destacados"
+
+#: src/Modules/WooCommerce/ListTracking.php:313
+msgid "Top Rated Products"
+msgstr "Productos mejor valorados"
+
+#: src/Modules/WooCommerce/ListTracking.php:310
+msgid "Best Selling Products"
+msgstr "Productos más vendidos"
+
+#: src/Modules/WooCommerce/ListTracking.php:307
+msgid "Sale Products"
+msgstr "Productos en oferta"
+
+#: src/Modules/WooCommerce/ListTracking.php:304
+msgid "Recent Products"
+msgstr "Productos recientes"
+
+#: src/Modules/WooCommerce/ListTracking.php:420
+msgid " (widget)"
+msgstr "(widget)"
+
+#: src/Modules/WooCommerce/ListTracking.php:295
+msgid "Related Products"
+msgstr "Productos relacionados"
+
+#: src/Modules/WooCommerce/ListTracking.php:344
+msgid "General Product List"
+msgstr "Lista general de productos"
+
+#: src/Modules/WooCommerce/ListTracking.php:292
+msgid "Search Results"
+msgstr "Resultados de búsqueda"
+
+#: src/Modules/PageVariables/AdminSchema.php:183
+msgid "Check this option to include the post id."
+msgstr "Selecciona esta opción para incluir el ID del post"
+
+#: src/Modules/PageVariables/AdminSchema.php:182
+msgid "Post ID"
+msgstr "ID del post"
+
+#. Author of the plugin
+#: duracelltomi-google-tag-manager-for-wordpress.php
+msgid "Thomas Geiger"
+msgstr "Thomas Geiger"
+
+#. Description of the plugin
+#: duracelltomi-google-tag-manager-for-wordpress.php
+msgid "The first Google Tag Manager plugin for WordPress with business goals in mind"
+msgstr "El primer plugin de Google Tag Manager para WordPress enfocado a objetivos de negocio"
+
+#: src/Admin/PluginRow.php:44
+msgid "Settings"
+msgstr "Ajustes"
+
+#: src/Admin/Notices.php:212
+msgid "Notice: you should deactivate the plugin \"Google Analytics for WordPress by MonsterInsights\" if you are using Google Analytics tags inside Google Tag Manager!"
+msgstr "Aviso: ¡Debes desactivar el plugin «Google Analytics for WordPress by MonsterInsights» si estás usando etiquetas de Google Analytics dentro de Google Tag Manager!"
+
+#: src/Admin/Notices.php:208
+msgid "Notice: you should deactivate the plugin \"WooCommerce Google Analytics Integration\" if you are using Google Analytics tags inside Google Tag Manager!"
+msgstr "Aviso: ¡Debe desactivar el plugin \"WooCommerce Google Analytics Integration\" si estás utilizando etiquetas de Google Analytics dentro de Google Tag Manager!"
+
+#. translators: 1: opening anchor element pointing to the GTM4WP options page.
+#. 2: closing anchor element.
+#: src/Admin/Notices.php:104
+msgid "To start using Google Tag Manager for WordPress, please %1$senter your GTM ID%2$s"
+msgstr "Por favor, %1$sintroduce tu ID de GTM%2$s para empezar a usar Google Tag Manager for WordPress"
+
+#: src/Modules/MediaEvents/AdminSchema.php:46
+msgid "Media events"
+msgstr "Eventos para Medios"
+
+#: src/Modules/WooCommerce/AdminSchema.php:57
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: src/Admin/SettingsPage.php:110
+msgid "Google Tag Manager"
+msgstr "Google Tag Manager"
+
+#: src/Admin/SettingsPage.php:109
+msgid "Google Tag Manager for WordPress settings"
+msgstr "Ajustes de Google Tag Manager para WordPress"
+
+#: src/Admin/SettingsPage.php:134
+msgid "Google Tag Manager for WordPress options"
+msgstr "Opciones de Google Tag Manager para WordPress"
+
+#: src/Modules/Container/AdminSchema.php:309
+msgid "In some cases you need to rename the dataLayer variable. You can enter your name here. Leave blank for default name: dataLayer"
+msgstr "Puede que necesites usar otro nombre para la variable dataLayer. Puedes escribir su nombre aquí. Déjalo en blanco para mantener el nombre por defecto: dataLayer"
+
+#: src/Modules/Container/AdminSchema.php:308
+msgid "dataLayer variable name"
+msgstr "Nombre de la variable dataLayer"
+
+#: src/Modules/Container/AdminSchema.php:79
+#: src/Modules/MediaEvents/AdminSchema.php:66
+#: src/Modules/WooCommerce/AdminSchema.php:90
+msgid "Advanced"
+msgstr "Avanzado"
+
+#: src/Modules/UserEvents/AdminSchema.php:64
+msgid "Events"
+msgstr "Eventos"
+
+#: src/Modules/Container/AdminSchema.php:272
+msgid "Container code placement"
+msgstr "Colocación del código del contenedor"
+
+#: src/Modules/Container/AdminSchema.php:78
+#: src/Modules/WooCommerce/AdminSchema.php:86
+msgid "General"
+msgstr "General"
+
+#: src/Modules/Blacklist/AdminSchema.php:204
+msgid "Do not modify if you do not know what to do, since it can cause issues with your tag deployment!"
+msgstr "¡No lo modifiques si no sabes qué hacer, ya que podría causar problemas con la implantación de tus etiquetas!"
+
+#: src/Modules/Blacklist/AdminSchema.php:203
+msgid "Here you can control which types of tags, triggers and variables can be executed on your site regardless of what tags are included in your container on the Google Tag Manager site. Use this to increase security!"
+msgstr "Aquí puedes controlar qué tipos de etiquetas, activadores y variables se pueden ejecutar en tu sitio, independientemente de qué etiquetas estén incluidas en tu contenedor en el sitio de Google Tag Manager. ¡Úsalo para aumentar la seguridad!"
+
+#: src/Modules/UserEvents/AdminSchema.php:54
+msgid "Fire tags in Google Tag Manager on special events on your website"
+msgstr "Activación de etiquetas en Google Tag Manager en eventos especiales de tu sitio web"
+
+#: src/Modules/PageVariables/AdminSchema.php:70
+msgid "Here you can check what data is needed to be included in the dataLayer to be able to access them in Google Tag Manager"
+msgstr "Aquí puedes consultar los datos que serán incluidos en la capa de datos (dataLayer) para poder acceder a ellos mediante Google Tag Manager"
+
+#: src/Modules/WooCommerce/AdminSchema.php:189
+msgid "Use SKU instead of ID"
+msgstr "Usar el SKU en lugar del ID"
+
+#: src/Modules/ContactForm7/AdminSchema.php:46
+#: src/Modules/ContactForm7/AdminSchema.php:65
+#: src/Modules/ContactForm7/AdminSchema.php:80
+msgid "Contact Form 7"
+msgstr "Contact Form 7"
+
+#: src/Modules/MediaEvents/AdminSchema.php:100
+msgid "Soundcloud events"
+msgstr "Eventos para Soundcloud"
+
+#: src/Modules/MediaEvents/AdminSchema.php:91
+msgid "Vimeo video events"
+msgstr "Eventos de video para Vimeo"
+
+#: src/Modules/MediaEvents/AdminSchema.php:81
+msgid "YouTube video events"
+msgstr "Eventos de video para Youtube"
+
+#: src/Modules/ClientDeviceData/AdminSchema.php:97
+msgid "Device data"
+msgstr "Datos del dispositivo"
+
+#: src/Modules/ClientDeviceData/AdminSchema.php:89
+msgid "Check this option to include the name and version of the operating system the visitor uses."
+msgstr "Selecciona esta opción para incluir el nombre y la versión del sistema operativo utilizado por el usuario."
+
+#: src/Modules/ClientDeviceData/AdminSchema.php:79
+msgid "Browser data"
+msgstr "Datos del navegador"
+
+#: src/Modules/PageVariables/AdminSchema.php:376
+msgid "Check this option to include the ID of the logged in user."
+msgstr "Selecciona esta opción para incluir el ID del usuario que ha iniciado sesión."
+
+#: src/Modules/PageVariables/AdminSchema.php:375
+msgid "Logged in user ID"
+msgstr "ID del usuario logueado"
+
+#: src/Modules/PageVariables/AdminSchema.php:366
+msgid "Logged in user role"
+msgstr "Rol del usuario logueado"
+
+#: src/Modules/PageVariables/AdminSchema.php:357
+msgid "Logged in status"
+msgstr "Estado logueado"
+
+#: src/Modules/PageVariables/AdminSchema.php:349
+msgid "Check this option to include the search term, referring page URL and number of results on the search page."
+msgstr "Selecciona esta opción para incluir el término de búsqueda, la URL de la página de referencia y el número de resultados en la página de búsqueda."
+
+#: src/Modules/PageVariables/AdminSchema.php:82
+#: src/Modules/PageVariables/AdminSchema.php:348
+msgid "Search data"
+msgstr "Datos de búsqueda"
+
+#: src/Modules/PageVariables/AdminSchema.php:174
+msgid "Check this option to include the count of the posts currently shown on the page and the total number of posts in the category/tag/any taxonomy."
+msgstr "Selecciona esta opción para incluir el recuento de posts que actualmente aparecen en la página y el número total de posts en la categoría/etiqueta/ o cualquier taxonomía."
+
+#: src/Modules/PageVariables/AdminSchema.php:173
+msgid "Post count"
+msgstr "Recuento de posts"
+
+#: src/Modules/PageVariables/AdminSchema.php:165
+msgid "Check this option to include the title of the current post."
+msgstr "Selecciona esta opción para incluir el título del post actual."
+
+#: src/Modules/PageVariables/AdminSchema.php:164
+msgid "Post title"
+msgstr "Título de post"
+
+#: src/Modules/PageVariables/AdminSchema.php:155
+msgid "Post date"
+msgstr "Fecha del post"
+
+#: src/Modules/PageVariables/AdminSchema.php:146
+msgid "Post author name"
+msgstr "Nombre del autor del post"
+
+#: src/Modules/PageVariables/AdminSchema.php:128
+msgid "Tags of current post"
+msgstr "Etiquetas del post actual"
+
+#: src/Modules/PageVariables/AdminSchema.php:108
+msgid "Category list of current post/archive"
+msgstr "Lista de categorías del post/archivo actual"
+
+#: src/Modules/PageVariables/AdminSchema.php:100
+msgid "Check this option to include the type of the current post or archive page (post, page or any custom post type)."
+msgstr "Selecciona esta opción para incluir si la página actual es de tipo Post o Archive (Entrada (post), Página (page) o cualquier Tipo de Contenido Personalizado (Custom Post Type)."
+
+#: src/Modules/PageVariables/AdminSchema.php:99
+msgid "Posttype of current post/archive"
+msgstr "Tipo de contenido (Post Type) de la publicación/archivo actual"

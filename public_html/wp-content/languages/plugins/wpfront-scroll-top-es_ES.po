@@ -1,0 +1,532 @@
+# Translation of Plugins - WPFront Scroll Top - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - WPFront Scroll Top - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-09-04 07:58:57+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.1.0\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - WPFront Scroll Top - Stable (latest release)\n"
+
+#: includes/settings/class-settings-view.php:134
+msgid "Save failed."
+msgstr "Error al guardar."
+
+#: includes/settings/class-settings-view.php:131
+msgid "Settings updated successfully."
+msgstr "Ajustes actualizados correctamente."
+
+#: includes/settings/class-settings-view.php:58
+msgid "CSS"
+msgstr "CSS"
+
+#: includes/settings/class-settings-view.php:57
+msgid "Accessibility"
+msgstr "Accesibilidad"
+
+#: includes/settings/class-settings-view-model.php:520
+msgid "Additional CSS to be added."
+msgstr "CSS adicional para añadir."
+
+#: includes/settings/class-settings-view-model.php:519
+msgid "Location of the CSS file."
+msgstr "Ubicación del archivo CSS."
+
+#: includes/settings/class-settings-view-model.php:518
+msgid "Enqueue CSS using file instead of inline CSS."
+msgstr "Incluir CSS usando un archivo en lugar de CSS en línea."
+
+#: includes/settings/class-settings-view-model.php:517
+msgid "Text for screen readers."
+msgstr "Texto para lectores de pantalla."
+
+#: includes/settings/class-settings-view-model.php:516
+msgid "Title for the button."
+msgstr "Título del botón."
+
+#: includes/settings/class-settings-view-model.php:515
+msgid "ARIA label for the button."
+msgstr "Etiqueta ARIA para el botón."
+
+#: includes/settings/class-settings-view-model.php:478
+msgid "Set 0px to auto fit, does not work for font awesome button."
+msgstr "Establece 0px para ajuste automático; no funciona con el botón de Font Awesome."
+
+#: includes/settings/class-settings-view-model.php:464
+msgid "Extra CSS"
+msgstr "CSS adicional"
+
+#: includes/settings/class-settings-view-model.php:463
+msgid "File Location"
+msgstr "Ubicación del archivo"
+
+#: includes/settings/class-settings-view-model.php:462
+msgid "Enqueue Using File"
+msgstr "Incluir usando archivo"
+
+#: includes/settings/class-settings-view-model.php:461
+msgid "Screen Reader Text"
+msgstr "Texto para lectores de pantalla"
+
+#: includes/settings/class-settings-view-model.php:460
+msgid "Title"
+msgstr "Título"
+
+#: includes/settings/class-settings-view-model.php:459
+msgid "ARIA Label"
+msgstr "Etiqueta ARIA"
+
+#. translators: %s: file path
+#: includes/settings/class-settings-view-model.php:382
+msgid "Unable to write to the CSS file \"%s\"."
+msgstr "No se pudo escribir en el archivo CSS «%s»."
+
+#: includes/settings/class-settings-view-model.php:376
+msgid "Unable to initialize filesystem."
+msgstr "No se pudo inicializar el sistema de archivos."
+
+#: includes/settings/class-settings-view-model.php:371
+msgid "Unable to create directory for CSS file."
+msgstr "No se pudo crear el directorio para el archivo CSS."
+
+#: includes/settings/class-settings-view-model.php:366
+msgid "Unable to create directory in uploads."
+msgstr "No se pudo crear el directorio en la carpeta de subidas."
+
+#: includes/settings/class-settings-view-model.php:361
+msgid "Invalid CSS data."
+msgstr "Datos CSS no válidos."
+
+#: includes/settings/class-settings-view-model.php:347
+msgid "Invalid nonce."
+msgstr "Nonce no válido."
+
+#: includes/settings/class-settings-view-model.php:341
+msgid "Invalid data received."
+msgstr "Se recibieron datos no válidos."
+
+#: includes/settings/class-settings-view-model.php:335
+msgid "No data received from input stream."
+msgstr "No se recibieron datos del flujo de entrada."
+
+#: includes/settings/class-settings-view-model.php:329
+msgid "You do not have permission to access this page."
+msgstr "No tienes permiso para acceder a esta página."
+
+#. Description of the plugin
+#: wpfront-scroll-top.php
+msgid "Adds a lightweight and smooth \"Scroll to Top\" button to your WordPress site, improving navigation and user experience with customizable options."
+msgstr "Añade un botón ligero y suave de «Volver arriba» a tu sitio WordPress, mejorando la navegación y la experiencia de usuario con opciones personalizables."
+
+#: includes/settings/class-settings-view-model.php:588
+msgid "[Home Page]"
+msgstr "[Página de inicio]"
+
+#: includes/settings/class-settings-view-model.php:574
+msgid "Exclude in pages"
+msgstr "Excluir en páginas"
+
+#: includes/settings/class-settings-view-model.php:573
+msgid "Include in pages"
+msgstr "Incluir en páginas"
+
+#: includes/settings/class-settings-view-model.php:510
+msgid "Enable this setting if your site already has Font Awesome. Usually your theme includes it."
+msgstr "Activa esta opción si tu sitio ya tiene Font Awesome. Normalmente tu tema lo incluye."
+
+#: includes/settings/class-settings-view-model.php:508
+msgid "Leave blank to use BootstrapCDN URL by MaxCDN. Otherwise specify the URL you want to use."
+msgstr "Déjalo en blanco para utilizar la URL BootstrapCDN de MaxCDN. De lo contrario, especifica la URL que quieres utilizar."
+
+#: includes/settings/class-settings-view-model.php:503
+#: includes/settings/class-settings-view-model.php:504
+#: includes/settings/class-settings-view-model.php:505
+#: includes/settings/class-settings-view-model.php:509
+msgid "Hex color code."
+msgstr "Código hexadecimal de colores."
+
+#: includes/settings/class-settings-view-model.php:502
+msgid "Text to be displayed."
+msgstr "Texto a mostrar."
+
+#: includes/settings/class-settings-view-model.php:499
+msgid "HTML title attribute(displays as a tooltip)."
+msgstr "Atributo de título HTML (se muestra como información emergente)."
+
+#: includes/settings/class-settings-view-model.php:498
+msgid "Alternative information for an image"
+msgstr "Información alternativa para una imagen"
+
+#: includes/settings/class-settings-view-model.php:495
+msgid "Sets the location of the scroll top button. Default is bottom right position."
+msgstr "Establece la posición del botón de desplazamiento superior. Por defecto es la posición inferior derecha."
+
+#: includes/settings/class-settings-view-model.php:494
+msgid "URL of the page, you are trying to redirect to."
+msgstr "URL de la página a la que intentas redirigir."
+
+#: includes/settings/class-settings-view-model.php:493
+msgid "Redirects to the URL."
+msgstr "Redirige a la URL."
+
+#: includes/settings/class-settings-view-model.php:492
+msgid "Scroll to the element specified by the user."
+msgstr "Desplazamiento hasta el elemento especificado por el usuario."
+
+#: includes/settings/class-settings-view-model.php:490
+msgid "Font awesome icon as button."
+msgstr "Icono de Font awesome como botón."
+
+#: includes/settings/class-settings-view-model.php:489
+msgid "Text as button."
+msgstr "Texto como botón."
+
+#: includes/settings/class-settings-view-model.php:488
+msgid "Built in or custom icon as button."
+msgstr "Icono incorporado o personalizado como botón."
+
+#: includes/settings/class-settings-view-model.php:482
+msgid "Enable to hide the button automatically."
+msgstr "Activar para ocultar el botón automáticamente."
+
+#: includes/settings/class-settings-view-model.php:479
+msgid "Set transparency of the button."
+msgstr "Establece la transparencia del botón."
+
+#: includes/settings/class-settings-view-model.php:475
+msgid "Enables the scroll top button."
+msgstr "Activa el botón de desplazamiento superior."
+
+#: includes/settings/class-settings-view-model.php:439
+msgid "Image Title"
+msgstr "Título de la imagen"
+
+#: includes/settings/class-settings-view.php:59
+msgid "Actions"
+msgstr "Acciones"
+
+#. Author of the plugin
+#: wpfront-scroll-top.php
+msgid "WPFront Team"
+msgstr "Equipo WPFront"
+
+#: includes/settings/class-settings-view-model.php:458
+msgid "Select Image"
+msgstr "Seleccionar una imagen"
+
+#: includes/settings/class-settings-view-model.php:457
+msgid "Choose Image"
+msgstr "Elegir la imagen"
+
+#: includes/settings/class-settings-view-model.php:456
+msgid "Media Library"
+msgstr "Biblioteca de medios"
+
+#: includes/settings/class-settings-view-model.php:531
+msgid "Image Button"
+msgstr "Botón de la imagen"
+
+#: includes/settings/class-settings-view-model.php:533
+msgid "Font Awesome Button"
+msgstr "Botón de Font Awesome"
+
+#: includes/settings/class-settings-view-model.php:506
+#: includes/settings/class-settings-view-model.php:507
+#: includes/settings/class-settings-view-model.php:511
+msgid "ex:"
+msgstr "ej.:"
+
+#: includes/settings/class-settings-view-model.php:500
+#: includes/settings/class-settings-view-model.php:501
+msgid "Use the textbox below to specify the post IDs as a comma separated list."
+msgstr "Usa la caja de texto siguiente para especificar los ID de las entradas en una lista separada por comas."
+
+#: includes/settings/class-settings-view-model.php:546
+msgid "Link to Page"
+msgstr "Enlace a la página"
+
+#: includes/settings/class-settings-view-model.php:453
+msgid "How to find CSS selector?"
+msgstr "¿Cómo encontrar el selector CSS?"
+
+#: includes/settings/class-settings-view-model.php:514
+msgid "Negative value allowed. Use this filed to precisely set scroll position. Useful when you have overlapping elements."
+msgstr "Se permiten valores negativos. Usa este campo para configurar con precisión la posición del desplazamiento. Útil cuando tienes elementos que se solapan."
+
+#: includes/settings/class-settings-view-model.php:513
+msgid "CSS selector of the element, which has the scroll bar. \"html, body\" works in almost all cases."
+msgstr "Selector CSS del elemento, el que tiene la barra de desplazamiento. «html, body» funciona en la mayoría de los casos."
+
+#: includes/settings/class-settings-view-model.php:512
+msgid "CSS selector of the element, you are trying to scroll to. Ex: #myDivID, .myDivClass"
+msgstr "Selector CSS del elemento al que estás tratando dedesplazarte. Ej.: #miDivID, .miClaseDiv"
+
+#: includes/settings/class-settings-view-model.php:545
+msgid "Scroll to Element"
+msgstr "Scroll al elemento"
+
+#: includes/settings/class-settings-view-model.php:491
+msgid "Default action on WP-ADMIN pages."
+msgstr "Acción por defecto en las páginas del WP-ADMIN."
+
+#: includes/settings/class-settings-view-model.php:544
+msgid "Scroll to Top"
+msgstr "Scroll al inicio"
+
+#: includes/settings/class-settings-view-model.php:476
+msgid "Increases site performance. Keep it enabled, if there are no conflicts."
+msgstr "Mejora el rendimiento del sitio. Déjalo activado si no hay conflictos."
+
+#: includes/settings/class-settings-view-model.php:448
+msgid "Icon Color"
+msgstr "Color del icono"
+
+#: includes/settings/class-settings-view-model.php:447
+msgid "Do not include URL"
+msgstr "No incluir la URL"
+
+#: includes/settings/class-settings-view-model.php:446
+msgid "Font Awesome URL"
+msgstr "URL de Font Awesome"
+
+#: includes/settings/class-settings-view-model.php:445
+msgid "Icon Class"
+msgstr "Clase del icono"
+
+#: includes/settings/class-settings-view-model.php:443
+msgid "Mouse Over Color"
+msgstr "Color al pasar el cursor"
+
+#: includes/settings/class-settings-view-model.php:452
+msgid "Offset"
+msgstr "Compensación"
+
+#: includes/settings/class-settings-view-model.php:451
+msgid "Scroll Container CSS Selector"
+msgstr "Selector CSS del contenedor del scroll"
+
+#: includes/settings/class-settings-view-model.php:450
+msgid "Element CSS Selector"
+msgstr "Selector CSS del elemento"
+
+#: includes/settings/class-settings-view-model.php:454
+msgid "Page URL"
+msgstr "URL de la página"
+
+#: includes/settings/class-settings-view-model.php:433
+msgid "Button Action"
+msgstr "Acción del botón"
+
+#: includes/settings/class-settings-view-model.php:420
+msgid "Javascript Async"
+msgstr "Javascript Async"
+
+#. Author URI of the plugin
+#: wpfront-scroll-top.php
+msgid "http://wpfront.com"
+msgstr "https://wpfront.com"
+
+#. Plugin URI of the plugin
+#: wpfront-scroll-top.php
+msgid "http://wpfront.com/scroll-top-plugin/"
+msgstr "https://wpfront.com/wordpress-plugins/scroll-top-plugin/"
+
+#: includes/settings/class-settings-view-model.php:437
+msgid "Custom URL"
+msgstr "URL personalizada"
+
+#: includes/settings/class-settings-view-model.php:572
+msgid "All pages"
+msgstr "Todas las páginas"
+
+#: includes/settings/class-settings-view.php:55
+msgid "Filter"
+msgstr "Filtrar"
+
+#: includes/settings/class-settings-view-model.php:496
+#: includes/settings/class-settings-view-model.php:497
+msgid "Negative values allowed."
+msgstr "Se permiten valores negativos."
+
+#: includes/settings/class-settings-view-model.php:560
+msgid "Top Left"
+msgstr "Superior izquierda"
+
+#: includes/settings/class-settings-view-model.php:559
+msgid "Top Right"
+msgstr "Superior derecha"
+
+#: includes/settings/class-settings-view-model.php:558
+msgid "Bottom Left"
+msgstr "Inferior izquierda"
+
+#: includes/settings/class-settings-view-model.php:557
+msgid "Bottom Right"
+msgstr "Inferior derecha"
+
+#: includes/settings/class-settings-view-model.php:532
+msgid "Text Button"
+msgstr "Texto del botón"
+
+#: includes/settings/class-settings-view-model.php:487
+msgid "Button will be hidden on iframes, usually inside popups."
+msgstr "El botón se ocultará en iframes, por lo general dentro de los mensajes emergentes."
+
+#: includes/settings/class-settings-view-model.php:486
+msgid "Button will be hidden on 'wp-admin'."
+msgstr "El botón se ocultará en «wp-admin»."
+
+#: includes/settings/class-settings-view-model.php:485
+msgid "Button will be hidden on browser window with lesser or equal width."
+msgstr "El botón se ocultará en la ventana del navegador con una anchura menor o igual."
+
+#: includes/settings/class-settings-view-model.php:484
+msgid "Button will be hidden on broswer window when the width matches."
+msgstr "El botón se ocultará en la ventana del navegador cuando coincida la anchura."
+
+#: includes/settings/class-settings-view-model.php:483
+msgid "Button will be auto hidden after this duration in seconds, if enabled."
+msgstr "El botón se ocultará automáticamente después de esta duración en segundos, si está activado."
+
+#: includes/settings/class-settings-view-model.php:481
+msgid "Window scroll duration in milliseconds."
+msgstr "Duración del desplazamiento de la ventana en milisegundos."
+
+#: includes/settings/class-settings-view-model.php:480
+msgid "Button fade duration in milliseconds."
+msgstr "Duración de la desaparición del botón en milisegundos."
+
+#: includes/settings/class-settings-view-model.php:422
+msgid "Button Size"
+msgstr "Tamaño del botón"
+
+#: includes/settings/class-settings-view-model.php:477
+msgid "Number of pixels to be scrolled before the button appears."
+msgstr "Número de píxeles que deben desplazarse antes de que aparezca en el botón."
+
+#: includes/settings/class-settings-view.php:53
+msgid "Display"
+msgstr "Visualización"
+
+#: includes/settings/class-settings-view-model.php:142
+#: includes/settings/class-settings-view.php:71
+msgid "WPFront Scroll Top Settings"
+msgstr "Ajustes de WPFront Scroll Top"
+
+#: includes/settings/class-settings-view-model.php:143
+msgid "Scroll Top"
+msgstr "Scroll al inicio"
+
+#. Plugin Name of the plugin
+#: wpfront-scroll-top.php
+msgid "WPFront Scroll Top"
+msgstr "WPFront Scroll Top"
+
+#: includes/settings/class-settings-view-model.php:455
+msgid "Display on Pages"
+msgstr "Mostrar en las páginas"
+
+#: includes/settings/class-settings-view-model.php:444
+#: includes/settings/class-settings-view-model.php:449
+msgid "Custom CSS"
+msgstr "CSS personalizado"
+
+#: includes/settings/class-settings-view-model.php:442
+msgid "Background Color"
+msgstr "Color de fondo"
+
+#: includes/settings/class-settings-view-model.php:441
+msgid "Text Color"
+msgstr "Color del texto"
+
+#: includes/settings/class-settings-view-model.php:440
+msgid "Text"
+msgstr "Texto"
+
+#: includes/settings/class-settings-view-model.php:436
+msgid "Margin Y"
+msgstr "Margen Y"
+
+#: includes/settings/class-settings-view-model.php:435
+msgid "Margin X"
+msgstr "Margen X"
+
+#: includes/settings/class-settings-view-model.php:434
+#: includes/settings/class-settings-view.php:54
+msgid "Location"
+msgstr "Ubicación"
+
+#: includes/settings/class-settings-view-model.php:431
+msgid "Hide on iframes"
+msgstr "Ocultar en iframes"
+
+#: includes/settings/class-settings-view-model.php:430
+msgid "Hide on WP-ADMIN"
+msgstr "Ocultar en WP-ADMIN"
+
+#: includes/settings/class-settings-view-model.php:438
+msgid "Image ALT"
+msgstr "ALT de la imagen"
+
+#: includes/settings/class-settings-view-model.php:432
+msgid "Button Style"
+msgstr "Estilo del botón"
+
+#: includes/settings/class-settings-view-model.php:429
+msgid "Small Window Max Width"
+msgstr "Anchura máxima de las ventanas pequeñas"
+
+#: includes/settings/class-settings-view-model.php:428
+msgid "Hide on Small Window"
+msgstr "Ocultar en ventanas pequeñas"
+
+#: includes/settings/class-settings-view-model.php:427
+msgid "Auto Hide After"
+msgstr "Ocultar automáticamente después de"
+
+#: includes/settings/class-settings-view-model.php:426
+msgid "Auto Hide"
+msgstr "Ocultar automáticamente"
+
+#: includes/settings/class-settings-view-model.php:425
+msgid "Scroll Duration"
+msgstr "Duración del scroll"
+
+#: includes/settings/class-settings-view-model.php:424
+msgid "Button Fade Duration"
+msgstr "Duración de la desaparición del botón"
+
+#: includes/settings/class-settings-view-model.php:423
+msgid "Button Opacity"
+msgstr "Opacidad del botón"
+
+#: includes/settings/class-settings-view-model.php:421
+msgid "Scroll Offset"
+msgstr "Compensación del scroll"
+
+#: includes/settings/class-settings-view-model.php:419
+msgid "Enabled"
+msgstr "Activado"
+
+#: includes/settings/class-settings-view.php:128
+msgid "Save Changes"
+msgstr "Guardar los cambios"
+
+#: includes/settings/class-settings-view.php:150
+msgid "Buy me a Beer or Coffee"
+msgstr "Cómprame una cerveza o un café"
+
+#: includes/settings/class-settings-view.php:149
+msgid "Write a review"
+msgstr "Escribe una reseña"
+
+#: includes/settings/class-settings-view.php:148
+msgid "Settings description"
+msgstr "Descripción de los ajustes"
+
+#: includes/settings/class-settings-view-model.php:221
+msgid "Settings"
+msgstr "Ajustes"

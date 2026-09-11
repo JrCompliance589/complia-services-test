@@ -1,0 +1,1627 @@
+# Translation of Plugins - Kirki – Freeform Page Builder, Website Builder &amp; Customizer - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Kirki – Freeform Page Builder, Website Builder &amp; Customizer - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-09-04 07:05:54+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.1.0\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Kirki – Freeform Page Builder, Website Builder &amp; Customizer - Stable (latest release)\n"
+
+#: app/Http/Middlewares/VerifyRestNonceMiddleware.php:45
+msgid "Nonce verification failed"
+msgstr "Ha fallado la verificación del nonce"
+
+#: app/Supports/Recaptcha.php:64
+msgid "Recaptcha is required."
+msgstr "reCAPTCHA es obligatorio."
+
+#: app/Services/FontService.php:114
+msgid "Invalid file name."
+msgstr "Nombre de archivo no válido."
+
+#: config/messages.php:113
+msgid "No policy found for this resource. Pass the model instance or class name as the second argument."
+msgstr "No se ha encontrado ninguna política para este recurso. Pasa la instancia del modelo o el nombre de la clase como segundo argumento."
+
+#: config/messages.php:104
+msgid "The {name} field must have one of the following extensions: {extensions}."
+msgstr "El campo {name} debe tener una de las siguientes extensiones: {extensions}."
+
+#: config/messages.php:103
+msgid "The {name} field must be a file of type: {types}."
+msgstr "El campo {name} debe ser un archivo de tipo: {types}."
+
+#: config/messages.php:102
+msgid "The {name} field must be an image."
+msgstr "El campo {name} debe ser una imagen."
+
+#: config/messages.php:101
+msgid "The {name} field must be between {min} and {max} kilobytes."
+msgstr "El campo {name} debe tener entre {min} y {max} kilobytes."
+
+#: config/messages.php:100
+msgid "The {name} field must be less than {max} kilobytes."
+msgstr "El campo {name} debe ser inferior a {max} kilobytes."
+
+#: config/messages.php:99
+msgid "The {name} field must be at least {min} kilobytes."
+msgstr "El campo {name} debe tener al menos {min} kilobytes."
+
+#: config/messages.php:98
+msgid "The {name} field must be less than {size} kilobytes."
+msgstr "El campo {name} debe ser inferior a {size} kilobytes."
+
+#: config/messages.php:97
+msgid "The {name} field must be a file."
+msgstr "El campo {name} debe ser un archivo."
+
+#: config/messages.php:94
+msgid "The {name} field must be a valid datetime."
+msgstr "El campo {name} debe ser una fecha y hora válidas."
+
+#: config/messages.php:93
+msgid "The {name} field must match the format {format}."
+msgstr "El campo {name} debe coincidir con el formato {format}."
+
+#: config/messages.php:92
+msgid "The {name} field must be a date after {after}."
+msgstr "El campo {name} debe ser una fecha posterior a {after}."
+
+#: config/messages.php:91
+msgid "The {name} field must be a valid date."
+msgstr "El campo {name} debe ser una fecha válida."
+
+#: config/messages.php:88
+msgid "The field {name} must be less than or equal to {lte}."
+msgstr "El campo {name} debe ser menor o igual que {lte}."
+
+#: config/messages.php:87
+msgid "The field {name} must be less than {lt}."
+msgstr "El campo {name} debe ser menor que {lt}."
+
+#: config/messages.php:86
+msgid "The field {name} must be greater than or equal to {gte}."
+msgstr "El campo {name} debe ser mayor o igual que {gte}."
+
+#: config/messages.php:85
+msgid "The field {name} must be greater than {gt}."
+msgstr "El campo {name} debe ser mayor que {gt}."
+
+#: config/messages.php:84
+msgid "The field {name} must be a decimal."
+msgstr "El campo {name} debe ser un decimal."
+
+#: config/messages.php:83
+msgid "The field {name} must be a float."
+msgstr "El campo {name} debe ser un número flotante."
+
+#: config/messages.php:81 config/messages.php:82
+msgid "The field {name} must be an integer."
+msgstr "El campo {name} debe ser un número entero."
+
+#: config/messages.php:80
+msgid "The field {name} must be less than or equal to {max}."
+msgstr "El campo {name} debe ser menor o igual que {max}."
+
+#: config/messages.php:79
+msgid "The field {name} must be greater than or equal to {min}."
+msgstr "El campo {name} debe ser mayor o igual que {min}."
+
+#: config/messages.php:78
+msgid "The field {name} must be a number."
+msgstr "El campo {name} debe ser un número."
+
+#: config/messages.php:75
+msgid "The field {name} must contain {contains}."
+msgstr "El campo {name} debe contener {contains}."
+
+#: config/messages.php:74
+msgid "The field {name} must have exactly {exactly} items."
+msgstr "El campo {name} debe tener exactamente {exactly} elementos."
+
+#: config/messages.php:73
+msgid "The field {name} must have exactly {size} items."
+msgstr "El campo {name} debe tener exactamente {size} elementos."
+
+#: config/messages.php:72
+msgid "The field {name} must have at most {max} items."
+msgstr "El campo {name} debe tener como máximo {max} elementos."
+
+#: config/messages.php:71
+msgid "The field {name} must have at least {min} items."
+msgstr "El campo {name} debe tener al menos {min} elementos."
+
+#: config/messages.php:70
+msgid "The field {name} must be an array."
+msgstr "El campo {name} debe ser una matriz."
+
+#: config/messages.php:67
+msgid "The {name} field must be a string."
+msgstr "El campo {name} debe ser una cadena."
+
+#: config/messages.php:66
+msgid "The {name} field must be exactly {exactly} characters long."
+msgstr "El campo {name} debe tener exactamente {exactly} caracteres."
+
+#: config/messages.php:65
+msgid "The {name} field must not end with {doesnt_end_with}."
+msgstr "El campo {name} no debe terminar con {doesnt_end_with}."
+
+#: config/messages.php:64
+msgid "The {name} field must not start with {doesnt_start_with}."
+msgstr "El campo {name} no debe empezar con {doesnt_start_with}."
+
+#: config/messages.php:63
+msgid "The {name} field must end with {ends_with}."
+msgstr "El campo {name} debe terminar con {ends_with}."
+
+#: config/messages.php:62
+msgid "The {name} field must start with {starts_with}."
+msgstr "El campo {name} debe empezar con {starts_with}."
+
+#: config/messages.php:61
+msgid "The {name} field must be between {min} and {max} characters long."
+msgstr "El campo {name} debe tener entre {min} y {max} caracteres."
+
+#: config/messages.php:60
+msgid "The {name} field must only contain alphabetic characters, dashes and underscores."
+msgstr "El campo {name} solo debe contener caracteres alfabéticos, guiones y guiones bajos."
+
+#: config/messages.php:59
+msgid "The {name} field must only contain alphabetic characters and numbers."
+msgstr "El campo {name} solo debe contener caracteres alfabéticos y números."
+
+#: config/messages.php:58
+msgid "The {name} field must only contain alphabetic characters."
+msgstr "El campo {name} solo debe contener caracteres alfabéticos."
+
+#: config/messages.php:57
+msgid "The {name} field must be a valid ip address."
+msgstr "El campo {name} debe ser una dirección IP válida."
+
+#: config/messages.php:56
+msgid "The {name} field format is invalid."
+msgstr "El formato del campo {name} no es válido."
+
+#: config/messages.php:55
+msgid "The {name} field must be a valid url."
+msgstr "El campo {name} debe ser una URL válida."
+
+#: config/messages.php:54
+msgid "The {name} field must be a valid email address."
+msgstr "El campo {name} debe ser una dirección de correo electrónico válida."
+
+#: config/messages.php:53
+msgid "The {name} field must be {size} characters long."
+msgstr "El campo {name} debe tener {size} caracteres."
+
+#: config/messages.php:52
+msgid "The {name} field must be {length} characters long."
+msgstr "El campo {name} debe tener {length} caracteres."
+
+#: config/messages.php:51
+msgid "The {name} field must be at most {max} characters long."
+msgstr "El campo {name} debe tener como máximo {max} caracteres."
+
+#: config/messages.php:50
+msgid "The {name} field must be at least {min} characters long."
+msgstr "El campo {name} debe tener al menos {min} caracteres."
+
+#: config/messages.php:47
+msgid "The {name} field must match the {args} field."
+msgstr "El campo {name} debe coincidir con el campo {args}."
+
+#: config/messages.php:44
+msgid "The {name} field must not be in the list of \"{args}\"."
+msgstr "El campo {name} no debe estar en la lista «{args}»."
+
+#: config/messages.php:41
+msgid "The {name} field must be in the list of \"{args}\"."
+msgstr "El campo {name} debe estar en la lista «{args}»."
+
+#: config/messages.php:38
+msgid "The {name} has already been taken."
+msgstr "El {name} ya ha sido usado."
+
+#: config/messages.php:35
+msgid "The selected {name} does not exist."
+msgstr "El {name} seleccionado no existe."
+
+#: config/messages.php:32
+msgid "The {name} field must be an object."
+msgstr "El campo {name} debe ser un objeto."
+
+#: config/messages.php:29
+msgid "The {name} field must be a boolean."
+msgstr "El campo {name} debe ser un booleano."
+
+#: config/messages.php:20 config/messages.php:23 config/messages.php:26
+msgid "The {name} field is prohibited."
+msgstr "El campo {name} está prohibido."
+
+#: config/messages.php:11 config/messages.php:14 config/messages.php:17
+msgid "The {name} field is required."
+msgstr "El campo {name} es obligatorio."
+
+#. translators: %s: Validation rule name.
+#: config/messages.php:9
+msgid "There is no validation rule defined as %s."
+msgstr "No hay ninguna regla de validación definida como %s."
+
+#. translators: %s: Field name.
+#: config/messages.php:7
+msgid "The %s field is invalid."
+msgstr "El campo %s no es válido."
+
+#: app/Supports/Recaptcha.php:80
+msgid "Google reCAPTCHA verification failed"
+msgstr "La verificación de Google reCAPTCHA ha fallado"
+
+#: app/Supports/Recaptcha.php:73
+msgid "reCAPTCHA secret key not configured"
+msgstr "La clave secreta de reCAPTCHA no está configurada"
+
+#: app/Supports/Recaptcha.php:55
+msgid "reCAPTCHA configuration not found"
+msgstr "No se ha encontrado la configuración de reCAPTCHA"
+
+#: app/Services/FormSubmissionService.php:333
+msgid "Failed to save your submission. Please try again."
+msgstr "No se ha podido guardar tu envío. Inténtalo de nuevo."
+
+#: app/Services/FormSubmissionService.php:267
+msgid "This form is no longer accepting submissions."
+msgstr "Este formulario ya no acepta envíos."
+
+#: app/Services/FormSubmissionService.php:260
+msgid "You have reached the maximum number of submissions allowed."
+msgstr "Has alcanzado el número máximo de envíos permitidos."
+
+#: app/Services/FormSubmissionService.php:171
+msgid "Form config not found"
+msgstr "No se ha encontrado la configuración del formulario"
+
+#: app/Services/FormSubmissionService.php:165
+msgid "Form data is invalid!"
+msgstr "Los datos del formulario no son válidos."
+
+#: app/Services/FormSubmissionService.php:74
+msgid "One or more form actions failed. Please try again."
+msgstr "Una o varias acciones del formulario han fallado. Inténtalo de nuevo."
+
+#: app/Services/ContentManagerTemplateService.php:103
+msgid "Content Manager template asset is invalid."
+msgstr "El recurso de plantilla de Content Manager no es válido."
+
+#: app/Services/ContentManagerTemplateService.php:98
+msgid "Content Manager template asset was not found."
+msgstr "No se ha encontrado el recurso de plantilla de Content Manager."
+
+#: app/Services/ContentManagerTemplateService.php:81
+msgid "Content Manager page template could not be saved."
+msgstr "No se ha podido guardar la plantilla de página de Content Manager."
+
+#: app/Services/ContentManagerTemplateService.php:56
+msgid "Content Manager collection not found."
+msgstr "No se ha encontrado la colección de Content Manager."
+
+#: app/Services/ContentManagerTemplateService.php:51
+msgid "Invalid Content Manager page kind."
+msgstr "El tipo de página de Content Manager no es válido."
+
+#: app/Services/ContentManagerTemplateBinder.php:420
+msgid "Content Manager template contains a foreign field binding."
+msgstr "La plantilla de Content Manager contiene un enlace a un campo externo."
+
+#: app/Services/ContentManagerTemplateBinder.php:410
+msgid "Content Manager template contains an unresolved binding."
+msgstr "La plantilla de Content Manager contiene un enlace no resuelto."
+
+#: app/Http/Controllers/Api/PageController.php:270
+msgid "Post not found."
+msgstr "No se ha encontrado la entrada."
+
+#: app/Http/Controllers/Api/PageController.php:145
+msgid "Staging version removed successfully."
+msgstr "La versión de preproducción se ha eliminado correctamente."
+
+#: app/Http/Controllers/Api/PageController.php:114
+#: app/Http/Controllers/Api/PageController.php:131
+msgid "Staging version renamed successfully."
+msgstr "La versión de preproducción se ha renombrado correctamente."
+
+#: app/Http/Controllers/Api/FormController.php:43
+msgid "Form submitted successfully."
+msgstr "Formulario enviado correctamente."
+
+#: app/Http/Controllers/Api/CollectionController.php:109
+#: app/Http/Controllers/Api/PostController.php:45
+msgid "Slug is not available."
+msgstr "El slug no está disponible."
+
+#: includes/API.php:94
+msgid "Invalid file type."
+msgstr "Tipo de archivo no válido."
+
+#: includes/API.php:80
+msgid "Not authorized"
+msgstr "No autorizado"
+
+#: includes/API.php:76
+msgid "Not authorized."
+msgstr "No autorizado."
+
+#. translators: %s: app slug
+#: app/Supports/FilterHooks.php:24
+msgid "The filter \"kirki_apps_configuration_%s\" must return an array."
+msgstr "El filtro «kirki_apps_configuration_%s» debe devolver una matriz."
+
+#. translators: %s: File Path
+#: app/Supports/FileHandler.php:173
+msgid "Directory traversal detected in %s."
+msgstr "Se ha detectado un recorrido de directorio en %s."
+
+#: app/Supports/FileHandler.php:147 app/Supports/FileHandler.php:164
+msgid "Invalid ZIP file."
+msgstr "Archivo ZIP no válido."
+
+#: app/Supports/FileHandler.php:142
+msgid "Failed to read ZIP file."
+msgstr "Error al leer el archivo ZIP."
+
+#: app/Http/Requests/Page/GlobalStyleRequest.php:29
+msgid "The isGlobalStyle field is required."
+msgstr "El campo isGlobalStyle es obligatorio."
+
+#: app/Http/Controllers/Api/GlobalDataController.php:133
+msgid "Styles saved successfully."
+msgstr "Estilos guardados correctamente."
+
+#: app/Http/Controllers/Api/GlobalDataController.php:125
+msgid "Font folder deleted successfully."
+msgstr "Carpeta de fuentes eliminada correctamente."
+
+#: app/Services/FontService.php:52 app/Services/FontService.php:97
+msgid "Only HTTPS is allowed."
+msgstr "Solo se permite HTTPS."
+
+#: app/Services/FontService.php:48 app/Services/FontService.php:93
+msgid "Invalid URL."
+msgstr "URL no válida."
+
+#. translators: %s: File name.
+#: config/messages.php:143
+msgid "The file \"%s\" was not uploaded due to an unknown error."
+msgstr "El archivo «%s» no se ha subido debido a un error desconocido."
+
+#: config/messages.php:141
+msgid "File upload was stopped by a PHP extension."
+msgstr "La subida del archivo fue detenida por una extensión de PHP."
+
+#: config/messages.php:140
+msgid "File could not be uploaded: missing temporary directory."
+msgstr "No se ha podido subir el archivo: falta el directorio temporal."
+
+#. translators: %s: File name.
+#: config/messages.php:139
+msgid "The file \"%s\" could not be written on disk."
+msgstr "El archivo «%s» no se ha podido escribir en el disco."
+
+#: config/messages.php:137
+msgid "No file was uploaded."
+msgstr "No se ha subido ningún archivo."
+
+#. translators: %s: File name.
+#: config/messages.php:136
+msgid "The file \"%s\" was only partially uploaded."
+msgstr "El archivo «%s» solo se ha subido parcialmente."
+
+#. translators: %s: File name.
+#: config/messages.php:134
+msgid "The file \"%s\" exceeds the upload limit defined in your form."
+msgstr "El archivo «%s» supera el límite de subida definido en tu formulario."
+
+#. translators: 1: File name, 2: Maximum allowed file size in KiB.
+#: config/messages.php:132
+msgid "The file \"%s\" exceeds your upload_max_filesize ini directive (limit is %d KiB)."
+msgstr "El archivo «%s» supera la directiva upload_max_filesize de tu php.ini (el límite es %d KiB)."
+
+#. translators: 1: Source file path, 2: Destination file path, 3: Error
+#. message.
+#: config/messages.php:130
+msgid "Could not move the file \"%s\" to \"%s\" (%s)."
+msgstr "No se ha podido mover el archivo «%s» a «%s» (%s)."
+
+#: config/messages.php:128
+msgid "Upload directory is not available."
+msgstr "El directorio de subida no está disponible."
+
+#. translators: %s: File path.
+#: config/messages.php:125
+msgid "file does not exists at [%s]"
+msgstr "el archivo no existe en [%s]"
+
+#. translators: 1: Model class name, 2: Comma-separated list of ids.
+#: config/messages.php:121
+msgid "No query results for model [%s] with ids: %s"
+msgstr "No hay resultados de consulta para el modelo [%s] con los IDs: %s"
+
+#: config/messages.php:117
+msgid "Invalid upload path."
+msgstr "Ruta de subida no válida."
+
+#: config/messages.php:116
+msgid "You are not authorized to upload files."
+msgstr "No estás autorizado para subir archivos."
+
+#. translators: %s: Ability name.
+#: config/messages.php:115
+msgid "The ability %s is not defined in the policy for this resource."
+msgstr "La capacidad %s no está definida en la política para este recurso."
+
+#. translators: %s: Ability or action name.
+#: config/messages.php:112
+msgid "You are not authorized to %s this resource."
+msgstr "No estás autorizado para %s este recurso."
+
+#: config/messages.php:110
+msgid "You are not authorized to make this request."
+msgstr "No estás autorizado para realizar esta solicitud."
+
+#: config/messages.php:109
+msgid "You have to be logged in and have admin privileges."
+msgstr "Debes haber iniciado sesión y tener privilegios de administrador."
+
+#: config/messages.php:108
+msgid "You have to be logged in."
+msgstr "Debes haber iniciado sesión."
+
+#: config/messages.php:5
+msgid "Validation failed!"
+msgstr "¡La validación ha fallado!"
+
+#: app/Traits/HasWordPressPostBehavior.php:71
+msgid "Failed to update post."
+msgstr "Error al actualizar la entrada."
+
+#: app/Traits/HasWordPressPostBehavior.php:37
+msgid "Failed to create post."
+msgstr "Error al crear la entrada."
+
+#. translators: %s: Utility page type
+#: app/Services/UtilityPageService.php:39
+msgid "Invalid utility page type: %s"
+msgstr "Tipo de página de utilidad no válido: %s"
+
+#: app/Services/PageService.php:315
+msgid "Page not deleted."
+msgstr "La página no se ha eliminado."
+
+#: app/Services/FontService.php:84 app/Services/FontService.php:139
+msgid "No usable font files were downloaded."
+msgstr "No se ha descargado ningún archivo de fuente utilizable."
+
+#: app/Services/FontService.php:127
+msgid "Failed to fetch font file."
+msgstr "Error al obtener el archivo de fuente."
+
+#. translators: %s: file extension
+#: app/Services/FontService.php:108
+msgid "Invalid or unsafe file extension: %s."
+msgstr "Extensión de archivo no válida o insegura: %s."
+
+#: app/Services/FontService.php:69
+msgid "Failed to fetch Google Fonts CSS."
+msgstr "Error al obtener el CSS de Google Fonts."
+
+#: app/Services/FontService.php:56 app/Services/FontService.php:101
+msgid "Only Google Fonts is supported."
+msgstr "Solo se admiten Google Fonts."
+
+#: app/Services/FontService.php:42
+msgid "Font already downloaded."
+msgstr "La fuente ya está descargada."
+
+#: app/Services/FontService.php:33
+msgid "Upload directory is not writable."
+msgstr "El directorio de subida no tiene permisos de escritura."
+
+#: app/Services/FontService.php:27
+msgid "Not valid font family."
+msgstr "Familia de fuentes no válida."
+
+#: app/Services/CollectionItemService.php:228
+msgid "No items found"
+msgstr "No se han encontrado elementos"
+
+#: app/Services/CollaborationCommentService.php:189
+msgid "No comment found"
+msgstr "No se ha encontrado ningún comentario"
+
+#. translators: 1: error message
+#: app/Services/AppsService.php:281
+msgid "An error occurred during the app deletion: %s"
+msgstr "Se ha producido un error durante la eliminación de la app: %s"
+
+#: app/Services/AppsService.php:270
+msgid "Failed to delete the app folder."
+msgstr "Error al eliminar la carpeta de la app."
+
+#. translators: 1: error message
+#: app/Services/AppsService.php:224
+msgid "An error occurred during the app update: %s"
+msgstr "Se ha producido un error durante la actualización de la app: %s"
+
+#: app/Services/AppsService.php:198
+msgid "Failed to extract the new app version."
+msgstr "Error al extraer la nueva versión de la app."
+
+#: app/Services/AppsService.php:188
+msgid "Failed to download the new app version."
+msgstr "Error al descargar la nueva versión de la app."
+
+#: app/Services/AppsService.php:178
+msgid "Failed to create backup of current app version."
+msgstr "Error al crear la copia de seguridad de la versión actual de la app."
+
+#: app/Services/AppsService.php:168 app/Services/AppsService.php:251
+msgid "App not found in installed apps."
+msgstr "No se ha encontrado la app en las apps instaladas."
+
+#: app/Services/AppsService.php:160 app/Services/AppsService.php:243
+msgid "No apps are currently installed."
+msgstr "No hay ninguna app instalada actualmente."
+
+#. translators: 1: error message
+#: app/Services/AppsService.php:141
+msgid "An error occurred during the app installation: %s"
+msgstr "Se ha producido un error durante la instalación de la app: %s"
+
+#: app/Services/AppsService.php:119
+msgid "Failed to extract the app zip file. Please ensure the file is valid."
+msgstr "Error al extraer el archivo zip de la app. Asegúrate de que el archivo es válido."
+
+#: app/Services/AppsService.php:111
+msgid "Failed to create directory: kirki-apps. Please check folder permissions."
+msgstr "Error al crear el directorio: kirki-apps. Comprueba los permisos de la carpeta."
+
+#: app/Services/AppsService.php:105
+msgid "The wp-content directory is not writable. Please check folder permissions."
+msgstr "El directorio wp-content no tiene permisos de escritura. Comprueba los permisos de la carpeta."
+
+#: app/Services/AppsService.php:96
+msgid "Failed to download the app zip file. Please check the remote URL."
+msgstr "Error al descargar el archivo zip de la app. Comprueba la URL remota."
+
+#: app/Services/AppsService.php:86
+msgid "This app is already installed. Please check the kirki-apps directory in wp-content folders."
+msgstr "Esta app ya está instalada. Comprueba el directorio kirki-apps en las carpetas de wp-content."
+
+#: app/Services/AppsService.php:32
+msgid "Failed to get apps."
+msgstr "Error al obtener las apps."
+
+#: app/Managers/PageManager.php:333
+msgid "[Restored] %s"
+msgstr "[Restaurado] %s"
+
+#: app/Http/Requests/Page/PageRequest.php:48
+msgid "Utility page of type %s already exists."
+msgstr "Ya existe una página de utilidad de tipo %s."
+
+#: app/Http/Requests/Page/PageRequest.php:41
+msgid "Utility page type is required."
+msgstr "El tipo de página de utilidad es obligatorio."
+
+#: app/Http/Requests/Page/PageDataRequest.php:64
+msgid "Unknown request"
+msgstr "Solicitud desconocida"
+
+#: app/Http/Requests/DownloadGoogleFontRequest.php:31
+msgid "It's not a valid Google Font"
+msgstr "No es una fuente de Google válida"
+
+#: app/Http/Middlewares/EditAccessMiddleware.php:24
+#: app/Http/Middlewares/FullAccessMiddleware.php:29
+#: app/Http/Middlewares/ViewAccessMiddleware.php:32
+#: app/Http/Middlewares/ViewOrPreviewMiddleware.php:36
+msgid "You don't have the permission to access this request"
+msgstr "No tienes permiso para acceder a esta solicitud"
+
+#: app/Http/Controllers/Api/PageSettingsController.php:52
+msgid "Custom code updated."
+msgstr "Código personalizado actualizado."
+
+#: app/Http/Controllers/Api/PageSettingsController.php:42
+msgid "Page settings updated."
+msgstr "Ajustes de la página actualizados."
+
+#: app/Http/Controllers/Api/PageController.php:230
+#: app/Http/Controllers/Api/PageController.php:232
+msgid "Page deleted."
+msgstr "Página eliminada."
+
+#: app/Http/Controllers/Api/PageController.php:214
+msgid "Unused style blocks removed."
+msgstr "Bloques de estilo no utilizados eliminados."
+
+#: app/Http/Controllers/Api/PageController.php:200
+msgid "Symbol data updated."
+msgstr "Datos de símbolos actualizados."
+
+#: app/Http/Controllers/Api/PageController.php:181
+msgid "Popup updated successfully."
+msgstr "Ventana emergente actualizada correctamente."
+
+#: app/Http/Controllers/Api/PageController.php:172
+msgid "Popup not found."
+msgstr "No se ha encontrado la ventana emergente."
+
+#: app/Http/Controllers/Api/PageController.php:163
+msgid "Page updated successfully."
+msgstr "Página actualizada correctamente."
+
+#: app/Http/Controllers/Api/PageController.php:100
+msgid "Staging version published successfully."
+msgstr "Versión de preproducción publicada correctamente."
+
+#: app/Http/Controllers/Api/PageController.php:71
+#: app/Http/Controllers/Api/PageController.php:73
+#: app/Http/Controllers/Api/PageController.php:197
+msgid "Page data saved."
+msgstr "Datos de la página guardados."
+
+#: app/Http/Controllers/Api/PageController.php:53
+msgid "Page created successfully."
+msgstr "Página creada correctamente."
+
+#: app/Http/Controllers/Api/MediaController.php:33
+msgid "Media data fetched successfully"
+msgstr "Datos multimedia obtenidos correctamente"
+
+#: app/Http/Controllers/Api/GlobalDataController.php:111
+#: app/Http/Controllers/Api/GlobalDataController.php:113
+msgid "Font removed successfully."
+msgstr "Fuente eliminada correctamente."
+
+#: app/Http/Controllers/Api/GlobalDataController.php:96
+#: app/Http/Controllers/Api/GlobalDataController.php:98
+msgid "Font downloaded successfully."
+msgstr "Fuente descargada correctamente."
+
+#: app/Http/Controllers/Api/GlobalDataController.php:82
+#: app/Http/Controllers/Api/GlobalDataController.php:84
+msgid "Custom fonts data updated."
+msgstr "Datos de fuentes personalizadas actualizados."
+
+#: app/Http/Controllers/Api/GlobalDataController.php:63
+#: app/Http/Controllers/Api/GlobalDataController.php:65
+msgid "UI saved data updated."
+msgstr "Datos guardados de la interfaz actualizados."
+
+#: app/Http/Controllers/Api/GlobalDataController.php:45
+#: app/Http/Controllers/Api/GlobalDataController.php:47
+msgid "UI controller data updated."
+msgstr "Datos del controlador de la interfaz actualizados."
+
+#: app/Http/Controllers/Api/CollectionItemController.php:141
+msgid "Bulk action handled successfully."
+msgstr "Acción masiva gestionada correctamente."
+
+#: app/Http/Controllers/Api/CollectionItemController.php:110
+msgid "Action handled successfully."
+msgstr "Acción gestionada correctamente."
+
+#: app/Http/Controllers/Api/CollectionItemController.php:82
+msgid "Item saved successfully."
+msgstr "Elemento guardado correctamente."
+
+#: app/Http/Controllers/Api/CollectionItemController.php:68
+msgid "Item retrieved successfully."
+msgstr "Elemento recuperado correctamente."
+
+#: app/Http/Controllers/Api/CollectionItemController.php:55
+msgid "Items retrieved successfully."
+msgstr "Elementos recuperados correctamente."
+
+#: app/Http/Controllers/Api/EditorController.php:30
+#: app/Http/Controllers/Api/EditorController.php:47
+#: app/Http/Controllers/Api/PageController.php:62
+#: app/Http/Controllers/Api/PageController.php:82
+#: app/Http/Controllers/Api/PageController.php:95
+#: app/Http/Controllers/Api/PageController.php:109
+#: app/Http/Controllers/Api/PageController.php:123
+#: app/Http/Controllers/Api/PageController.php:140
+#: app/Http/Controllers/Api/PageController.php:154
+#: app/Http/Controllers/Api/PageController.php:190
+#: app/Http/Controllers/Api/PageController.php:209
+#: app/Http/Controllers/Api/PageController.php:223
+#: app/Http/Controllers/Api/PageController.php:283
+#: app/Http/Controllers/Api/PageController.php:306
+#: app/Http/Controllers/Api/PageSettingsController.php:33
+msgid "Page not found."
+msgstr "No se ha encontrado la página."
+
+#: app/Http/Controllers/Api/CollectionController.php:109
+#: app/Http/Controllers/Api/PostController.php:45
+msgid "Slug validated successfully.."
+msgstr "Slug validado correctamente."
+
+#: app/Http/Controllers/Api/CollectionController.php:92
+msgid "Collection duplicated successfully."
+msgstr "Colección duplicada correctamente."
+
+#: app/Http/Controllers/Api/CollectionController.php:79
+msgid "Collection deleted successfully."
+msgstr "Colección eliminada correctamente."
+
+#: app/Http/Controllers/Api/CollectionController.php:68
+msgid "Collection saved successfully."
+msgstr "Colección guardada correctamente."
+
+#: app/Http/Controllers/Api/CollectionController.php:54
+msgid "Collection retrieved successfully."
+msgstr "Colección recuperada correctamente."
+
+#: app/Http/Controllers/Api/CollectionController.php:41
+msgid "Collections retrieved successfully."
+msgstr "Colecciones recuperadas correctamente."
+
+#: app/Http/Controllers/Api/CollaborationCommentController.php:126
+msgid "Comment marked as unread."
+msgstr "Comentario marcado como no leído."
+
+#: app/Http/Controllers/Api/CollaborationCommentController.php:113
+msgid "Comment marked as read."
+msgstr "Comentario marcado como leído."
+
+#: app/Http/Controllers/Api/CollaborationCommentController.php:100
+msgid "Users retrieved successfully."
+msgstr "Usuarios recuperados correctamente."
+
+#: app/Http/Controllers/Api/CollaborationCommentController.php:84
+msgid "Comment status updated successfully."
+msgstr "Estado del comentario actualizado correctamente."
+
+#: app/Http/Controllers/Api/CollaborationCommentController.php:68
+msgid "Comment created successfully."
+msgstr "Comentario creado correctamente."
+
+#: app/Http/Controllers/Api/CollaborationCommentController.php:52
+msgid "Comments retrieved successfully."
+msgstr "Comentarios recuperados correctamente."
+
+#: app/Http/Controllers/Api/AppsController.php:100
+msgid "App removed successfully!"
+msgstr "App eliminada correctamente."
+
+#: app/Http/Controllers/Api/AppsController.php:83
+#: app/Http/Controllers/Api/AppsController.php:84
+msgid "App updated successfully!"
+msgstr "App actualizada correctamente."
+
+#: app/Http/Controllers/Api/AppsController.php:72
+msgid "App settings updated successfully!"
+msgstr "Ajustes de la app actualizados correctamente."
+
+#: app/Http/Controllers/Api/AppsController.php:58
+#: app/Http/Controllers/Api/AppsController.php:93
+msgid "App slug is required."
+msgstr "El slug de la app es obligatorio."
+
+#: app/Http/Controllers/Api/AppsController.php:34
+#: app/Http/Controllers/Api/AppsController.php:35
+msgid "App installed successfully!"
+msgstr "App instalada correctamente."
+
+#: ComponentLibrary/controller/CompLibFormHandler.php:61
+msgid "You must be logged in to post comments."
+msgstr "Debes haber iniciado sesión para publicar comentarios."
+
+#: includes/Frontend/Editor.php:41 includes/Frontend/Iframe.php:85
+msgid "Sorry you are not allowed to access this page"
+msgstr "Lo sentimos, no tienes permiso para acceder a esta página"
+
+#: includes/Frontend.php:44
+msgid "Sorry, you are not allowed to access this page."
+msgstr "Lo sentimos, no tienes permiso para acceder a esta página."
+
+#: includes/FormValidator/FormValidator.php:228
+msgid "File upload stopped by extension"
+msgstr "Subida de archivo detenida por una extensión"
+
+#: includes/FormValidator/FormValidator.php:225
+msgid "Missing a temporary folder"
+msgstr "Falta una carpeta temporal"
+
+#: includes/FormValidator/FormValidator.php:222
+msgid "The uploaded file was only partially uploaded"
+msgstr "El archivo subido solo se ha subido parcialmente"
+
+#: includes/FormValidator/FormValidator.php:219
+msgid "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form"
+msgstr "El archivo subido supera la directiva MAX_FILE_SIZE especificada en el formulario HTML"
+
+#: includes/FormValidator/FormValidator.php:216
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini"
+msgstr "El archivo subido supera la directiva upload_max_filesize de php.ini"
+
+#: includes/FormValidator/FormValidator.php:213
+msgid "Failed to write file to disk"
+msgstr "Error al escribir el archivo en el disco"
+
+#. translators: %s: maximum file size in MB
+#: includes/FormValidator/FormValidator.php:210
+msgid "File size should be less than %s MB"
+msgstr "El tamaño del archivo debe ser inferior a %s MB"
+
+#: includes/FormValidator/FormValidator.php:206
+msgid "Unsupported file type!"
+msgstr "¡Tipo de archivo no compatible!"
+
+#. translators: %1$s: field name, %2$s: minimum length
+#: includes/FormValidator/FormValidator.php:203
+msgid "%1$s should be more than %2$s charecters"
+msgstr "%1$s debe tener más de %2$s caracteres"
+
+#. translators: %1$s: field name, %2$s: maximum length
+#: includes/FormValidator/FormValidator.php:199
+msgid "%1$s should be less than %2$s charecters"
+msgstr "%1$s debe tener menos de %2$s caracteres"
+
+#. translators: %1$s: field name, %2$s: expected type
+#: includes/FormValidator/FormValidator.php:195
+msgid "Invalid type! %1$s should be a valid %2$s"
+msgstr "¡Tipo no válido! %1$s debe ser un %2$s válido"
+
+#. translators: %s: field name
+#: includes/FormValidator/FormValidator.php:146
+msgid "%s field is required"
+msgstr "El campo %s es obligatorio"
+
+#. translators: %d: number of errors
+#: includes/FormValidator/FormValidator.php:63
+msgid "No errors found."
+msgstr "No se han encontrado errores."
+
+#. translators: %d: number of errors
+#: includes/FormValidator/FormValidator.php:63
+msgid " (and %d more errors)"
+msgstr " (y %d errores más)"
+
+#: includes/API/Media.php:568
+msgid "The date the object was published, in the site's timestamp."
+msgstr "La fecha en que se publicó el objeto, en la marca de tiempo del sitio."
+
+#: includes/API/Media.php:562
+msgid "Total media items."
+msgstr "Total de elementos multimedia."
+
+#: includes/API/Media.php:554
+msgid "Media trash or not."
+msgstr "Multimedia en la papelera o no."
+
+#: includes/API/Media.php:546
+msgid "Media url."
+msgstr "URL del multimedia."
+
+#: includes/API/Media.php:538
+msgid "Media category."
+msgstr "Categoría del multimedia."
+
+#: includes/API/Media.php:530
+msgid "Media mime type."
+msgstr "Tipo MIME del multimedia."
+
+#: includes/API/Media.php:522
+msgid "Alt of the media item."
+msgstr "Texto alternativo del elemento multimedia."
+
+#: includes/API/Media.php:514
+msgid "Name of the media item."
+msgstr "Nombre del elemento multimedia."
+
+#: includes/API/Media.php:508
+msgid "Unique identifier for the object."
+msgstr "Identificador único del objeto."
+
+#: includes/API/Media.php:409
+msgid "Media can not move to trash or restore."
+msgstr "El multimedia no se puede mover a la papelera ni restaurar."
+
+#: includes/API/Media.php:244
+msgid "Media item can not be updated."
+msgstr "No se puede actualizar el elemento multimedia."
+
+#: includes/API/Media.php:114
+msgid "Unique post id for the object."
+msgstr "ID de entrada único del objeto."
+
+#: includes/API/Media.php:94
+msgid "media type name to get specific media."
+msgstr "nombre del tipo de multimedia para obtener un multimedia específico."
+
+#: includes/API/KirkiComments/KirkiCommentsRest.php:343
+msgid "You do not have permission to delete this comment."
+msgstr "No tienes permiso para eliminar este comentario."
+
+#: app/Http/Controllers/Api/CollaborationCommentController.php:139
+#: includes/API/KirkiComments/KirkiCommentsRest.php:336
+msgid "Comment deleted successfully."
+msgstr "Comentario eliminado correctamente."
+
+#: app/Http/Controllers/Api/CollaborationCommentController.php:165
+#: includes/API/KirkiComments/KirkiCommentsRest.php:236
+msgid "All comments marked as resolved."
+msgstr "Todos los comentarios marcados como resueltos."
+
+#: app/Http/Controllers/Api/CollaborationCommentController.php:150
+#: includes/API/KirkiComments/KirkiCommentsRest.php:204
+msgid "All comments marked as read."
+msgstr "Todos los comentarios marcados como leídos."
+
+#. translators: %s: maximum file size in bytes
+#: includes/API/Frontend/Controllers/FormController.php:297
+msgid "File size exceeds the maximum allowed for this field (%s bytes)."
+msgstr "El tamaño del archivo supera el máximo permitido para este campo (%s bytes)."
+
+#. translators: %s: file type
+#: includes/API/Frontend/Controllers/FormController.php:287
+msgid "File type \"%s\" is not allowed for this field."
+msgstr "El tipo de archivo «%s» no está permitido para este campo."
+
+#: includes/Admin/EditWithButton.php:61 includes/Admin/EditWithButton.php:94
+msgid "Edit with Kirki"
+msgstr "Editar con Kirki"
+
+#. Description of the plugin
+#: kirki.php
+msgid "Kirki is an all-in-one no-code builder that empowers users to build professional-grade WordPress sites without writing any code. It’s a promising glimpse into the future of website development."
+msgstr "Kirki es un constructor sin código todo en uno que permite a los usuarios crear sitios web de nivel profesional sin escribir ningún código. Es una prometedora visión del futuro del desarrollo web."
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: kirki.php includes/Frontend/views/editor.php:24
+msgid "Kirki"
+msgstr "Kirki"
+
+#. translators: %s is the limit of selection number.
+#: customizer/packages/controls/react-select/src/Control/ReactSelect.php:144
+msgid "You can only select %s items"
+msgstr "Solo puedes seleccionar %s elementos"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:94
+msgid "Admin Menu"
+msgstr "Menú de administración"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:95
+msgid "Welcome Screen"
+msgstr "Pantalla de bienvenida"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:97
+msgid "Media"
+msgstr "Medios"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:98
+msgid "Image Editing"
+msgstr "Edición de imágenes"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:102
+msgid "Social"
+msgstr "Social"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:104
+msgid "Products"
+msgstr "Productos"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:105
+msgid "Taxonomies"
+msgstr "Taxonomías"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:106
+msgid "Widgets"
+msgstr "Widgets"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:107
+msgid "Notifications"
+msgstr "Avisos"
+
+#: customizer/packages/controls/react-select/src/Control/ReactSelect.php:137
+msgid "Select..."
+msgstr "Seleccionar..."
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:124
+#: customizer/packages/fields/typography/src/Field/Typography.php:183
+msgid "700"
+msgstr "700"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:143
+msgid "100"
+msgstr "100"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:151
+msgid "200"
+msgstr "200"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:159
+msgid "300"
+msgstr "300"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:167
+msgid "500"
+msgstr "500"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:175
+msgid "600"
+msgstr "600"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:191
+msgid "800"
+msgstr "800"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:199
+msgid "900"
+msgstr "900"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:305
+msgid "Font Variant"
+msgstr "Variante de fuente"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:848
+msgid "Defaults"
+msgstr "Valores por defecto"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:391
+msgid "Wavy"
+msgstr "Ondulado"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:332
+msgid "Font Color"
+msgstr "Color de fuente"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:203
+msgid "900 Italic"
+msgstr "900 Italic"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:195
+msgid "800 Italic"
+msgstr "800 Italic"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:179
+msgid "600 Italic"
+msgstr "600 Italic"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:171
+msgid "500 Italic"
+msgstr "500 Italic"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:163
+msgid "300 Italic"
+msgstr "300 Italic"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:155
+msgid "200 Italic"
+msgstr "200 Italic"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:147
+msgid "100 Italic"
+msgstr "100 Italic"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:128
+#: customizer/packages/fields/typography/src/Field/Typography.php:187
+msgid "700 Italic"
+msgstr "700 Italic"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:120
+#: customizer/packages/fields/typography/src/Field/Typography.php:139
+msgid "Italic"
+msgstr "Italic"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:116
+#: customizer/packages/fields/typography/src/Field/Typography.php:135
+msgid "Regular"
+msgstr "Regular"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:101
+msgid "Sorting"
+msgstr "Ordenación"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:100
+msgid "Posts"
+msgstr "Publicaciones"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:96
+msgid "Post Formats"
+msgstr "Formato de la publicación"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:390
+msgid "Solid"
+msgstr "Continuo"
+
+#: customizer/packages/controls/dashicons/src/Control/Dashicons.php:108
+msgid "Miscellaneous"
+msgstr "Varios"
+
+#: customizer/packages/compatibility/src/Init.php:264
+msgid "Install Plugin"
+msgstr "Instalar plugin"
+
+#: customizer/packages/compatibility/src/Init.php:261
+msgid "Your theme uses a Font Awesome field for icons. To avoid issues with missing icons on your frontend we recommend you install the official Font Awesome plugin."
+msgstr "Tu tema usa Font Awesome para los iconos. Para evitar problemas con iconos que no se muestran, te recomendamos instalar el plugin oficial de Font Awesome."
+
+#: customizer/packages/compatibility/src/Init.php:265
+msgid "Don't show this again"
+msgstr "No mostrar de nuevo"
+
+#: customizer/packages/controls/image/src/Field/Image.php:121
+msgid "Choose image"
+msgstr "Elegir imagen"
+
+#: customizer/packages/controls/image/src/Control/Image.php:83
+#: customizer/packages/controls/image/src/Field/Image.php:115
+#: customizer/packages/controls/image/src/Field/Image.php:120
+msgid "Select image"
+msgstr "Seleccionar imagen"
+
+#: customizer/packages/controls/image/src/Field/Image.php:116
+msgid "Change image"
+msgstr "Cambiar la imagen"
+
+#: customizer/packages/controls/image/src/Control/Image.php:76
+#: customizer/packages/controls/image/src/Field/Image.php:119
+msgid "No image selected"
+msgstr "No se ha seleccionado ninguna imagen"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:388
+msgid "Line Through"
+msgstr "Tachado"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:387
+msgid "Underline"
+msgstr "Subrayado"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:383
+msgid "Text Decoration"
+msgstr "Decoración del texto"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:880
+msgid "Google Fonts"
+msgstr "Google Fonts"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:875
+msgid "Standard Fonts"
+msgstr "Fuentes estándar"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:389
+msgid "Overline"
+msgstr "Raya superior"
+
+#: customizer/packages/compatibility/src/deprecated/functions.php:20
+msgid "%1$s or %2$s"
+msgstr "%1$s o %2$s"
+
+#. translators: The field ID where the error occurs.
+#: customizer/packages/compatibility/src/Field.php:546
+#: customizer/packages/compatibility/src/Field.php:557
+#: customizer/packages/modules/css/src/CSS.php:167
+#: customizer/packages/modules/css/src/CSS.php:178
+#: customizer/packages/modules/postmessage/src/Postmessage.php:102
+msgid "\"output\" invalid format in field %s. The \"output\" argument should be defined as an array of arrays."
+msgstr "Formato no válido de \"output\" en el campo %s. El argumento \"output\" debe ser definido como un array de arrays."
+
+#. translators: %s represents the field ID where the error occurs.
+#: customizer/packages/compatibility/src/Field.php:293
+msgid "Typo found in field %s - setting instead of settings."
+msgstr "Se ha encontrado una errata en el campo %s: setting en lugar de settings."
+
+#. translators: %1$s represents the field ID where the error occurs. %2$s is
+#. the URL in the documentation site.
+#: customizer/packages/compatibility/src/Field.php:304
+msgid "Config not defined for field %1$s - See %2$s for details on how to properly add fields."
+msgstr "Configuración no definida para el campo %1$s. Consulta %2$s para obtener detalles sobre cómo agregar campos correctamente."
+
+#. translators: %1$s represents the field ID where the error occurs.
+#: customizer/packages/compatibility/src/Field.php:403
+msgid "Typo found in field %s - \"theme_mods\" vs \"theme_mod\""
+msgstr "Se ha encontrado una errata en el campo %s: \"theme_mods\" en lugar de \"theme_mod\"."
+
+#. translators: %1$s represents the field ID where the error occurs.
+#: customizer/packages/compatibility/src/Field.php:420
+msgid "\"partial_refresh\" invalid entry in field %s"
+msgstr "Entrada \"partial_refresh\" no válida en el campo %s."
+
+#: customizer/packages/compatibility/src/Kirki.php:191
+msgid "Kirki fields should not be added on customize_register. Please add them directly, or on init."
+msgstr "Los campos de Kirki no deben añadirse en customize_register. Añádelos directamente, o en init."
+
+#: customizer/packages/compatibility/src/Init.php:210
+msgid "We detected you're using Kirki\\Compatibility\\Init::get_variables(). Please use \\Kirki\\Util\\Util::get_variables() instead."
+msgstr "Hemos detectado que estás usando `Kirki\\Compatibility\\Init::get_variables()`. Por favor, usa `\\Kirki\\Util\\Util::get_variables()` en su lugar."
+
+#: customizer/packages/controls/image/src/Control/Image.php:81
+#: customizer/packages/controls/image/src/Field/Image.php:117
+#: customizer/packages/fields/typography/src/Field/Typography.php:850
+msgid "Default"
+msgstr "Por defecto"
+
+#. translators: The title.
+#: customizer/packages/modules/sections/src/Section_Types/Nested.php:65
+msgid "Customizing &#9656; %s"
+msgstr "Personalizar &#9656; %s"
+
+#: customizer/packages/modules/sections/src/Section_Types/Nested.php:62
+msgid "Customizing"
+msgstr "Personalizar"
+
+#: customizer/packages/controls/checkbox/src/Control/Checkbox_Switch.php:69
+msgid "On"
+msgstr "Activado"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:431
+msgid "Margin Bottom"
+msgstr "Margen inferior"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:426
+msgid "Margin Top"
+msgstr "Margen superior"
+
+#: customizer/packages/controls/checkbox/src/Control/Checkbox_Switch.php:70
+msgid "Off"
+msgstr "Desactivado"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:76
+msgid "Width"
+msgstr "Ancho"
+
+#: customizer/packages/fields/background/src/Background.php:200
+msgid "Auto"
+msgstr "Automático"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:68
+msgid "Word Spacing"
+msgstr "Espaciado entre palabras"
+
+#. translators: %s represents the label of the row.
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:104
+msgid "Add new %s"
+msgstr "Añadir nueva %s"
+
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:463
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:468
+msgid "No File Selected"
+msgstr "No se ha seleccionado ningún archivo"
+
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:474
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:478
+msgid "Add File"
+msgstr "Añadir archivo"
+
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:474
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:476
+msgid "Change File"
+msgstr "Cambiar archivo"
+
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:95
+msgid "row"
+msgstr "fila"
+
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:139
+msgid "Select a Page"
+msgstr "Selecciona una página"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:354
+msgid "Initial"
+msgstr "Inicial"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:369
+msgid "Lowercase"
+msgstr "Minúsculas"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:368
+msgid "Uppercase"
+msgstr "Mayúsculas"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:367
+msgid "Capitalize"
+msgstr "Iniciales en mayúscula"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:363
+msgid "Text Transform"
+msgstr "Transformación del texto"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:366
+#: customizer/packages/fields/typography/src/Field/Typography.php:386
+msgid "None"
+msgstr "Ninguna"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:358
+msgid "Justify"
+msgstr "Justificado"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:351
+msgid "Text Align"
+msgstr "Alineación del texto"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:73
+#: customizer/packages/fields/typography/src/Field/Typography.php:356
+msgid "Center"
+msgstr "Centrado"
+
+#. translators: %s represents the number of rows we're limiting the repeater to
+#. allow.
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:263
+msgid "Limit: %s rows"
+msgstr "Límite: %s filas"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:169
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:170
+msgid "Normal 400"
+msgstr "Normal 400"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:78
+msgid "Invalid Value"
+msgstr "Valor no válido"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:75
+msgid "Spacing"
+msgstr "Espaciado"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:162
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:163
+msgid "Ultra-Light 100"
+msgstr "Delgado 100"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:164
+msgid "Ultra-Light 100 Italic"
+msgstr "Delgado 100 cursiva"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:165
+msgid "Light 200"
+msgstr "Muy claro 200"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:166
+msgid "Light 200 Italic"
+msgstr "Muy claro 200 cursiva"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:167
+msgid "Book 300"
+msgstr "Claro 300"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:168
+msgid "Book 300 Italic"
+msgstr "Claro 300 cursiva"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:171
+msgid "Normal 400 Italic"
+msgstr "Normal 400 cursiva"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:172
+msgid "Medium 500"
+msgstr "Medio 500"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:173
+msgid "Medium 500 Italic"
+msgstr "Medio 500 cursiva"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:174
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:175
+msgid "Semi-Bold 600"
+msgstr "Seminegrita 600"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:176
+msgid "Semi-Bold 600 Italic"
+msgstr "Seminegrita 600 cursiva"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:177
+msgid "Bold 700"
+msgstr "Negrita 700"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:178
+msgid "Bold 700 Italic"
+msgstr "Negrita 700 cursiva"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:179
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:180
+msgid "Extra-Bold 800"
+msgstr "Muy negrita 800"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:181
+msgid "Extra-Bold 800 Italic"
+msgstr "Muy negrita 800 cursiva"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:182
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:183
+msgid "Ultra-Bold 900"
+msgstr "Negro 900"
+
+#: customizer/packages/modules/webfonts/src/Webfonts/Fonts.php:184
+msgid "Ultra-Bold 900 Italic"
+msgstr "Negro 900 cursiva"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:77
+msgid "Height"
+msgstr "Altura"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:66
+msgid "Font Style"
+msgstr "Estilo de fuente"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:74
+msgid "Size"
+msgstr "Tamaño"
+
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:431
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:436
+msgid "No Image Selected"
+msgstr "No se ha seleccionado ninguna imagen"
+
+#: customizer/packages/controls/image/src/Control/Image.php:79
+#: customizer/packages/controls/image/src/Field/Image.php:118
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:441
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:473
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:498
+msgid "Remove"
+msgstr "Quitar"
+
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:442
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:444
+msgid "Change Image"
+msgstr "Cambiar la imagen"
+
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:442
+#: customizer/packages/controls/repeater/src/Control/Repeater.php:446
+msgid "Add Image"
+msgstr "Añadir imagen"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:72
+#: customizer/packages/fields/typography/src/Field/Typography.php:357
+msgid "Right"
+msgstr "Derecha"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:71
+#: customizer/packages/fields/typography/src/Field/Typography.php:355
+msgid "Left"
+msgstr "Izquierda"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:70
+msgid "Bottom"
+msgstr "Abajo"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:69
+msgid "Top"
+msgstr "Arriba"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:63
+#: customizer/packages/fields/typography/src/Field/Typography.php:327
+msgid "Font Size"
+msgstr "Tamaño de fuente"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:65
+#: customizer/packages/fields/typography/src/Field/Typography.php:406
+msgid "Line Height"
+msgstr "Alto de línea"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:67
+#: customizer/packages/fields/typography/src/Field/Typography.php:411
+msgid "Letter Spacing"
+msgstr "Espaciado entre caracteres"
+
+#: customizer/packages/fields/dimensions/src/Dimensions.php:64
+msgid "Font Weight"
+msgstr "Peso de la fuente"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: kirki.php
+msgid "https://kirki.com"
+msgstr "https://kirki.com"
+
+#: customizer/packages/fields/typography/src/Field/Typography.php:278
+msgid "Font Family"
+msgstr "Familia de fuente"
+
+#: customizer/packages/fields/background/src/Background.php:156
+msgid "Background Position"
+msgstr "Posición del fondo"
+
+#: customizer/packages/fields/background/src/Background.php:164
+#: customizer/packages/fields/dimensions/src/Dimensions.php:61
+msgid "Center Center"
+msgstr "Centro centro"
+
+#: customizer/packages/fields/background/src/Background.php:160
+#: customizer/packages/fields/dimensions/src/Dimensions.php:54
+msgid "Left Top"
+msgstr "Izquierda arriba"
+
+#: customizer/packages/fields/background/src/Background.php:161
+#: customizer/packages/fields/dimensions/src/Dimensions.php:55
+msgid "Left Center"
+msgstr "Izquierda centro"
+
+#: customizer/packages/fields/background/src/Background.php:162
+#: customizer/packages/fields/dimensions/src/Dimensions.php:56
+msgid "Left Bottom"
+msgstr "Izquierda abajo"
+
+#: customizer/packages/fields/background/src/Background.php:166
+#: customizer/packages/fields/dimensions/src/Dimensions.php:57
+msgid "Right Top"
+msgstr "Derecha arriba"
+
+#: customizer/packages/fields/background/src/Background.php:167
+#: customizer/packages/fields/dimensions/src/Dimensions.php:58
+msgid "Right Center"
+msgstr "Derecha centro"
+
+#: customizer/packages/fields/background/src/Background.php:168
+#: customizer/packages/fields/dimensions/src/Dimensions.php:59
+msgid "Right Bottom"
+msgstr "Derecha abajo"
+
+#: customizer/packages/fields/background/src/Background.php:163
+#: customizer/packages/fields/dimensions/src/Dimensions.php:60
+msgid "Center Top"
+msgstr "Centro arriba"
+
+#: customizer/packages/fields/background/src/Background.php:165
+#: customizer/packages/fields/dimensions/src/Dimensions.php:62
+msgid "Center Bottom"
+msgstr "Centro abajo"
+
+#: customizer/packages/fields/background/src/Background.php:226
+msgid "Background Attachment"
+msgstr "Fijación del fondo"
+
+#: customizer/packages/fields/background/src/Background.php:231
+msgid "Scroll"
+msgstr "Desplazable"
+
+#: customizer/packages/fields/background/src/Background.php:198
+msgid "Cover"
+msgstr "Cubrir"
+
+#: customizer/packages/fields/background/src/Background.php:232
+msgid "Fixed"
+msgstr "Fijo"
+
+#: customizer/packages/fields/background/src/Background.php:199
+msgid "Contain"
+msgstr "Contener"
+
+#: customizer/packages/fields/background/src/Background.php:194
+msgid "Background Size"
+msgstr "Tamaño del fondo"
+
+#: customizer/packages/fields/background/src/Background.php:129
+msgid "Repeat Horizontally"
+msgstr "Repetir horizontalmente"
+
+#: customizer/packages/fields/background/src/Background.php:130
+msgid "Repeat Vertically"
+msgstr "Repetir verticalmente"
+
+#: customizer/packages/fields/background/src/Background.php:123
+msgid "Background Repeat"
+msgstr "Repetición del fondo"
+
+#: customizer/packages/fields/background/src/Background.php:128
+msgid "Repeat All"
+msgstr "Repetir todo"
+
+#: customizer/packages/fields/background/src/Background.php:127
+msgid "No Repeat"
+msgstr "Sin repetición"
+
+#: customizer/packages/fields/background/src/Background.php:107
+msgid "Background Image"
+msgstr "Imagen de fondo"
+
+#: customizer/packages/fields/background/src/Background.php:88
+msgid "Background Color"
+msgstr "Color de fondo"

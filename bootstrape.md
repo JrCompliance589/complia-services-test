@@ -1,0 +1,1 @@
+Your Inside a complia-service project now the public_html contains old website which build through wordpress now i want a premium website based on that data in next.js create a website based on that and content already exist on public_html copy content from that and build a classic awesome website

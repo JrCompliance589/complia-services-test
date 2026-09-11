@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//complia.services/main-sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc>https://complia.services/page-sitemap.xml</loc>
+		<lastmod>2026-08-24T07:50:18+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://complia.services/services-sitemap.xml</loc>
+		<lastmod>2025-07-23T06:56:46+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://complia.services/category-sitemap.xml</loc>
+		<lastmod>2026-08-31T18:55:16+00:00</lastmod>
+	</sitemap>
+</sitemapindex>
