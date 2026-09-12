@@ -468,11 +468,11 @@ export const marketGroups = [
       "United Arab Emirates",
     ],
   },
-  {
-    region: "Eurasia",
-    note: "Conformity guidance for products entering Eurasian regulatory environments.",
-    countries: ["Russia"],
-  },
+  // {
+  //   region: "Eurasia",
+  //   note: "Conformity guidance for products entering Eurasian regulatory environments.",
+  //   countries: ["Russia"],
+  // },
 ];
 
 export const industryGroups = [
