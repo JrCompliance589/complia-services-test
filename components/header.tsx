@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { LanguageTranslator } from "@/components/language-translator";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -58,6 +59,8 @@ export function Header() {
             </Link>
           ))}
         </nav>
+
+        <LanguageTranslator />
 
         <Link href="/contact" className="header-cta">
           Start an enquiry <ArrowUpRight size={16} strokeWidth={2.2} />

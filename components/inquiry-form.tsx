@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ArrowUpRight, CheckCircle2, MessageCircle } from "lucide-react";
 import { FormEvent, useState } from "react";
-import { contact, services } from "@/lib/site-data";
+import { contact } from "@/lib/site-data";
 
 export function InquiryForm() {
   const [continued, setContinued] = useState(false);
@@ -11,7 +11,8 @@ export function InquiryForm() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
-    const name = String(form.get("name") || "");
+    const firstName = String(form.get("firstName") || "");
+    const lastName = String(form.get("lastName") || "");
     const organisation = String(form.get("organisation") || "");
     const email = String(form.get("email") || "");
     const phone = String(form.get("phone") || "");
@@ -19,12 +20,12 @@ export function InquiryForm() {
     const message = String(form.get("message") || "");
     const text = [
       "Hello Complia, I'd like to discuss a compliance requirement.",
-      `Name: ${name}`,
+      `Name: ${firstName} ${lastName}`.trim(),
       organisation ? `Organisation: ${organisation}` : "",
       `Email: ${email}`,
       `Phone: ${phone}`,
       `Service: ${service}`,
-      message ? `Product / destination: ${message}` : "",
+      message ? `Message: ${message}` : "",
     ]
       .filter(Boolean)
       .join("\n");
@@ -49,52 +50,58 @@ export function InquiryForm() {
 
       <div className="form-row">
         <label>
-          Full name <span>*</span>
-          <input name="name" type="text" autoComplete="name" required placeholder="Your name" />
+          Full Name <span>*</span>
+          <input name="firstName" type="text" autoComplete="given-name" required placeholder="Full Name" />
         </label>
         <label>
-          Organisation
-          <input name="organisation" type="text" autoComplete="organization" placeholder="Company name" />
-        </label>
-      </div>
-
-      <div className="form-row">
-        <label>
-          Work email <span>*</span>
-          <input name="email" type="email" autoComplete="email" required placeholder="name@company.com" />
-        </label>
-        <label>
-          Phone <span>*</span>
-          <input name="phone" type="tel" autoComplete="tel" required placeholder="+91 00000 00000" />
+          Last Name <span>*</span>
+          <input name="lastName" type="text" autoComplete="family-name" required placeholder="Last Name" />
         </label>
       </div>
 
       <label>
-        What do you need help with? <span>*</span>
+        Organization Name <span>*</span>
+        <input name="organisation" type="text" autoComplete="organization" required placeholder="Organization Name" />
+      </label>
+
+      <div className="form-row">
+        <label>
+          Email <span>*</span>
+          <input name="email" type="email" autoComplete="email" required placeholder="Email Address" />
+        </label>
+        <label>
+          Phone/Mobile <span>*</span>
+          <input name="phone" type="tel" autoComplete="tel" required placeholder="Mobile Number" />
+        </label>
+      </div>
+
+      <label>
+        What Certification do you need? <span>*</span>
         <select name="service" required defaultValue="">
-          <option value="" disabled>Select a service</option>
-          {services.map((service) => (
-            <option key={service.slug} value={service.shortTitle}>{service.shortTitle}</option>
-          ))}
-          <option value="Other conformity programme">Other conformity programme</option>
+          <option value="" disabled>What Certification do you need?</option>
+          <option value="SASO- SABER: PCoC (Product Certificate of Conformity)">SASO- SABER: PCoC (Product Certificate of Conformity)</option>
+          <option value="SASO/ SABER- SCoC (Shipment Certificate of Conformity)">SASO/ SABER- SCoC (Shipment Certificate of Conformity)</option>
+          <option value="SASO- IECEE">SASO- IECEE</option>
+          <option value="SASO- EER">SASO- EER</option>
+          <option value="Others, please specify below.">Others, please specify below.</option>
         </select>
       </label>
 
       <label>
-        Product and destination <span>*</span>
+        Your Message <span>*</span>
         <textarea
           name="message"
-          rows={5}
+          rows={4}
           required
-          placeholder="Tell us about the product, destination market, and target date."
+          placeholder="Your Message"
         />
       </label>
 
       <label className="consent-row">
         <input type="checkbox" required />
         <span>
-          I agree that Complia may use these details to respond to my enquiry. See the{" "}
-          <Link href="/legal/privacy-policy">Privacy Policy</Link>.
+          I consent to have this website use my submitted information so the Complia team
+          can respond to my inquiry. See the <Link href="/legal/privacy-policy">Privacy Policy</Link>.
         </span>
       </label>
 

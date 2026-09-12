@@ -38,8 +38,8 @@ export default function AccreditationPage() {
     <>
       <PageHero
         eyebrow="Accreditation"
-        title="Credibility starts with a status you can verify."
-        text="Complia Regulatory Services Private Limited is accredited by NABCB to ISO/IEC 17065:2012 for Product Certification under certificate PC 050."
+        title="Accreditation"
+        text="Complia Regulatory Services Private Limited is accredited by NABCB to ISO/IEC 17065:2012 as a Conformity Assessment Body and Certification Body for Product Certification."
         action={{ label: "Verify with NABCB", href: "https://nabcb.qci.org.in" }}
       />
 
@@ -55,17 +55,18 @@ export default function AccreditationPage() {
           <div>
             <SectionHeading
               eyebrow="Accreditation at a glance"
-              title="An internationally structured foundation for product certification."
+              title="NABCB-accredited product certification."
             />
             <p className="body-large">
-              Accreditation to ISO/IEC 17065:2012 demonstrates that Complia’s product
-              certification activities operate within a framework for competence,
-              consistency, and impartiality.
+              Complia Regulatory Services Private Limited is accredited by NABCB to
+              ISO/IEC 17065:2012 as a Conformity Assessment Body and Certification Body
+              for Product Certification.
             </p>
             <p>
-              The certificate and its schedules define the exact normative documents,
-              schemes, product scope, and offices covered. Clients should refer to the
-              published scope when confirming whether a specific product is included.
+              This accreditation authorizes us to issue globally recognized product
+              certifications, ensuring that manufacturers, exporters, and importers can
+              access international markets with confidence, while maintaining the highest
+              standards of quality and compliance.
             </p>
             <div className="status-callout">
               <Check size={17} />
@@ -95,15 +96,15 @@ export default function AccreditationPage() {
           <div>
             <SectionHeading
               eyebrow="Published scope"
-              title="What the current accreditation covers."
-              text="Scope must be read precisely. The following details are drawn from the latest accreditation information on the previous Complia site."
+              title="Our accreditation journey."
+              text="The certificate and its schedules set out the full scope as accredited, including all normative documents and the offices covered."
             />
           </div>
           <div className="scope-card">
-            <div><span>IAF scope</span><strong>18 — Machinery & Equipment</strong></div>
-            <div><span>Certification scheme</span><strong>CQS-01 / KSA SALEEM Type 1a</strong></div>
+            <div><span>IAF scope</span><strong>18 — Machinery and Equipment</strong></div>
+            <div><span>Certification scheme</span><strong>CQS-01 (KSA SALEEM) Type 1a as per ISO/IEC Guide 17067, or SASO SALEEM Scheme (Type 1a assessment as per ISO 17067:2013)</strong></div>
             <div><span>Certification activity</span><strong>Product Certification</strong></div>
-            <div><span>Accredited entity</span><strong>Complia Regulatory Services Private Limited</strong></div>
+            <div><span>Accredited office</span><strong>H. No. 9, Second Floor, Paschim Vihar Extn., Paschim Vihar, West Delhi, New Delhi – 110063, India</strong></div>
           </div>
         </div>
       </section>
@@ -113,12 +114,14 @@ export default function AccreditationPage() {
           <div className="notification-status"><span /> In progress</div>
           <div>
             <p className="eyebrow eyebrow-light"><span /> SASO notification</p>
-            <h2>Clear about what is accredited—and what comes next.</h2>
+            <h2>Progressing toward SASO notification.</h2>
             <p>
-              Complia is progressing toward recognition as a SASO-notified Certification
-              Body. NABCB accreditation is an important prerequisite, but it is not the
-              same as completed SASO notification. Until that process is complete, we do
-              not describe Complia as SASO-notified.
+              Building on our ISO/IEC 17065 accreditation, Complia is progressing toward
+              recognition as an official SASO-notified Certification Body. Our NABCB scope
+              already covers the SASO SALEEM Scheme (Type 1a, ISO/IEC Guide 17067)—the
+              prerequisite for issuing the SASO Certificate of Conformity for products
+              imported to Saudi Arabia against the standards set by the Saudi Standards,
+              Metrology, and Quality Organization (SASO).
             </p>
           </div>
         </div>
@@ -133,6 +136,11 @@ export default function AccreditationPage() {
             />
           </div>
           <div className="document-list">
+            <a href="/assets/documents/nabcb-accreditation-pc-050.pdf" target="_blank">
+              <span><ShieldCheck size={21} /></span>
+              <div><strong>NABCB Accreditation Certificate</strong><small>PC 050 · PDF</small></div>
+              <Download size={19} />
+            </a>
             <a href="/assets/documents/certification-agreement.pdf" target="_blank">
               <span><FileBadge2 size={21} /></span>
               <div><strong>Certification Agreement</strong><small>CQF-02 Annex A · PDF</small></div>

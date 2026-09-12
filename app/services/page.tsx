@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, CheckCircle2, FileCheck2, ScanSearch, Ship, Waypoints } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, ClipboardCheck, ShieldCheck, Sparkles } from "lucide-react";
 import { CtaBand } from "@/components/cta-band";
 import { PageHero } from "@/components/page-hero";
 import { SectionHeading } from "@/components/section-heading";
@@ -21,33 +21,44 @@ export const metadata: Metadata = {
 };
 
 const capabilities = [
-  { icon: ScanSearch, title: "Regulatory scoping", text: "Map the product, destination, and applicable technical route." },
-  { icon: FileCheck2, title: "Technical-file review", text: "Check reports, labels, declarations, manuals, and specifications." },
-  { icon: Waypoints, title: "Application coordination", text: "Keep evidence, stakeholders, and platform stages aligned." },
-  { icon: Ship, title: "Shipment readiness", text: "Prepare consignment-level records for the final conformity stage." },
+  {
+    icon: ShieldCheck,
+    title: "Quality Control",
+    text: "Complia excels in delivering conformity certifications. We ensure your product passes all major checkpoints and is at par with the safety and quality standards.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Conformity Assessment",
+    text: "Complia is accredited by NABCB to ISO/IEC 17065:2012 as a Product Certification Body under certificate PC 050.",
+  },
+  {
+    icon: Sparkles,
+    title: "Continuous Improvements",
+    text: "We are committed to drive continuous improvement in our supply chain through innovation, data analysis, and iterative refinements.",
+  },
 ];
 
 export default function ServicesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Certification services"
-        title="From requirement to ready—with fewer unknowns."
-        text="Complia turns product regulations into a structured path: what applies, what evidence is needed, and what happens next."
-        action={{ label: "Discuss your requirement", href: "/contact" }}
+        eyebrow="Our Services"
+        title="What We Do"
+        text="We believe in providing clear and transparent solutions, making compliance a straightforward and positive experience."
+        action={{ label: "Get Started With Us", href: "/contact" }}
       />
 
       <section className="section services-index">
         <div className="container">
           <div className="section-heading-row">
             <SectionHeading
-              eyebrow="Core solutions"
-              title="Focused expertise for Saudi product compliance."
-              text="Select a service to see the typical scope, evidence, and sequence. Exact requirements are confirmed for each product."
+              eyebrow="Our Services"
+              title="Our Dedicated Services"
+              text="We believe in providing clear and transparent solutions, making compliance a straightforward and positive experience."
             />
             <div className="scope-note">
               <CheckCircle2 size={20} />
-              <span>Every route begins with product classification.</span>
+              <span>Helping your products reach Global Markets with Compliance!</span>
             </div>
           </div>
           <div className="service-grid service-grid-large">
@@ -59,14 +70,14 @@ export default function ServicesPage() {
       <section className="section capabilities-section">
         <div className="container capabilities-grid">
           <div className="capabilities-intro">
-            <p className="eyebrow eyebrow-light"><span /> Across every service</p>
-            <h2>Technical coordination that keeps the whole file together.</h2>
+            <p className="eyebrow eyebrow-light"><span /> Enhancing quality</p>
+            <h2>Enhancing Quality Through Control, Assessment, Improvement</h2>
             <p>
-              Certification is rarely one document or one decision. We help teams see
-              the full evidence chain and manage it deliberately.
+              Complia makes sure in attaining excellence through diligent control,
+              assessment, and ongoing improvement in methodologies applied.
             </p>
             <Link href="/contact" className="button button-coral">
-              Start with your product <ArrowUpRight size={18} />
+              Get Started With Us <ArrowUpRight size={18} />
             </Link>
           </div>
           <div className="capability-list">

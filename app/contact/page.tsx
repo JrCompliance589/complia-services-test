@@ -21,16 +21,16 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        eyebrow="Start an enquiry"
-        title="Bring us the product. We'll help clarify the path."
-        text="Tell us what you are exporting, where it is going, and when it needs to move. Our New Delhi team will take it from there."
+        eyebrow="Get in touch"
+        title="We Are Connected To Help Your Business!"
+        text="Want professional help or advice for your business? Our experts are ready to help you. Get in touch with us to discuss your requirements."
       />
 
       <section className="section contact-section">
         <div className="container contact-grid">
           <div className="contact-details">
             <p className="eyebrow"><span /> Contact Complia</p>
-            <h2>Expert guidance starts with a few practical details.</h2>
+            <h2>If You Need Any Help Contact Us</h2>
             <p>
               Product classification, destination, and available test evidence are a
               useful place to begin. If you do not have everything yet, send what you do

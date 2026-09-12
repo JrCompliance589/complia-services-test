@@ -8,9 +8,7 @@ import {
   Check,
   CheckCircle2,
   ClipboardCheck,
-  FileSearch,
   Globe2,
-  PackageCheck,
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
@@ -34,28 +32,22 @@ export const metadata: Metadata = {
 
 const process = [
   {
-    icon: FileSearch,
+    icon: ShieldCheck,
     number: "01",
-    title: "Define the route",
-    text: "We begin with the product, destination, HS code, and applicable regulatory programme.",
+    title: "Quality Control",
+    text: "Complia excels in delivering conformity certifications. We ensure your product passes all major checkpoints and is at par with the safety and quality standards.",
   },
   {
     icon: ClipboardCheck,
     number: "02",
-    title: "Build the evidence",
-    text: "Your reports, declarations, labels, manuals, and technical documents are organised and checked.",
+    title: "Conformity Assessment",
+    text: "Complia is accredited by NABCB to ISO/IEC 17065:2012 as a Product Certification Body under certificate PC 050.",
   },
   {
-    icon: PackageCheck,
+    icon: Sparkles,
     number: "03",
-    title: "Complete evaluation",
-    text: "Evidence is reviewed against the relevant requirements and gaps are resolved clearly.",
-  },
-  {
-    icon: Globe2,
-    number: "04",
-    title: "Move to market",
-    text: "We support the final certification or shipment workflow so your team can move with confidence.",
+    title: "Continuous Improvements",
+    text: "We are committed to drive continuous improvement in our supply chain through innovation, data analysis, and iterative refinements.",
   },
 ];
 
@@ -84,25 +76,24 @@ export default function Home() {
               <small>ISO/IEC 17065:2012 · PC 050</small>
             </div>
             <h1>
-              Clear paths to<br />
-              <em>compliant markets.</em>
+              Grow Your Business<br />
+              <em>More Efficiently.</em>
             </h1>
             <p>
-              Product certification and conformity assessment for manufacturers,
-              exporters, and importers who need to move with confidence.
+              Helping your products reach Global Markets with Compliance!
             </p>
             <div className="hero-actions">
-              <Link href="/contact" className="button button-coral">
-                Start your assessment <ArrowUpRight size={18} />
-              </Link>
               <Link href="/services" className="button button-ghost-light">
-                Explore services <ArrowDown size={17} />
+                Our Services <ArrowDown size={17} />
+              </Link>
+              <Link href="/contact" className="button button-coral">
+                Get Started With Us <ArrowUpRight size={18} />
               </Link>
             </div>
           </div>
           <div className="hero-side-note">
             <span aria-hidden="true" />
-            <p>From technical file<br />to market access</p>
+            <p>Compliance for safer products<br />and global market access</p>
           </div>
         </div>
         <div className="container hero-metrics">
@@ -159,8 +150,8 @@ export default function Home() {
             <div className="about-float-card">
               <ShieldCheck size={26} />
               <div>
-                <strong>Independent assessment</strong>
-                <span>Built on impartiality and evidence</span>
+                <strong>Compliance Expertise</strong>
+                <span>Conformity Assurance</span>
               </div>
             </div>
             <span className="about-index">C / 01</span>
@@ -168,22 +159,23 @@ export default function Home() {
 
           <div className="about-preview-copy">
             <SectionHeading
-              eyebrow="Your compliance partner"
-              title="Compliance should open markets—not hold them back."
-              text="Complia Regulatory Services Private Limited was founded in 2024 to make complex product requirements clearer, more accountable, and easier to navigate."
+              eyebrow="Who We Are?"
+              title="Your Compliance Partner for Success"
+              text="Complia Regulatory Services Private Limited was founded in November 2024 with a clear vision to become a trusted global partner in product certification and regulatory compliance."
             />
             <p className="body-large">
-              We bring regulatory insight and structured technical evaluation together,
-              helping clients move from product evidence to confident market access while
-              upholding accuracy, integrity, and transparency.
+              At Complia, we believe that compliance should not be a barrier to innovation
+              or market access—it should be an enabler. Our mission is to help manufacturers,
+              importers, and exporters navigate complex regulatory frameworks with confidence
+              and clarity.
             </p>
             <div className="check-grid">
-              {["Technical accuracy", "Impartial decisions", "Transparent communication", "Market-focused guidance"].map((item) => (
+              {["Compliance Expertise", "International Presence", "Conformity Assurance", "24x7 Hours Customer Support"].map((item) => (
                 <div key={item}><CheckCircle2 size={18} /> {item}</div>
               ))}
             </div>
             <Link href="/about" className="button button-outline">
-              Meet Complia <ArrowUpRight size={18} />
+              About Us <ArrowUpRight size={18} />
             </Link>
           </div>
         </div>
@@ -193,12 +185,12 @@ export default function Home() {
         <div className="container">
           <div className="section-heading-row">
             <SectionHeading
-              eyebrow="Certification services"
-              title="The right evidence. The right route."
-              text="Focused support for the Saudi conformity programmes most often encountered by product and export teams."
+              eyebrow="Our Services"
+              title="Our Dedicated Services"
+              text="We believe in providing clear and transparent solutions, making compliance a straightforward and positive experience."
             />
             <Link href="/services" className="button button-outline desktop-only-button">
-              View all services <ArrowUpRight size={18} />
+              What We Do <ArrowUpRight size={18} />
             </Link>
           </div>
           <div className="service-grid">
@@ -211,9 +203,9 @@ export default function Home() {
         <div className="process-orbit" aria-hidden="true" />
         <div className="container">
           <SectionHeading
-            eyebrow="How it works"
-            title="A rigorous process, made understandable."
-            text="Every engagement is different. The discipline behind it is consistent."
+            eyebrow="Enhancing quality"
+            title="Enhancing Quality Through Control, Assessment, Improvement"
+            text="Complia makes sure in attaining excellence through diligent control, assessment, and ongoing improvement in methodologies applied."
             light
           />
           <div className="process-grid">
@@ -233,7 +225,7 @@ export default function Home() {
           </div>
           <div className="process-promise">
             <Sparkles size={19} />
-            <p><strong>No black box.</strong> You see what is required, what is ready, and what needs attention.</p>
+            <p><strong>Accuracy, reliability, and regulatory compliance.</strong> We guide you through every step of the certification process.</p>
           </div>
         </div>
       </section>
@@ -295,11 +287,11 @@ export default function Home() {
           </div>
           <div className="accreditation-copy">
             <p className="eyebrow"><span aria-hidden="true" /> Verified foundation</p>
-            <h2>Accreditation you can check. Status we state plainly.</h2>
+            <h2>Progressing Toward SASO Notification</h2>
             <p>
-              Complia is NABCB-accredited to ISO/IEC 17065:2012 under certificate PC 050,
-              initially accredited 18 December 2025 and valid through 17 December 2028.
-              SASO-notified status remains in progress.
+              Building on our ISO/IEC 17065 accreditation, Complia is progressing toward
+              recognition as an official SASO-notified Certification Body. Our NABCB scope
+              already covers the SASO SALEEM Scheme (Type 1a, ISO/IEC Guide 17067).
             </p>
             <div className="accreditation-links">
               <Link href="/accreditation" className="button button-primary">

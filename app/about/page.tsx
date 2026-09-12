@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import {
-  ArrowUpRight,
   Compass,
-  Eye,
   Leaf,
-  Scale,
   ShieldCheck,
-  Sparkles,
   Target,
 } from "lucide-react";
 import { CtaBand } from "@/components/cta-band";
@@ -31,23 +26,23 @@ export const metadata: Metadata = {
 const goals = [
   {
     icon: ShieldCheck,
-    title: "Quality & safety",
-    text: "Meet applicable requirements, strengthen safety, and keep improving the way certification work is delivered.",
+    title: "Quality and Safety",
+    text: "We commit to meeting top-quality and safety regulations, ensure compliance, exceed customer expectations, and drive continuous improvement.",
   },
   {
     icon: Compass,
-    title: "Explore possibilities",
-    text: "Help product businesses understand and unlock opportunities in new regulated markets.",
+    title: "Exploring Possibilities",
+    text: "We aim to be a catalyst for our clients' businesses by helping them venture into and unlock new markets.",
   },
   {
     icon: Target,
-    title: "Strategic growth",
-    text: "Support market expansion with focused, compliance-led decisions and practical next steps.",
+    title: "Strategic Growth",
+    text: "Driving success through target driven strategies and compliance-driven solutions.",
   },
   {
     icon: Leaf,
-    title: "Sustainable progress",
-    text: "Encourage responsible product and manufacturing practices through credible conformity routes.",
+    title: "Sustainability Initiative",
+    text: "We aim to promote sustainable practices among our clients, particularly manufacturers and producers, by helping them achieve certifications that serve as an added step towards building a sustainable future.",
   },
 ];
 
@@ -56,33 +51,47 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About Complia"
-        title="Built to make compliance a business enabler."
-        text="We combine regulatory insight, disciplined evaluation, and plain communication so product businesses can approach complex markets with confidence."
-        action={{ label: "Work with our team", href: "/contact" }}
+        title="About Us"
+        text="Complia Regulatory Services Private Limited was founded in November 2024 with a clear vision to become a trusted global partner in product certification and regulatory compliance."
+        action={{ label: "Our Services", href: "/services" }}
       />
 
       <section className="section story-section">
         <div className="container story-grid">
           <div className="story-copy">
             <SectionHeading
-              eyebrow="Our story"
-              title="A young company built on a serious standard."
+              eyebrow="About Us"
+              title="Your Compliance Partner for Success"
             />
             <p className="body-large">
               Complia Regulatory Services Private Limited was founded in November 2024
-              with a clear vision: to become a trusted global partner in product
-              certification and regulatory compliance.
+              with a clear vision to become a trusted global partner in product
+              certification and regulatory compliance. Now accredited by NABCB to
+              ISO/IEC 17065:2012 (Certificate No. PC 050), Complia operates as a
+              Conformity Assessment Body (CAB) that delivers impartial, competent, and
+              internationally recognized certification services.
             </p>
             <p>
-              Today, Complia is accredited by NABCB to ISO/IEC 17065:2012 as a Product
-              Certification Body under certificate PC 050. We help manufacturers,
-              importers, and exporters navigate the path from product evaluation to
-              certification with precision, integrity, and transparency.
+              At Complia, we believe that compliance should not be a barrier to innovation
+              or market access—it should be an enabler. Our mission is to help
+              manufacturers, importers, and exporters navigate complex regulatory
+              frameworks with confidence and clarity. From product evaluation to final
+              certification, we aim to guide the path to compliance with precision, while
+              upholding the highest standards of technical accuracy, integrity, and
+              transparency.
             </p>
             <p>
-              We believe compliance should not be a barrier to innovation or market
-              access. It should create confidence—inside the business, across the supply
-              chain, and in the market where the product arrives.
+              With a team of experienced professionals and deep regulatory insight, we
+              serve a broad spectrum of industries offering product conformity
+              certification, inspection, and other technical services aligned with global
+              best practices. Backed by accreditation, our services are recognized for
+              facilitating access to regulated markets, ensuring that products meet
+              applicable safety, quality, and performance requirements.
+            </p>
+            <p>
+              As we grow, Complia remains focused on building a culture of trust,
+              independence, and excellence—becoming not just a certifying body, but a
+              long-term partner in your journey toward regulatory success.
             </p>
           </div>
           <div className="story-visual">
@@ -104,35 +113,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section purpose-section">
-        <div className="container purpose-grid">
-          <article>
-            <span className="purpose-icon"><Target size={23} /></span>
-            <p className="eyebrow eyebrow-light"><span /> Our mission</p>
-            <h2>Guide the path to compliance with clarity and technical precision.</h2>
-            <p>
-              We help clients understand what applies, prepare sound evidence, and make
-              informed decisions—without turning a complex process into a black box.
-            </p>
-          </article>
-          <article>
-            <span className="purpose-icon"><Eye size={23} /></span>
-            <p className="eyebrow eyebrow-light"><span /> Our vision</p>
-            <h2>Become a trusted long-term partner for regulated global trade.</h2>
-            <p>
-              We are building a culture of trust, independence, and excellence around
-              certification that supports safe products and confident market entry.
-            </p>
-          </article>
-        </div>
-      </section>
-
       <section className="section goals-section">
         <div className="container">
           <SectionHeading
-            eyebrow="What drives us"
-            title="Four goals behind every engagement."
-            text="The principles carried over from Complia's original mission, sharpened for the work ahead."
+            eyebrow="Our Goals"
+            title="Our Goals"
+            text="Quality, new possibilities, strategic growth, and sustainability guide our work."
             align="center"
           />
           <div className="goal-grid">
@@ -149,26 +135,6 @@ export default function AboutPage() {
                 </article>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      <section className="section values-section">
-        <div className="container values-grid">
-          <div>
-            <SectionHeading
-              eyebrow="How we work"
-              title="Trust is built in the details."
-              text="Accreditation provides the framework. The daily discipline of impartial, evidence-led work is what makes it real."
-            />
-            <Link href="/accreditation" className="button button-outline">
-              See our accreditation <ArrowUpRight size={18} />
-            </Link>
-          </div>
-          <div className="value-list">
-            <div><span><Scale size={20} /></span><strong>Impartiality</strong><p>Certification decisions remain independent of commercial pressure.</p></div>
-            <div><span><Sparkles size={20} /></span><strong>Clarity</strong><p>Requirements, findings, and next steps are communicated plainly.</p></div>
-            <div><span><ShieldCheck size={20} /></span><strong>Integrity</strong><p>Claims and status are grounded in the scope and evidence available.</p></div>
           </div>
         </div>
       </section>

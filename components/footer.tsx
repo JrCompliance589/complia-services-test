@@ -18,8 +18,9 @@ export function Footer() {
             />
           </Link>
           <p>
-            Independent, evidence-led conformity assessment for safer products and
-            more confident market access.
+            COMPLIA was established with the aim to “deliver unmatched quality” services.
+            We are an NABCB-accredited ISO/IEC 17065 certification body (PC 050), helping
+            clients ensure regulatory compliance for safe, secure access to global markets.
           </p>
           <Link href="/contact" className="footer-enquiry">
             Discuss your product <ArrowUpRight size={18} />

@@ -2,7 +2,15 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowUpRight, Check, CheckCircle2 } from "lucide-react";
+import {
+  ArrowUpRight,
+  Check,
+  CheckCircle2,
+  Download,
+  FileBadge2,
+  Scale,
+  ShieldCheck,
+} from "lucide-react";
 import { CtaBand } from "@/components/cta-band";
 import { PageHero } from "@/components/page-hero";
 import { services } from "@/lib/site-data";
@@ -33,6 +41,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
   const { slug } = await params;
   const service = services.find((item) => item.slug === slug);
   if (!service) notFound();
+  const showPublicDocuments = service.slug === "pcoc-scoc";
 
   return (
     <>
@@ -48,7 +57,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         <div className="container service-intro-grid">
           <div className="service-intro-copy">
             <p className="eyebrow"><span /> Service overview</p>
-            <h2>A practical route through the requirement.</h2>
+            <h2>{service.title}</h2>
             <p className="body-large">{service.intro}</p>
             <div className="best-for">
               <h3>Well suited for</h3>
@@ -111,9 +120,9 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             ))}
           </div>
           <aside className="service-aside">
-            <p className="eyebrow"><span /> Need a clear answer?</p>
-            <h3>Start with the product and destination.</h3>
-            <p>We’ll help identify the likely route and the evidence worth preparing first.</p>
+            <p className="eyebrow"><span /> Get in touch</p>
+            <h3>If You Need Any Help Contact Us</h3>
+            <p>Our team is connected to help your business with the applicable certification requirements.</p>
             <Link href="/contact#enquiry" className="button button-primary">
               Discuss this service <ArrowUpRight size={18} />
             </Link>
@@ -121,6 +130,37 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </aside>
         </div>
       </section>
+
+      {showPublicDocuments && (
+        <section className="section document-section service-documents-section">
+          <div className="container document-grid">
+            <div>
+              <p className="eyebrow"><span /> Public documents</p>
+              <h2>COMPLIA policies and procedures</h2>
+              <p className="body-large">
+                Review the documents referenced in the certification information above.
+              </p>
+            </div>
+            <div className="document-list">
+              <a href="/assets/documents/nabcb-accreditation-pc-050.pdf" target="_blank">
+                <span><ShieldCheck size={21} /></span>
+                <div><strong>NABCB Accreditation Certificate</strong><small>PC 050 · PDF</small></div>
+                <Download size={19} />
+              </a>
+              <a href="/assets/documents/certification-agreement.pdf" target="_blank">
+                <span><FileBadge2 size={21} /></span>
+                <div><strong>Certification Agreement</strong><small>CQF-02 Annex A · PDF</small></div>
+                <Download size={19} />
+              </a>
+              <a href="/assets/documents/complaints-and-appeals.pdf" target="_blank">
+                <span><Scale size={21} /></span>
+                <div><strong>Complaints &amp; Appeals Procedure</strong><small>CQP-08 · PDF</small></div>
+                <Download size={19} />
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="section faq-section">
         <div className="container faq-grid">
