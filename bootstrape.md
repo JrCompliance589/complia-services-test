@@ -22,6 +22,10 @@ Working instructions:
 
 Prompt:-
 
-1. 
+1. https://complia.services/privacy-policy/
+2. https://complia.services/terms-and-conditions/
+3. https://complia.services/regulatory-disclaimer/
+
+i want this to be exactly same line by line but based on our current design and theme.
 
 

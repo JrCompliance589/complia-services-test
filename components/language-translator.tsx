@@ -4,7 +4,7 @@ import Script from "next/script";
 
 const settings = {
   default_language: "en",
-  languages: ["ar", "zh-CN", "en", "es", "tr"],
+  languages: ["ar", "en", "de", "fr"],
   url_structure: "none",
   detect_browser_language: false,
   flag_style: "2d",
