@@ -1368,6 +1368,20 @@ h3 {
   font-weight: 660;
 }
 
+.cta-section-compact {
+  padding: 58px 0 92px;
+}
+
+.cta-section-compact .cta-band {
+  padding: 54px 60px;
+  border-radius: 8px;
+}
+
+.cta-section-compact .cta-copy h2 {
+  max-width: 650px;
+  font-size: clamp(2.2rem, 3.6vw, 3.55rem);
+}
+
 /* About page */
 .story-grid {
   display: grid;
@@ -1591,58 +1605,111 @@ h3 {
 }
 
 .capabilities-section {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 88px;
   background: var(--navy-900);
   color: white;
 }
 
-.capabilities-grid {
+.capabilities-section::before {
+  position: absolute;
+  top: -260px;
+  right: -180px;
+  width: 620px;
+  height: 620px;
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  border-radius: 50%;
+  box-shadow: 0 0 0 100px rgba(255, 255, 255, 0.018);
+  content: "";
+  pointer-events: none;
+}
+
+.capabilities-heading-row {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 55px;
+}
+
+.capabilities-heading-row .section-heading {
+  max-width: 830px;
+}
+
+.capabilities-heading-row .section-heading h2 {
+  font-size: clamp(2.25rem, 4vw, 4rem);
+}
+
+.capability-card-grid {
+  position: relative;
+  z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  gap: 110px;
-  align-items: center;
-}
-
-.capabilities-intro h2 {
-  font-size: clamp(2.3rem, 4vw, 4rem);
-}
-
-.capabilities-intro > p:not(.eyebrow) {
-  max-width: 550px;
-  margin-bottom: 34px;
-  color: rgba(255, 255, 255, 0.58);
-}
-
-.capability-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   border-top: 1px solid var(--line-dark);
+  border-left: 1px solid var(--line-dark);
 }
 
-.capability-list article {
-  display: grid;
-  min-height: 125px;
-  grid-template-columns: 34px 48px 1fr;
-  align-items: center;
-  gap: 18px;
+.capability-card {
+  display: flex;
+  min-height: 285px;
+  flex-direction: column;
+  padding: 34px;
+  border-right: 1px solid var(--line-dark);
   border-bottom: 1px solid var(--line-dark);
+  background: rgba(255, 255, 255, 0.018);
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.capability-card:hover {
+  background: rgba(255, 255, 255, 0.055);
+  transform: translateY(-4px);
+}
+
+.capability-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 54px;
 }
 
 .capability-number {
   color: rgba(255, 255, 255, 0.34);
-  font-size: 0.63rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
-.capability-list svg {
+.capability-icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid var(--line-dark);
+  background: rgba(255, 255, 255, 0.035);
   color: var(--coral-400);
 }
 
-.capability-list h3 {
-  margin-bottom: 7px;
-  font-size: 1rem;
+.capability-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.12rem;
 }
 
-.capability-list p {
+.capability-card > p {
   margin: 0;
   color: rgba(255, 255, 255, 0.55);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
+  line-height: 1.7;
+}
+
+.capabilities-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+}
+
+.capabilities-footer .text-link {
+  color: white;
 }
 
 /* Service detail */
@@ -2186,7 +2253,6 @@ h3 {
   .about-preview-grid,
   .story-grid,
   .markets-preview-grid,
-  .capabilities-grid,
   .service-intro-grid,
   .service-content-grid,
   .faq-grid,
@@ -2196,6 +2262,8 @@ h3 {
   .contact-grid,
   .legal-grid,
   .values-grid { grid-template-columns: 1fr; gap: 55px; }
+  .capabilities-section { padding-bottom: 72px; }
+  .capability-card { min-height: 270px; padding: 28px; }
   .about-visual { min-height: 590px; }
   .story-visual { min-height: 600px; grid-row: 1; }
   .story-image-wrap { inset: 0 0 55px 35px; }
@@ -2294,6 +2362,8 @@ h3 {
   .cta-band { padding: 42px 25px; }
   .cta-actions { flex-direction: column; align-items: stretch; }
   .cta-phone { justify-content: center; }
+  .cta-section-compact { padding: 48px 0 74px; }
+  .cta-section-compact .cta-band { padding: 42px 25px; }
 
   .story-visual { min-height: 500px; }
   .story-image-wrap { left: 20px; border-radius: 60px 3px 3px 3px; }
@@ -2306,7 +2376,11 @@ h3 {
   .value-list p { grid-column: 2; }
 
   .scope-note { max-width: 100%; }
-  .capability-list article { grid-template-columns: 25px 38px 1fr; }
+  .capabilities-section { padding-bottom: 58px; }
+  .capability-card-grid { grid-template-columns: 1fr; }
+  .capability-card { min-height: 225px; }
+  .capability-card-head { margin-bottom: 34px; }
+  .capabilities-footer { justify-content: flex-start; }
   .service-intro-grid { gap: 45px; }
   .best-for { grid-template-columns: 1fr; }
   .service-detail-art { padding: 42px 22px 25px; }

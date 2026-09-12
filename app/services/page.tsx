@@ -68,34 +68,39 @@ export default function ServicesPage() {
       </section>
 
       <section className="section capabilities-section">
-        <div className="container capabilities-grid">
-          <div className="capabilities-intro">
-            <p className="eyebrow eyebrow-light"><span /> Enhancing quality</p>
-            <h2>Enhancing Quality Through Control, Assessment, Improvement</h2>
-            <p>
-              Complia makes sure in attaining excellence through diligent control,
-              assessment, and ongoing improvement in methodologies applied.
-            </p>
-            <Link href="/contact" className="button button-coral">
-              Get Started With Us <ArrowUpRight size={18} />
-            </Link>
+        <div className="container">
+          <div className="capabilities-heading-row">
+            <SectionHeading
+              eyebrow="Enhancing quality"
+              title="Enhancing Quality Through Control, Assessment, Improvement"
+              text="Complia makes sure in attaining excellence through diligent control, assessment, and ongoing improvement in methodologies applied."
+              light
+            />
           </div>
-          <div className="capability-list">
+          <div className="capability-card-grid">
             {capabilities.map((item, index) => {
               const Icon = item.icon;
               return (
-                <article key={item.title}>
-                  <span className="capability-number">0{index + 1}</span>
-                  <Icon size={23} />
-                  <div><h3>{item.title}</h3><p>{item.text}</p></div>
+                <article key={item.title} className="capability-card">
+                  <div className="capability-card-head">
+                    <span className="capability-number">0{index + 1}</span>
+                    <span className="capability-icon"><Icon size={22} /></span>
+                  </div>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
                 </article>
               );
             })}
           </div>
+          <div className="capabilities-footer">
+            <Link href="/contact" className="text-link">
+              Get Started With Us <ArrowUpRight size={16} />
+            </Link>
+          </div>
         </div>
       </section>
 
-      <CtaBand />
+      <CtaBand compact />
     </>
   );
 }

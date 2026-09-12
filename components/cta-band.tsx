@@ -2,9 +2,9 @@ import Link from "next/link";
 import { ArrowUpRight, Phone } from "lucide-react";
 import { contact } from "@/lib/site-data";
 
-export function CtaBand() {
+export function CtaBand({ compact = false }: { compact?: boolean }) {
   return (
-    <section className="cta-section">
+    <section className={compact ? "cta-section cta-section-compact" : "cta-section"}>
       <div className="container">
         <div className="cta-band">
           <div className="cta-grid" aria-hidden="true" />
