@@ -564,7 +564,7 @@ export const contact = {
   whatsapp: "919599593141",
   feedbackEmail: "feedback@complia.services",
   address:
-    "H. No. 9, Second Floor, Paschim Vihar Extn., Paschim Vihar, West Delhi, New Delhi, Delhi, India 110063",
+    "Plot no 143,Second Floor,Avatar Enclave ,Paschim Vihar ,Delhi -110063",
   hours: "Monday–Friday · 9:30 am–5:30 pm",
 };
 
