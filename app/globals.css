@@ -1856,6 +1856,15 @@ h3 {
 .service-copy-block:last-child { margin-bottom: 0; }
 .service-copy-block h2 { font-size: clamp(2rem, 3.5vw, 3.1rem); }
 .service-copy-block > p { color: var(--slate); }
+.service-copy-block > p a {
+  color: var(--blue-700);
+  font-weight: 740;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 160ms ease;
+}
+.service-copy-block > p a:hover { color: var(--coral-500); }
 .service-copy-block ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 24px; margin: 28px 0 0; padding: 0; list-style: none; }
 .service-copy-block li { display: flex; align-items: flex-start; gap: 9px; color: #344756; font-size: 0.76rem; }
 .service-copy-block li svg { flex: 0 0 auto; margin-top: 4px; color: var(--coral-500); }

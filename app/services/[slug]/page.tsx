@@ -13,9 +13,33 @@ import {
 } from "lucide-react";
 import { CtaBand } from "@/components/cta-band";
 import { PageHero } from "@/components/page-hero";
-import { services } from "@/lib/site-data";
+import { services, type ServiceSectionParagraph } from "@/lib/site-data";
 
 type ServicePageProps = { params: Promise<{ slug: string }> };
+
+function ServiceParagraph({ paragraph }: { paragraph: ServiceSectionParagraph }) {
+  if (typeof paragraph === "string") {
+    return <p>{paragraph}</p>;
+  }
+
+  const linkIndex = paragraph.text.indexOf(paragraph.link.label);
+  if (linkIndex === -1) {
+    return <p>{paragraph.text}</p>;
+  }
+
+  const beforeLink = paragraph.text.slice(0, linkIndex);
+  const afterLink = paragraph.text.slice(linkIndex + paragraph.link.label.length);
+
+  return (
+    <p>
+      {beforeLink}
+      <a href={paragraph.link.href} target="_blank" rel="noreferrer">
+        {paragraph.link.label}
+      </a>
+      {afterLink}
+    </p>
+  );
+}
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
@@ -110,7 +134,12 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             {service.sections.map((section) => (
               <article key={section.title} className="service-copy-block">
                 <h2>{section.title}</h2>
-                {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                {section.paragraphs.map((paragraph) => (
+                  <ServiceParagraph
+                    key={typeof paragraph === "string" ? paragraph : paragraph.text}
+                    paragraph={paragraph}
+                  />
+                ))}
                 {section.bullets && (
                   <ul>
                     {section.bullets.map((bullet) => <li key={bullet}><Check size={16} /> {bullet}</li>)}

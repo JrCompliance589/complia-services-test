@@ -1,3 +1,10 @@
+export type ServiceSectionParagraph =
+  | string
+  | {
+      text: string;
+      link: { label: string; href: string };
+    };
+
 export type Service = {
   slug: string;
   index: string;
@@ -11,7 +18,7 @@ export type Service = {
   bestFor: string[];
   facts: { value: string; label: string }[];
   steps: { title: string; text: string }[];
-  sections: { title: string; paragraphs: string[]; bullets?: string[] }[];
+  sections: { title: string; paragraphs: ServiceSectionParagraph[]; bullets?: string[] }[];
   faq: { question: string; answer: string }[];
 };
 
@@ -177,7 +184,13 @@ export const services: Service[] = [
         paragraphs: [
           "SASO (Saudi Standards, Metrology and Quality Organization) developed a Certification system under the Saudi Safety Program to issue conformity certificates for products under various Technical Regulations.",
           "COMPLIA’s accredited certification scheme scope includes Technical Regulations Machinery Safety Part 1—Portable and Hand-oriented Machines, Technical Regulation for Low Voltage Electrical Equipments and Appliances, and Technical Regulation for Telecommunications Devices.",
-          "The evaluation activities are aligned as per the regulations issued by SASO in the Technical Regulations.",
+          {
+            text: "The evaluation activities are aligned as per the regulations issued by SASO in the Technical Regulations.",
+            link: {
+              label: "Technical Regulations",
+              href: "https://saso.gov.sa/en/Laws-And-Regulations/technical_regulations/Pages/default.aspx",
+            },
+          },
         ],
       },
       {

@@ -22,16 +22,6 @@ Working instructions:
 
 Prompt:-
 
-1. copy the exact content from https://complia.services/ and also public_html is present here which is the public_html of https://complia.services/.
-
-2. because here content -> text is important and add the pdfs in the websites.
-
-* but design and theme exactly same as current only i want the content to be exactly same.
-
-3. add language translater at the top reference image is given.
-
-4. also make it responsive for mobile also.
-
-Don't change the current design theme follow that
+1. 
 
 
