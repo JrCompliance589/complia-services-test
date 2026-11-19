@@ -6,13 +6,11 @@ import {
   ArrowUpRight,
   Check,
   CheckCircle2,
-  Download,
-  FileBadge2,
-  Scale,
-  ShieldCheck,
 } from "lucide-react";
+import { CertificationOverview } from "@/components/certification-information";
 import { CtaBand } from "@/components/cta-band";
 import { PageHero } from "@/components/page-hero";
+import { PublicDocuments } from "@/components/public-documents";
 import { services, type ServiceSectionParagraph } from "@/lib/site-data";
 
 type ServicePageProps = { params: Promise<{ slug: string }> };
@@ -29,13 +27,16 @@ function ServiceParagraph({ paragraph }: { paragraph: ServiceSectionParagraph })
 
   const beforeLink = paragraph.text.slice(0, linkIndex);
   const afterLink = paragraph.text.slice(linkIndex + paragraph.link.label.length);
+  const isInternal = paragraph.link.href.startsWith("/");
 
   return (
     <p>
       {beforeLink}
-      <a href={paragraph.link.href} target="_blank" rel="noreferrer">
-        {paragraph.link.label}
-      </a>
+      {isInternal ? (
+        <Link href={paragraph.link.href}>{paragraph.link.label}</Link>
+      ) : (
+        <a href={paragraph.link.href} target="_blank" rel="noopener noreferrer">{paragraph.link.label}</a>
+      )}
       {afterLink}
     </p>
   );
@@ -65,7 +66,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
   const { slug } = await params;
   const service = services.find((item) => item.slug === slug);
   if (!service) notFound();
-  const showPublicDocuments = service.slug === "pcoc-scoc";
+  const showPublicDocuments = service.slug === "pcoc-scoc" || service.slug === "saso-saber";
 
   return (
     <>
@@ -109,6 +110,8 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </div>
         </div>
       </section>
+
+      {showPublicDocuments && <CertificationOverview />}
 
       <section className="section service-steps-section">
         <div className="container">
@@ -160,36 +163,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         </div>
       </section>
 
-      {showPublicDocuments && (
-        <section className="section document-section service-documents-section">
-          <div className="container document-grid">
-            <div>
-              <p className="eyebrow"><span /> Public documents</p>
-              <h2>COMPLIA policies and procedures</h2>
-              <p className="body-large">
-                Review the documents referenced in the certification information above.
-              </p>
-            </div>
-            <div className="document-list">
-              <a href="/assets/documents/nabcb-accreditation-pc-050.pdf" target="_blank">
-                <span><ShieldCheck size={21} /></span>
-                <div><strong>NABCB Accreditation Certificate</strong><small>PC 050 · PDF</small></div>
-                <Download size={19} />
-              </a>
-              <a href="/assets/documents/certification-agreement.pdf" target="_blank">
-                <span><FileBadge2 size={21} /></span>
-                <div><strong>Certification Agreement</strong><small>CQF-02 Annex A · PDF</small></div>
-                <Download size={19} />
-              </a>
-              <a href="/assets/documents/complaints-and-appeals.pdf" target="_blank">
-                <span><Scale size={21} /></span>
-                <div><strong>Complaints &amp; Appeals Procedure</strong><small>CQP-08 · PDF</small></div>
-                <Download size={19} />
-              </a>
-            </div>
-          </div>
-        </section>
-      )}
+      {showPublicDocuments && <PublicDocuments />}
 
       <section className="section faq-section">
         <div className="container faq-grid">

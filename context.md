@@ -30,6 +30,8 @@ The active application lives at the repository root and uses the Next.js App Rou
 - `components/header.tsx`: client component for primary navigation and mobile menu.
 - `components/inquiry-form.tsx`: client component that opens a WhatsApp enquiry URL; form data is not stored by the static site.
 - `components/page-hero.tsx`, `components/section-heading.tsx`, `components/service-card.tsx`, `components/cta-band.tsx`, `components/footer.tsx`: shared presentational components.
+- `components/certification-information.tsx`: public scheme, funding/fees, client rights/mark use, and complaints/appeals sections on Accreditation, with topic links on the SASO/SABER and PCoC/SCoC service pages. Content is maintained in `lib/site-data.ts`.
+- `components/public-documents.tsx`: shared approved document downloads on Accreditation and both certification service pages.
 - `theme.md`: current logo/header/footer theme notes.
 - `CONTENT_MIGRATION.md`: migration authority, exclusions, and production checklist notes.
 
@@ -88,7 +90,8 @@ Important active assets live in `public/assets/`:
 - Logos: `complia-logo-white-red.png`, `complia-logo.png`, `nabcb.png`.
 - Main imagery: `complia-hero.webp`, `compliance-partner.webp`, `who-we-are.webp`.
 - Service imagery: `saso-logo.webp`, `scoc-pcoc.webp`, `energy-rating.webp`, `iecee.webp`.
-- Documents: `documents/certification-agreement.pdf`, `documents/complaints-and-appeals.pdf`.
+- Documents: `documents/certification-scheme.pdf` (approved CQS-01 v1.1), `documents/certification-agreement.pdf` (CQF-02 Annex A v1.0), `documents/complaints-and-appeals.pdf` (CQP-08 v1.0).
+- CQP-08 and CQS-01 state different complaint acknowledgement deadlines (two/three working days). The public summary distinguishes acknowledgement from resolution and leaves the acknowledgement deadline to the linked procedure pending confirmation. Complaint outcomes are within 20 working days of acknowledgement; appeals follow the two-week timeframe in CQP-08.
 - Font: `fonts/plus-jakarta-sans.woff2`.
 
 ## Design System

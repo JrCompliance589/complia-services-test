@@ -3,26 +3,26 @@ import Image from "next/image";
 import {
   CalendarCheck2,
   Check,
-  Download,
-  ExternalLink,
   FileBadge2,
   Scale,
   ShieldCheck,
 } from "lucide-react";
 import { CtaBand } from "@/components/cta-band";
+import { CertificationInformation, CertificationOverview } from "@/components/certification-information";
 import { PageHero } from "@/components/page-hero";
+import { PublicDocuments } from "@/components/public-documents";
 import { SectionHeading } from "@/components/section-heading";
 
 export const metadata: Metadata = {
   title: "Accreditation",
   description:
-    "Complia is NABCB-accredited to ISO/IEC 17065:2012 as a Product Certification Body under certificate PC 050, valid through 17 December 2028.",
+    "Review Complia’s NABCB accreditation (PC 050), certification scheme, fees and funding, client rights, mark-use rules, and complaints and appeals procedure.",
   alternates: { canonical: "/accreditation" },
   openGraph: {
     url: "/accreditation",
     title: "Accreditation | Complia",
     description:
-      "Verify Complia's NABCB accreditation to ISO/IEC 17065:2012 under Product Certification Body certificate PC 050.",
+      "Verify Complia’s NABCB accreditation and review its certification process, financial support, fees, client rights, and complaints and appeals procedure.",
   },
 };
 
@@ -42,6 +42,8 @@ export default function AccreditationPage() {
         text="Complia Regulatory Services Private Limited is accredited by NABCB to ISO/IEC 17065:2012 as a Conformity Assessment Body and Certification Body for Product Certification."
         action={{ label: "Verify with NABCB", href: "https://nabcb.qci.org.in" }}
       />
+
+      <CertificationOverview local />
 
       <section className="section accreditation-overview">
         <div className="container accreditation-overview-grid">
@@ -127,38 +129,9 @@ export default function AccreditationPage() {
         </div>
       </section>
 
-      <section className="section document-section">
-        <div className="container document-grid">
-          <div>
-            <SectionHeading
-              eyebrow="Public documents"
-              title="Policies and procedures, ready to review."
-            />
-          </div>
-          <div className="document-list">
-            <a href="/assets/documents/nabcb-accreditation-pc-050.pdf" target="_blank">
-              <span><ShieldCheck size={21} /></span>
-              <div><strong>NABCB Accreditation Certificate</strong><small>PC 050 · PDF</small></div>
-              <Download size={19} />
-            </a>
-            <a href="/assets/documents/certification-agreement.pdf" target="_blank">
-              <span><FileBadge2 size={21} /></span>
-              <div><strong>Certification Agreement</strong><small>CQF-02 Annex A · PDF</small></div>
-              <Download size={19} />
-            </a>
-            <a href="/assets/documents/complaints-and-appeals.pdf" target="_blank">
-              <span><Scale size={21} /></span>
-              <div><strong>Complaints & Appeals Procedure</strong><small>CQP-08 · PDF</small></div>
-              <Download size={19} />
-            </a>
-            <a href="https://nabcb.qci.org.in" target="_blank" rel="noreferrer">
-              <span><ShieldCheck size={21} /></span>
-              <div><strong>NABCB verification</strong><small>External accreditation registry</small></div>
-              <ExternalLink size={19} />
-            </a>
-          </div>
-        </div>
-      </section>
+      <CertificationInformation />
+
+      <PublicDocuments includeVerification />
 
       <CtaBand />
     </>

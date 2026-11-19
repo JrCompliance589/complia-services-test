@@ -22,6 +22,163 @@ export type Service = {
   faq: { question: string; answer: string }[];
 };
 
+export const certificationLinks = [
+  { id: "certification-scheme", label: "Scheme and process" },
+  { id: "fees-and-funding", label: "Fees and funding" },
+  { id: "client-rights-and-duties", label: "Client rights and duties" },
+  { id: "complaints-and-appeals", label: "Complaints and appeals" },
+] as const;
+
+export const certificationDocuments = [
+  {
+    id: "scheme",
+    title: "SASO SALEEM Certification Scheme",
+    reference: "CQS-01 · v1.1 · 28 April 2025 · PDF",
+    href: "/assets/documents/certification-scheme.pdf",
+  },
+  {
+    id: "agreement",
+    title: "Certification Agreement",
+    reference: "CQF-02 Annex A · v1.0 · PDF",
+    href: "/assets/documents/certification-agreement.pdf",
+  },
+  {
+    id: "complaints",
+    title: "Complaints & Appeals Procedure",
+    reference: "CQP-08 · v1.0 · 30 December 2024 · PDF",
+    href: "/assets/documents/complaints-and-appeals.pdf",
+  },
+  {
+    id: "accreditation",
+    title: "NABCB Accreditation Certificate",
+    reference: "PC 050 · PDF",
+    href: "/assets/documents/nabcb-accreditation-pc-050.pdf",
+  },
+] as const;
+
+// Public summaries of the approved CQS-01 v1.1, CQF-02 Annex A v1.0 and CQP-08 v1.0.
+export const certificationInformation = {
+  schemeRules: [
+    {
+      title: "Application and evaluation",
+      paragraphs: [
+        "Submit the application, Certification Agreement and confidentiality agreement, together with the required technical documentation. This includes product specifications, photographs and labelling, applicable declarations, risk assessment and test reports from an ISO/IEC 17025-accredited laboratory with the relevant scope. Additional documents depend on the product and applicable technical regulation.",
+        "Complia reviews the application and evaluates the evidence against the relevant requirements. Where nonconformities are found, the applicant is informed of the reasons and given a specified period to provide additional or amended documentation. Where testing is needed, an appropriately accredited laboratory is used.",
+      ],
+    },
+    {
+      title: "Granting certification",
+      paragraphs: [
+        "A final review and certification decision are made using the application file and evaluation report. Certification is granted only when conformity with the applicable requirements has been demonstrated. Under the scheme, approval is lodged in SABER and the Product Certificate of Conformity (PCoC) is generated through that platform.",
+      ],
+    },
+    {
+      title: "Maintaining validity and applying after expiry",
+      paragraphs: [
+        "A PCoC is valid for one year and expires automatically on its stated expiry date. Clients must continue to meet the applicable certification requirements, report changes that could affect conformity, maintain complaint records and use certification only within its approved scope.",
+        "There is no PCoC renewal under this scheme: a new application is required for a new certification. Changes to products or certification requirements may require additional evaluation, withdrawal of an existing certificate and a new application, as described in the scheme.",
+      ],
+    },
+    {
+      title: "Extending the scope",
+      paragraphs: [
+        "Requests to add models or extend certification scope are treated as a new application. Supply the updated product information and previous certification documents so that the differences can be evaluated through the certification process. The expiry date of combined or extended certification is the earliest expiry date of the original certificates concerned.",
+      ],
+    },
+    {
+      title: "Reducing the scope",
+      paragraphs: [
+        "Scope reduction is not applicable under the SASO SALEEM scheme, as stated in section 7.3 of CQS-01. Contact Complia about changes to the products covered by a certificate so that the applicable certification action can be determined.",
+      ],
+    },
+    {
+      title: "Suspension and reinstatement",
+      paragraphs: [
+        "Certification may be suspended while nonconformities are investigated, including by restraining the issuance of shipment certificates. Complia informs the certificate holder of the reasons, the actions required for reinstatement and the deadline. References to the suspended certification in advertising must stop.",
+        "Reinstatement follows evaluation and review confirming compliance, acceptance of the required corrective action, or an investigation that does not confirm the issue. Complia confirms reinstatement in writing. Failure to respond or meet the specified deadline leads to withdrawal.",
+      ],
+    },
+    {
+      title: "Withdrawal and termination",
+      paragraphs: [
+        "Certification may be withdrawn for confirmed nonconforming products, certificate misuse or fraud, outdated certification requirements, uncorrected nonconformities or unpaid fees, as applicable under the scheme and agreement. A client may also request termination or withdrawal.",
+        "Complia notifies the certificate holder of the action and reasons. The holder must return the original certificate within 15 days where required by the scheme, stop advertising or referring to that certification and take the other measures required by the scheme and agreement.",
+      ],
+    },
+    {
+      title: "Refusing certification",
+      paragraphs: [
+        "Certification may be refused where conformity has not been demonstrated, required documentation or corrective action is not provided within the specified period, fees are unpaid, or fraudulent conduct is identified. Complia communicates the reasons for refusal. An application is closed if the applicant does not provide the required evidence or respond within the defined timeframe.",
+        "An applicant may appeal a certification decision through the complaints and appeals procedure.",
+      ],
+    },
+  ],
+  funding: [
+    "COMPLIA’s certification activities are financially supported by its parent company, Complia Services Limited. This support ensures that our operations remain impartial, consistent, and independent, with adequate resources to carry out all certification functions effectively.",
+    "In addition, COMPLIA generates revenue through fees charged to applicants and certified clients for the provision of certification services. These fees are determined based on the scope, complexity, and duration of the certification process and are communicated transparently to all clients in advance.",
+  ],
+  feeTerms: [
+    {
+      title: "Your quotation",
+      text: "Certification charges are provided in a financial offer for the applicant to agree before proceeding. The quotation reflects the scope, complexity and duration of the certification work, including application review and evaluation.",
+    },
+    {
+      title: "Testing and additional costs",
+      text: "Where activities are outsourced to approved subcontractors, the client is informed and bears the associated costs under the Certification Agreement. Applicable charges are communicated in the quotation or invoices during the process.",
+    },
+    {
+      title: "Payment and refunds",
+      text: "Fees are payable in advance before services are performed unless specially approved by the Accounts department. Fees are non-refundable as applicable under the Certification Agreement, and charges remain payable regardless of the application outcome. Unpaid fees may lead to refusal or cancellation of certification.",
+    },
+  ],
+  rights: [
+    "An impartial and objective assessment against the applicable certification requirements.",
+    "A report of assessment findings, including identified nonconformities, and certification upon successful demonstration of conformity.",
+    "Confidential handling of information, with notification of disclosure required by law or contractual arrangements unless notification is prohibited by law.",
+    "Access to complaints and appeals, with investigation and decisions handled by personnel independent of the activities or decision concerned.",
+  ],
+  duties: [
+    "Provide accurate application information, required documents, access and cooperation. Documentation must be in English unless another language is accepted by Complia.",
+    "Meet certification requirements and implement applicable changes communicated by Complia. Inform Complia of product changes that could affect conformity.",
+    "Keep records of complaints about compliance, take appropriate action on complaints and deficiencies, and make those records available to Complia on request.",
+    "Pay the agreed charges and disclose conflicts of interest. The same application must not be submitted to another certification body.",
+  ],
+  certificationClaims: [
+    "Refer only to the products and models listed on a valid certificate. Do not extend a claim to uncertified products or imply that a whole product is certified because a component is certified.",
+    "Obtain Complia’s approval of certification advertising content before publication. Use Complia’s name, logo and certification mark only in accordance with the scheme, agreement and any express authorization.",
+    "Reproduce certification documents in full, or as specifically permitted by the scheme. Misleading claims, partial reproduction and unauthorized logo use are prohibited.",
+    "On suspension, withdrawal or termination, stop advertising and making references to the affected certification and carry out the actions required by the scheme and agreement.",
+  ],
+  nabcbRules: [
+    "Certification does not automatically authorize use of the NABCB accreditation symbol. Any permitted client use requires Complia’s authorization and supervision and must comply with NABCB 010.",
+    "Where permitted, the symbol must include the accreditation number and be used with Complia’s mark, never on its own. The NABCB accreditation symbol must not be used on products or imply that NABCB approves a product.",
+    "Clients must not use the standalone NABCB logo, the IAF MLA Mark or the ILAC MRA Mark.",
+  ],
+  complaints: [
+    {
+      title: "Make a complaint",
+      description: "Raise a concern about Complia’s certification activities, staff conduct or competence, or the conformity of a certified product. Clients, certificate beneficiaries and other interested parties may submit a complaint.",
+      deadline: "Within 15 days of the event giving rise to the complaint.",
+      outcome: "The outcome is communicated within 20 working days of acknowledgement, subject to the confidentiality requirements in the procedure.",
+    },
+    {
+      title: "Lodge an appeal",
+      description: "Applicants or clients who have contracted with Complia for product certification may ask for reconsideration of a certification decision, including a refusal to issue certification.",
+      deadline: "Within 15 days of the certification decision.",
+      outcome: "The final decision is communicated by email within the two-week timeframe following receipt specified in the procedure, including its eligibility checks.",
+    },
+  ],
+  complaintSteps: [
+    { title: "Submit", text: "Email the issue, your contact details, the relevant product or certification decision and supporting information to feedback@complia.services. Complia records the submission and checks its eligibility." },
+    // CQP-08 §4.2.2.4 and CQS-01 §11.1.2 give different complaint acknowledgement
+    // deadlines (two and three working days). Do not introduce a combined deadline.
+    { title: "Acknowledgement", text: "Receipt and acceptance for examination are confirmed by email in accordance with the applicable procedure. An acknowledgement confirms receipt; it is separate from the investigation outcome." },
+    { title: "Independent review", text: "The Quality Assurance Manager coordinates the investigation. Personnel reviewing or approving the resolution must be free from conflicts of interest and independent of the work or decision concerned." },
+    { title: "Decision and follow-up", text: "Complia communicates the outcome by email and follows up on any required corrective action. Confidential information about clients is protected throughout the process." },
+  ],
+  nabcbPolicyUrl: "https://nabcb.qci.org.in/wp-content/uploads/2026/06/NABCB-010-Conditions-for-Use-of-NABCB-Accreditation-Mark-May-2026.pdf",
+};
+
 export const services: Service[] = [
   {
     slug: "saso-saber",
@@ -197,28 +354,17 @@ export const services: Service[] = [
         title: "Certification Evaluation and Decision Procedures",
         paragraphs: [
           "COMPLIA evaluates the following documents to comply with the relevant certification requirements. Certification shall be granted only if the products comply with the relevant SASO Certification requirements.",
-          "Any non-compliance to the certification requirements found during the evaluation or otherwise shall be reason for withdrawal, suspension or rejection of certification. Document requirements vary as per the certification requirements.",
+          "Where nonconformities are found, the applicant is informed of the reasons and given a specified period to provide additional or amended documentation. A final review determines whether certification can be granted. The reasons for refusal are communicated to the applicant.",
+          {
+            text: "Review our certification scheme and process for the rules on maintaining validity, changing scope, suspension, withdrawal and refusal.",
+            link: { label: "certification scheme and process", href: "/accreditation#certification-scheme" },
+          },
         ],
         bullets: [
           "The test report(s) issued by an ISO/IEC 17025 accredited testing laboratory with the corresponding accreditation scope within 3 years validity",
           "Product images containing clear marking and labels of the product sample(s) to be certified",
           "Information on the Technical Datasheets, Specifications, Manuals, etc.",
           "All information, both technical and non-technical, of the product to be certified (Product information)",
-        ],
-      },
-      {
-        title: "COMPLIA financial support and general information on the fees",
-        paragraphs: [
-          "COMPLIA’s certification activities are financially supported by its parent company, Complia Services Limited. This support ensures that our operations remain impartial, consistent, and independent, with adequate resources to carry out all certification functions effectively.",
-          "In addition, COMPLIA generates revenue through fees charged to applicants and certified clients for the provision of certification services. These fees are determined based on the scope, complexity, and duration of the certification process and are communicated transparently to all clients in advance.",
-          "For more information on our fee structure or to request a quotation, please contact us.",
-        ],
-      },
-      {
-        title: "Rights, duties, complaints, and appeals",
-        paragraphs: [
-          "The applicant/client’s rights and obligations, restrictions and limitations for the use of COMPLIA name, certification mark, logos, etc. are described in the Certification Agreement (CQF-02 Annex A).",
-          "Clients can submit feedback, complaints, or appeals by emailing feedback@complia.services, and COMPLIA will respond within three working days. For more information please refer to COMPLIA complaints & appeal procedure.",
         ],
       },
     ],

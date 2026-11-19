@@ -34,6 +34,7 @@ export function Footer() {
           <Link href="/markets">Markets</Link>
           <Link href="/industries">Industries</Link>
           <Link href="/accreditation">Accreditation</Link>
+          <Link href="/accreditation#certification-information">Certification information</Link>
         </div>
 
         <div className="footer-column">
