@@ -40,7 +40,7 @@ export default function AccreditationPage() {
         eyebrow="Accreditation"
         title="Accreditation"
         text="Complia Regulatory Services Private Limited is accredited by NABCB to ISO/IEC 17065:2012 as a Conformity Assessment Body and Certification Body for Product Certification."
-        action={{ label: "Verify with NABCB", href: "https://nabcb.qci.org.in" }}
+        action={{ label: "Verify with NABCB", href: "https://nabcb.qci.org.in/product-certification/" }}
       />
 
       <CertificationOverview local />
@@ -70,10 +70,6 @@ export default function AccreditationPage() {
               access international markets with confidence, while maintaining the highest
               standards of quality and compliance.
             </p>
-            <div className="status-callout">
-              <Check size={17} />
-              <p><strong>Current status:</strong> initially accredited 18 December 2025 and valid until 17 December 2028.</p>
-            </div>
           </div>
         </div>
       </section>
@@ -106,7 +102,8 @@ export default function AccreditationPage() {
             <div><span>IAF scope</span><strong>18 — Machinery and Equipment</strong></div>
             <div><span>Certification scheme</span><strong>CQS-01 (KSA SALEEM) Type 1a as per ISO/IEC Guide 17067, or SASO SALEEM Scheme (Type 1a assessment as per ISO 17067:2013)</strong></div>
             <div><span>Certification activity</span><strong>Product Certification</strong></div>
-            <div><span>Accredited office</span><strong>H. No. 9, Second Floor, Paschim Vihar Extn., Paschim Vihar, West Delhi, New Delhi – 110063, India</strong></div>
+            <div><span>Accredited office</span><strong>143, Second Floor, Avtar Enclave, Paschim Vihar,
+New Delhi–110063, India</strong></div>
           </div>
         </div>
       </section>

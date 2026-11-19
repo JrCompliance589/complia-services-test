@@ -39,7 +39,6 @@ export function CertificationInformation() {
         <div className="container certification-layout">
           <div className="certification-intro">
             <SectionHeading eyebrow="Scheme and process" title="From application to certification." text="Our CQS-01 SASO SALEEM scheme sets out the requirements for Type 1a product certification and the decisions that can affect a certificate." />
-            <a href={scheme.href} className="certification-source" target="_blank" rel="noopener noreferrer">Read the certification scheme (PDF)</a>
           </div>
           <div className="certification-body">
             <div className="certification-scheme-facts">
@@ -84,7 +83,6 @@ export function CertificationInformation() {
         <div className="container certification-layout">
           <div className="certification-intro">
             <SectionHeading eyebrow="Client rights and duties" title="A clear basis for working together." text="Understand what you can expect from Complia, what certification requires of you, and how to refer to your certification." />
-            <a href={agreement.href} className="certification-source" target="_blank" rel="noopener noreferrer">Read the Certification Agreement (PDF)</a>
           </div>
           <div className="certification-body">
             <article className="certification-client-block"><h3>Your rights</h3><InformationList items={certificationInformation.rights} /></article>
@@ -104,7 +102,6 @@ export function CertificationInformation() {
           <div className="certification-intro">
             <SectionHeading eyebrow="Complaints and appeals" title="A clear route to be heard." text="Raise a concern about our certification activities or ask us to reconsider a certification decision. The public summary below follows our complaints and appeals procedure." />
             <a href="mailto:feedback@complia.services" className="certification-contact"><Mail size={18} aria-hidden="true" /> feedback@complia.services</a>
-            <a href={complaints.href} className="certification-source" target="_blank" rel="noopener noreferrer">Read the full procedure (PDF)</a>
           </div>
           <div className="certification-body">
             <div className="certification-complaint-options">
