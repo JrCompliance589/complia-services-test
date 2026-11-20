@@ -131,6 +131,16 @@ export const certificationInformation = {
       text: "Fees are payable in advance before services are performed unless specially approved by the Accounts department. Fees are non-refundable as applicable under the Certification Agreement, and charges remain payable regardless of the application outcome. Unpaid fees may lead to refusal or cancellation of certification.",
     },
   ],
+  costOfServices: {
+    title: "Cost of Services",
+    paragraphs: [
+      "Actual costs are calculated for the certification service not limited to; receiving and studying the application document(s) submitted by the Organization.",
+      "The actual cost for the certification services shall be made clear to the applicant in the form of financial offer (e.g. quotation), and shall be agreed by the applicant.",
+      "In the case of a deposit request, the non-payment thereof within a period of 1 months may lead to revision in the financial offer.",
+      "If the result of the examination on the product(s) is not satisfactory, the costs resulting of the certification review and decision are still to be settled by the applicant.",
+      "The costs defined above are invoiced to the applicant. Payment will be made upon presentation of invoices, no later than the certification decision to grant the certification document to the applicant or settle the payment(s) per the defined term.",
+    ],
+  },
   rights: [
     "An impartial and objective assessment against the applicable certification requirements.",
     "A report of assessment findings, including identified nonconformities, and certification upon successful demonstration of conformity.",

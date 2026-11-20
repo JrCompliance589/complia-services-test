@@ -22,10 +22,22 @@ Working instructions:
 
 Prompt:-
 
-1. https://complia.services/privacy-policy/
-2. https://complia.services/terms-and-conditions/
-3. https://complia.services/regulatory-disclaimer/
+i want the bellow given exact section in Fees and funding section after payment and refunds:-
 
-i want this to be exactly same line by line but based on our current design and theme.
+13.Cost of Services
+13.1. Actual costs are calculated for the certification service not limited to; receiving and studying
+the application document(s) submitted by the Organization.
+13.2. The actual cost for the certification services shall be made clear to the applicant in the form
+of financial offer (e.g. quotation), and shall be agreed by the applicant.
+13.3. In the case of a deposit request, the non-payment thereof within a period of 1 months may
+lead to revision in the financial offer.
+13.4. If the result of the examination on the product(s) is not satisfactory, the costs resulting of the
+certification review and decision are still to be settled by the applicant.
+13.5. The costs defined above (13.1) are invoiced to the applicant. Payment will be made upon
+presentation of invoices, no later than the certification decision to grant the certification
+document to the applicant or settle the payment(s) per the defined term.
 
+and in this 
+See the scheme’s cost-of-services provisions and Certification Agreement for the full terms.
 
+only i want the Certification Agreement. now apart from this don't do anything else.

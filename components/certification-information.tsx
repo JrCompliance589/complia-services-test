@@ -3,7 +3,7 @@ import { Check, ChevronDown, Mail } from "lucide-react";
 import { SectionHeading } from "@/components/section-heading";
 import { certificationDocuments, certificationInformation, certificationLinks } from "@/lib/site-data";
 
-const [scheme, agreement, complaints] = certificationDocuments;
+const [, agreement] = certificationDocuments;
 
 function InformationList({ items }: { items: string[] }) {
   return (
@@ -73,8 +73,12 @@ export function CertificationInformation() {
               {certificationInformation.feeTerms.map((term) => (
                 <article key={term.title}><h3>{term.title}</h3><p>{term.text}</p></article>
               ))}
+              <article>
+                <h3>{certificationInformation.costOfServices.title}</h3>
+                <InformationList items={certificationInformation.costOfServices.paragraphs} />
+              </article>
             </div>
-            <p className="certification-reference">See the <a href={scheme.href} target="_blank" rel="noopener noreferrer">scheme’s cost-of-services provisions</a> and <a href={agreement.href} target="_blank" rel="noopener noreferrer">Certification Agreement</a> for the full terms.</p>
+            <p className="certification-reference">See the <a href={agreement.href} target="_blank" rel="noopener noreferrer">Certification Agreement</a> for the full terms.</p>
           </div>
         </div>
       </section>
